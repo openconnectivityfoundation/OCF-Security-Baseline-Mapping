@@ -10,5 +10,5 @@ THIS SOFTWARE IS PROVIDED BY THE Open Connectivity Foundation, INC. "AS IS" AND 
 
 Overview table with the OCF security base line mappings:
 
-https://openconnectivityfoundation.github.io/OCF-Security-Baseline-Mapping/docs/index.html
+[Security Mapping Table](https://openconnectivityfoundation.github.io/OCF-Security-Baseline-Mapping/docs/index.html)
 
