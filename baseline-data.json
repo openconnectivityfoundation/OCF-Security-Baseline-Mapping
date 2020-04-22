@@ -58,6 +58,63 @@
           ]
         }
       ]
+    },
+    {
+      "baselineId":"CNIST",
+      "baselineName":"8529",
+      "baselineCategories": [
+        {
+          "categoryName": "CNISTDevice Identification",
+          "subCategories":
+          [
+            {
+          		"subCategoryName":"1",
+              	"subCategoryDescription":"CNISTA unique logical identifier",
+              	"ocfMatchSpecification":"CNISTOCF Security Specification ISO/IEC 30118-2:2018]",
+              	"ocfMatches":[
+                  {
+                    "ocfMatchClause":"CNIST7.1.1",
+                    "ocfMatchNotes":"CNIST. Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
+                  }
+                ]
+            },
+            {"subCategoryName":"CNIST2",
+                "subCategoryDescription":"CNISTA unique physical identifier on it at an external or internal location authorized entities can access",
+                "ocfMatchSpecification":"",
+                "ocfMatches":[{}]
+            }
+          ]
+        },
+        {
+          "categoryName":"CNISTDevice Configuration",
+          "subCategories":
+          [
+            {
+                "subCategoryName":"1",
+                "subCategoryDescription":"CNISTThe ability to change the device’s software and firmware configuration settings",
+                "ocfMatchSpecification":"CNISTOCF Security Specification ISO/IEC 30118-2:2018]",
+                "ocfMatches":[
+                  {
+                    "ocfMatchClause":"CNIST5.3.3",
+                    "ocfMatchNotes":"CNISTPrior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                  }
+                ]
+            },
+            {
+              "subCategoryName":"CNIST2",
+              "subCategoryDescription":"CNISTThe ability to restrict configuration changes to authorized entities only",
+              "ocfMatchSpecification":"CNISTOCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+              [
+                {
+                "ocfMatchClause":"CNIST12",
+                "ocfMatchNotes" :"CNISTPrior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                  }
+                ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
