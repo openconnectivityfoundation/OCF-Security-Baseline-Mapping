@@ -33,7 +33,7 @@
           "subCategories":
           [
             {
-                "subCategoryName":"1",
+                "subCategoryNumber":"1",
                 "subCategoryDescription":"The ability to change the device’s software and firmware configuration settings",
                 "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
                 "ocfMatches":[
@@ -44,7 +44,7 @@
                 ]
             },
             {
-              "subCategoryName":"2",
+              "subCategoryNumber":"2",
               "subCategoryDescription":"The ability to restrict configuration changes to authorized entities only",
               "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
               "ocfMatches":
@@ -54,63 +54,265 @@
                 "ocfMatchNotes" :"Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
                   }
                 ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "baselineId":"CNIST",
-      "baselineName":"8529",
-      "baselineCategories": [
-        {
-          "categoryName": "CNISTDevice Identification",
-          "subCategories":
-          [
+            },
             {
-          		"subCategoryName":"1",
-              	"subCategoryDescription":"CNISTA unique logical identifier",
-              	"ocfMatchSpecification":"CNISTOCF Security Specification ISO/IEC 30118-2:2018]",
-              	"ocfMatches":[
+                "subCategoryNumber":"3",
+                "subCategoryDescription":"The ability for authorized entities to restore the device to a secure default configuration defined by an authorized entity",
+                "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                "ocfMatches":
+                [
                   {
-                    "ocfMatchClause":"CNIST7.1.1",
-                    "ocfMatchNotes":"CNIST. Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
+                    "ocfMatchClause":"8.2",
+                    "ocfMatchNotes":"Describes the Resources and properties that are restored to manufacturer settings."
                   }
                 ]
-            },
-            {"subCategoryName":"CNIST2",
-                "subCategoryDescription":"CNISTA unique physical identifier on it at an external or internal location authorized entities can access",
-                "ocfMatchSpecification":"",
-                "ocfMatches":[{}]
             }
           ]
         },
         {
-          "categoryName":"CNISTDevice Configuration",
-          "subCategories":
-          [
+        "categoryName":"Data Protection",
+        "subCategories":
+        [
+          {
+            "subCategoryNumber":"1",
+            "subCategoryDescription":"The ability to use accepted cryptographic algorithms (e.g., encryption with authentication, cryptographic hashes, digital signature validation) to prevent the confidentiality and integrity of the device’s stored and transmitted data from being compromised",
+            "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+            "ocfMatches":
+            [
+              {
+                "ocfMatchClause":"11.2.1",
+                "ocfMatchNotes":" Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+              },
+              {
+                "ocfMatchClause":"11.3",
+                "ocfMatchNotes":"Cipher Suites: All heavily reviewed and IETF approved or greater."
+              },
+              {
+                "ocfMatchClause":"14.2.2",
+                "ocfMatchNotes":"Secure storage for credentials is strongly recommended."
+              }
+            ]
+          },
+          {
+            "subCategoryNumber":"2",
+            "subCategoryDescription":"The ability for authorized entities to configure the cryptography use itself when applicable, such as choosing a key length",
+            "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+            "ocfMatches":
+            [
+              {}
+            ]
+          },
+          {
+            "subCategoryNumber":"3",
+            "subCategoryDescription":"The ability for authorized entities to render all data on the device inaccessible by all entities, whether previously authorized or not (e.g., through a wipe of internal storage, destruction of cryptographic keys for encrypted data)",
+            "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+            "ocfMatches":
+            [
+              {
+                "ocfMatchClause":"8.2",
+                "ocfMatchNotes":"Describes the Resources and properties that are restored to manufacturer settings during device reset."
+              }
+            ]
+          }
+        ]
+      },
+      {
+          "categoryName":"Logical Access to Interfaces",
+          "subCategories":[
             {
-                "subCategoryName":"1",
-                "subCategoryDescription":"CNISTThe ability to change the device’s software and firmware configuration settings",
-                "ocfMatchSpecification":"CNISTOCF Security Specification ISO/IEC 30118-2:2018]",
-                "ocfMatches":[
+              "subCategoryNumber":"1",
+              "subCategoryDescription":"The ability to logically or physically disable any local and network interfaces that are not necessary for the core functionality of the device.",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+                [
                   {
-                    "ocfMatchClause":"CNIST5.3.3",
-                    "ocfMatchNotes":"CNISTPrior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                  "ocfMatchClause":"12",
+                  "ocfMatchNotes":"Describes access control and policy management for both local and network resources."
                   }
                 ]
             },
             {
-              "subCategoryName":"CNIST2",
-              "subCategoryDescription":"CNISTThe ability to restrict configuration changes to authorized entities only",
-              "ocfMatchSpecification":"CNISTOCF Security Specification ISO/IEC 30118-2:2018]",
+              "subCategoryNumber":"2",
+              "subCategoryDescription":"The ability to logically restrict access to each network interface (e.g., device authentication, user authentication)",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+                [
+                  {
+                  "ocfMatchClause":"5",
+                  "ocfMatchNotes":"Figure 3 shows security enforcement points"
+                  }
+                ]
+            },
+            {
+              "subCategoryNumber":"3",
+              "subCategoryDescription":"The ability to enable, disable, and adjust thresholds for any ability the device might have to lock or disable an account or to delay additional authentication attempts after too many failed authentication attempts. ",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+                [{}]
+            }
+          ]
+      },
+      {
+          "categoryName":"Software and Firmware Update",
+          "subCategories":
+          [
+            {
+              "subCategoryNumber":"1",
+              "subCategoryDescription":"The ability to update all the device’s software and firmware through remote <e.g., network download> and/or local means (e.g., removable media)",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+              [
+                  {
+                      "ocfMatchClause":"14.5",
+                      "ocfMatchNotes":"The aspects of the software [update] include, but are not limited to, firmware, operating system, networking stack, application code, drivers, etc."
+                  }
+              ]
+            },
+            {
+              "subCategoryNumber":"2",
+              "subCategoryDescription":"The ability to confirm the validity of any update before installing it",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
               "ocfMatches":
               [
                 {
-                "ocfMatchClause":"CNIST12",
-                "ocfMatchNotes" :"CNISTPrior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
-                  }
-                ]
+                    "ocfMatchClause":"14.5.3",
+                    "ocfMatchNotes":" Process where device validates the software version against a trusted source."
+                }
+              ]
+            },
+            {
+              "subCategoryNumber":"3",
+              "subCategoryDescription":"The ability to restrict updating actions to authorized entities only",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+              [
+                {
+                  "ocfMatchClause":"14.5.4",
+                  "ocfMatchNotes":"A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
+                }
+              ]
+            },
+            {
+              "subCategoryNumber":"4",
+              "subCategoryDescription":"The ability to enable or disable updating",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+              [
+                {
+                  "ocfMatchClause":"14.5.4",
+                  "ocfMatchNotes":"A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
+                }
+              ]
+            },
+            {
+              "subCategoryNumber":"5",
+              "subCategoryDescription":"The ability to set remote update mechanisms to be either automatically or manually initiated for update downloads and installations",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+              [
+                {
+                  "ocfMatchClause":"14.5.4",
+                  "ocfMatchNotes":"Describes the use of a combination of software update bits that inform the device to look to a valid update."
+                }
+              ]
+            },
+            {
+              "subCategoryNumber":"6",
+              "subCategoryDescription":"The ability to enable or disable notification when an update is available and specify who or what is to be notified",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":[{}]
+            }
+          ]
+      },
+      {
+          "categoryName":"Cybersecurity State Awareness",
+          "subCategories":
+          [
+                {
+                  "subCategoryNumber":"1",
+                  "subCategoryDescription":"The ability to report the device’s cybersecurity state",
+                  "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                  "ocfMatches":
+                  [
+                    {
+                      "ocfMatchClause":"13.10",
+                      "ocfMatchNotes":"Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity"
+                    },
+                    {
+                      "ocfMatchClause":"5.1",
+                      "ocfMatchNotes":"Describes access control architecture and the access based on state of device."
+                    }
+                  ]
+                },
+                {
+                  "subCategoryNumber":"2",
+                  "subCategoryDescription":"The ability to differentiate between when a device will likely operate as expected from when it may be in a degraded cybersecurity state",
+                  "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                  "ocfMatches":
+                  [
+                    {
+                      "ocfMatchClause":"8.6",
+                      "ocfMatchNotes":"Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
+                    }
+                  ]
+                },
+                {
+                  "subCategoryNumber":"3",
+                  "subCategoryDescription":"The ability to restrict access to the state indicator so only authorized entities can view it",
+                  "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                  "ocfMatches":
+                  [
+                    {
+                      "ocfMatchClause":"13.8",
+                      "ocfMatchNotes":"Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
+                    }
+                  ]
+                },
+                {
+                  "subCategoryNumber":"4",
+                  "subCategoryDescription":"The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device’s monitor",
+                  "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                  "ocfMatches":
+                  [
+                      {
+                        "ocfMatchClause":"13.8",
+                        "ocfMatchNotes":"Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
+                      }
+                  ]
+                },
+                {
+                  "subCategoryNumber":"5",
+                  "subCategoryDescription":"The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device’s monitor",
+                  "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                  "ocfMatches":[{}]
+                }
+          ]
+      }
+      ]
+    },
+    {
+      "baselineId":"CTAC2",
+      "baselineName":"Conveners",
+      "baselineCategories":[
+        {
+          "categoryName":"Device Identifiers",
+          "categoryNumber":"5.1.1",
+          "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+          "ocfMatches":[
+            {
+              "ocfMatchClause":"7.1.1",
+              "ocfMatchNotes":"Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
+            }
+          ]
+        },
+        {
+          "categoryName":"Secured Access",
+          "categoryNumber":"5.1.2",
+          "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+          "ocfMatches":[
+            {
+              "ocfMatchClause":"5.3.3",
+              "ocfMatchNotes":"Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
             }
           ]
         }
