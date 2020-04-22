@@ -1,0 +1,67 @@
+
+{
+  "baseLines":
+  [
+    {
+      "baselineId":"NIST",
+      "baselineName":"8529",
+      "baselineCategories": [
+        {
+          "categoryName": "Device Identification",
+          "subCategories":
+          [
+            {
+          		"subCategoryName":"1",
+              	"subCategoryDescription":"A unique logical identifier",
+              	"ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              	"ocfMatches":[
+                  {
+                    "ocfMatchClause":"7.1.1",
+                    "ocfMatchNotes":". Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
+                  }
+                ]
+            },
+            {"subCategoryName":"2",
+                "subCategoryDescription":"A unique physical identifier on it at an external or internal location authorized entities can access",
+                "ocfMatchSpecification":"",
+                "ocfMatches":[{}]
+            }
+          ]
+        },
+        {
+          "categoryName":"Device Configuration",
+          "subCategories":
+          [
+            {
+                "subCategoryName":"1",
+                "subCategoryDescription":"The ability to change the device’s software and firmware configuration settings",
+                "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+                "ocfMatches":[
+                  {
+                    "ocfMatchClause":"5.3.3",
+                    "ocfMatchNotes":"Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                  }
+                ]
+            },
+            {
+              "subCategoryName":"2",
+              "subCategoryDescription":"The ability to restrict configuration changes to authorized entities only",
+              "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+              "ocfMatches":
+              [
+                {
+                "ocfMatchClause":"12",
+                "ocfMatchNotes" :"Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "baselineId":"CTAC2",
+      "baselineName":"Conveners"
+    }
+  ]
+}

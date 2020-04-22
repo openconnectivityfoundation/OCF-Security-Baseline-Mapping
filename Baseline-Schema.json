@@ -1,0 +1,80 @@
+{
+  "$id": "https://example.com/arrays.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "OCF Baseline Mapping",
+  "baseLines":{
+    "required":["baseline"],
+    "type":"array",
+    "items":{"$ref":"#/definitions/baseline"}
+  },
+  "definitions": {
+    "baseline":{
+      "required": [ "baselineId","baselineName"],
+      "type": "object",
+      "properties": {
+         "baselineId": {
+          "description":"Baseline Identifier",
+          "type" : "string"
+        },
+        "baselineName":{
+          "discription":"Name of Baseline",
+          "type":"string"
+        },
+        "baselineCategories": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/category" }
+        }
+    },
+    "category": {
+      "type": "object",
+      "required": [ "categoryName"],
+      "properties": {
+        "categoryName": {
+          "type": "string",
+          "description": "The name of the Baseline Category"
+        },
+       	"subCategories":{
+          "type":"array",
+          "items":{"$ref":"#/definitions/subcategory"}
+        }
+      }
+    },
+      "subcategory": {
+      "type": "object",
+      "required": [ "subCategoryName","subCategoryDescription","ocfMatchSpecification","ocfMatches"],
+      "properties": {
+        "subCategoryName": {
+          "type": "string",
+          "description": "The name of the Baseline Sub-Category"
+        },
+        "subCategoryDescription": {
+          "type": "string",
+          "description": "The decription of the SubCategory"
+        },
+        "ocfMatchSpecification":{
+          "type":"string",
+          "description":"The specification document"
+        },
+        "ocfMatches":{
+          "type":"array",
+          "description":"Clause number that matches baseline sub category",
+          "items":{"$ref":"#/definitions/ocfMatch"}
+        }
+      }
+    },
+    "ocfMatch":{
+      "type": "object",
+      "properties": {
+      "ocfMatchClause":{
+          "type":"string",
+          "description":"Clause number that matches baseline sub category"
+        },
+       "ocfMatchNotes":{
+          "type":"string",
+          "description":"Clause number that matches baseline sub category"
+        }
+      }
+    }
+  }
+}
+}
