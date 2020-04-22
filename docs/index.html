@@ -1,0 +1,124 @@
+<!doctype html>
+
+<!--
+table selection:
+http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-table-and-send-values-onclick-of-a-button
+-->
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+<title>OCF Security Baseline mapping overview</title>
+<a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64" align="right"></a>
+	
+</head>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+
+<div class=page>
+
+  <h1>OCF Security Baseline mapping overview </h1>
+ 
+<ul class="nav nav-tabs"  role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">BaselineOverview</a>
+  </li>
+</ul>
+
+
+  <script type="text/javascript" src="http://sjc-web10-lnx.cisco.com:1086/service.js"></script>
+  <table id="example" class="display" width="100%" cellspacing="0" data-page-length='20'>
+        <thead>
+            <tr>
+                <th>BaselineID </th>
+                <th>Baseline </th>
+                <th>Category Name</th>
+                <th>Sub Category Name</th>
+                <th>Specification Name</th>
+                <th>Clause</th>
+                <th>notes</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script>
+    $('#example').DataTable( {
+        "ajax": {
+            "url": "https://openconnectivityfoundation.github.io/OCF-Security-Baseline-Mapping/baseline-data.json", 
+            "dataSrc": function (json) {
+              var return_data = new Array();
+              var my_baselineName="device_unknown";
+              var my_baselineID="device_unknown";
+              var my_categoryName="categoryname";
+              var my_subcategoryName=" ";
+              var my_specName=" ";
+              var my_Clause=" ";
+              var my_Notes=" ";
+              
+              for(var i=0;i< json.baseLines.length; i++) {
+                // assign var in this loop
+                my_baselineName = json.baseLines[i].baselineName
+                my_baselineID = json.baseLines[i].baselineId
+                for(var j=0;j< json.baseLines[i].baselineCategories.length; j++) {
+                  // assign vars in this loop
+                  my_categoryName = json.baseLines[i].baselineCategories[j].categoryName
+                  for(var k=0;k < json.baseLines[i].baselineCategories[j].subCategories.length; k++) {
+                    // assign vars in this loop
+                    if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryDescription != "undefined") {
+                      my_subcategoryName=json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryDescription
+                    }
+                    if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification != "undefined") {
+                      my_specName=json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification
+                    }
+                    for(var l=0;l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
+                         // assign vars in this loop and create the table entry 
+                         if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
+                            my_Clause=json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause
+                         }
+                         if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes != "undefined") {
+                           my_Notes=json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes
+                         }
+                         //alert ( my_baselineName + " " + my_categoryName + " " + my_subcategoryName);
+                         return_data.push({
+                            'a': my_baselineName,
+                            'b': my_baselineID,
+                            'c': my_categoryName,
+                            'e' : my_subcategoryName,
+                            'f' : my_specName,
+                            'g' : my_Clause,
+                            'h' : my_Notes
+                            })
+                     }
+                  }
+                }
+              }
+              //alert ( return_data)
+              return return_data;
+            }
+        },
+        "columns": [
+          { "data": "a" },
+          { "data": "b" },
+          { "data": "c" },
+          { "data": "e" },
+          { "data": "f" },
+          { "data": "g" },
+          { "data": "h" }
+        ]
+      })
+	</script>
+</div>
