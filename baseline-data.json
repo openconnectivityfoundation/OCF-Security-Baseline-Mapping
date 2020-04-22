@@ -296,8 +296,12 @@
       "baselineCategories":[
         {
           "categoryName":"Device Identifiers",
-          "categoryNumber":"5.1.1",
-          "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
+          "categoryNumber":"5.1",
+          "subCategories":
+          [
+	  "subCategoryNumber":"1",
+	  "subCategoryDescription":"A unique value associated with the endpoint <or values associated with the functional entities within the endpoint> that exists in a namespace to allow it to be referenced without ambiguity. This value is distinct and distinguishes a device from all other devices.",
+	  "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
           "ocfMatches":[
             {
               "ocfMatchClause":"7.1.1",
@@ -307,14 +311,15 @@
         },
         {
           "categoryName":"Secured Access",
-          "categoryNumber":"5.1.2",
-          "ocfMatchSpecification":"OCF Security Specification ISO/IEC 30118-2:2018]",
-          "ocfMatches":[
-            {
-              "ocfMatchClause":"5.3.3",
-              "ocfMatchNotes":"Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
-            }
-          ]
+          "categoryNumber":"5.1",
+	  "subCategoryNumber":"2",
+	  "subCategoryDescription":"Protection of device operational and management capabilities by requiring user authentication to read or modify the software, firmware and configuration, including means to ensure device-unique credentials for administrative access, and by protecting access to interfaces. ",
+		  "ocfMatches":[
+		    {
+		      "ocfMatchClause":"5.3.3",
+		      "ocfMatchNotes":"Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+		    }
+		  ]
         }
       ]
     }
