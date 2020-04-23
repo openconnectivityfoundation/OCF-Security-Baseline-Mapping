@@ -9,11 +9,11 @@
   },
   "definitions": {
     "baseline":{
-      "required": [ "baselineId","baselineName"],
+      "required": [ "baselineOrg","baselineName"],
       "type": "object",
       "properties": {
-         "baselineId": {
-          "description":"Baseline Identifier",
+         "baselineOrg": {
+          "description":"Baseline Organization",
           "type" : "string"
         },
         "baselineName":{
@@ -35,7 +35,7 @@
         },
         "categoryNumber": {
           "type": "string",
-          "description": "The number of the Baseline Category"
+          "description": "The number of the Baseline Category (used for sorting)"
         },
         "ocfMatchSpecification":{
           "type":"string",
