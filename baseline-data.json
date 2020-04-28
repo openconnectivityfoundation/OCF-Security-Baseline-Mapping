@@ -326,6 +326,8 @@
                     "categoryNumber": "5.1",
                     "subCategories": [
                         {
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
