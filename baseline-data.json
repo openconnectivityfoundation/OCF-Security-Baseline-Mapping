@@ -19,9 +19,9 @@
                             "subCategoryName": "1"
                         },
                         {
-                            "ocfMatches": [ { } ],
                             "subCategoryDescription": "A unique physical identifier at an external or internal location on the device authorized entities can access",
-                            "subCategoryName": "2"
+                            "subCategoryName": "2",
+                            "ocfMatches": [ { } ]
                         }
                     ]
                 },
