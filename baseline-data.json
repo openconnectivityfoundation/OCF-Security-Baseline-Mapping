@@ -19,6 +19,7 @@
                             "subCategoryName": "1"
                         },
                         {
+                            "ocfMatches": [ { } ],
                             "subCategoryDescription": "A unique physical identifier at an external or internal location on the device authorized entities can access",
                             "subCategoryName": "2"
                         }
@@ -295,7 +296,7 @@
                     ]
                 }
             ],
-            "baselineId": "NIST",
+            "baselineOrg": "NIST",
             "baselineName": "8529"
         },
         {
@@ -335,7 +336,7 @@
                     ]
                 }
             ],
-            "baselineId": "CTAC2",
+            "baselineOrg": "CTAC2",
             "baselineName": "Conveners"
         }
     ]
