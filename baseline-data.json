@@ -21,6 +21,8 @@
                         {
                             "subCategoryDescription": "A unique physical identifier at an external or internal location on the device authorized entities can access",
                             "subCategoryName": "2",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [ { } ]
                         }
                     ]
