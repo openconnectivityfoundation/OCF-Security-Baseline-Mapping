@@ -20,6 +20,10 @@
           "discription":"Name of Baseline",
           "type":"string"
         },
+        "baselineURL":{
+          "discription":"URL of Baseline",
+          "type":"string"
+        },
         "baselineCategories": {
           "type": "array",
           "items": { "$ref": "#/definitions/category" }
@@ -71,6 +75,10 @@
         "ocfMatchSpecification":{
           "type":"string",
           "description":"The specification document"
+        },
+        "ocfMatchSpecificationURL":{
+          "type":"string",
+          "description":"The specification documenti URL"
         },
         "ocfMatches":{
           "type":"array",
