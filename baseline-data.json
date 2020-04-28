@@ -299,7 +299,8 @@
                 }
             ],
             "baselineOrg": "NIST",
-            "baselineName": "8529"
+            "baselineName": "8529",
+	    "baselineURL":"https://doi.org/10.6028/NIST.IR.8259-draft2"
         },
         {
             "baselineCategories": [
@@ -341,7 +342,8 @@
                 }
             ],
             "baselineOrg": "CTAC2",
-            "baselineName": "Conveners"
+            "baselineName": "Conveners",
+	    "baselineURL":"https://securingdigitaleconomy.org/wp-content/uploads/2019/09/CSDE_IoT-C2-Consensus-Report_FINAL.pdf"
         }
     ]
 }
