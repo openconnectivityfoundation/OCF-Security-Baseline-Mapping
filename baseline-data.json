@@ -16,11 +16,13 @@
                                 }
                             ],
                             "subCategoryDescription": "A unique logical identifier",
-                            "subCategoryName": "1"
+                            "subCategoryName": "1",
+                            "subCategoryNumber": "1"
                         },
                         {
                             "subCategoryDescription": "A unique physical identifier at an external or internal location on the device authorized entities can access",
                             "subCategoryName": "2",
+                            "subCategoryNumber": "1",
                             "ocfMatchSpecification": "",
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [ { } ]
