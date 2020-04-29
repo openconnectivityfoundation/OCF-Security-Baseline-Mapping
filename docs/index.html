@@ -12,6 +12,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
@@ -24,10 +25,9 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
 <script type="text/javascript"
-        src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript"
         src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
+<script src="https://cdn.rawgit.com/ashl1/datatables-rowsgroup/v1.0.0/dataTables.rowsGroup.js"></script>
 
 <div class=page>
 
@@ -40,12 +40,11 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 </ul>
 
 
-  <script type="text/javascript" src="http://sjc-web10-lnx.cisco.com:1086/service.js"></script>
-  <table id="example" class="display" width="100%" cellspacing="0" data-page-length='20'>
+  <table border="1" id="example" class="display" width="100%" cellspacing="0" data-page-length='20' style="border-color:#D5D8DC">
         <thead>
             <tr>
-                <th>BaselineID </th>
-                <th>Baseline </th>
+                <th>Baseline Organization </th>
+                <th>Baseline Name</th>
                 <th>Category Name</th>
                 <th>Sub Category Name</th>
                 <th>Specification Name</th>
@@ -58,32 +57,55 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
     <script>
     $('#example').DataTable( {
         "ajax": {
-            "url": "https://openconnectivityfoundation.github.io/OCF-Security-Baseline-Mapping/baseline-data.json", 
+            "url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/nist/baseline-data.json", 
             "dataSrc": function (json) {
               var return_data = new Array();
+	      var return_data = new Array();
               var my_baselineName=" ";
-              var my_baselineID=" ";
+              var my_baselineOrg=" ";
+              var my_baselineURL=" ";
               var my_categoryName=" ";
               var my_subcategoryName=" ";
+              var my_subcategoryNumber=" ";
               var my_specName=" ";
+              var my_specURL=" ";
               var my_Clause=" ";
               var my_Notes=" ";
-              
+
+
+
+
               for(var i=0;i< json.baseLines.length; i++) {
                 // assign var in this loop
                 my_baselineName = json.baseLines[i].baselineName
-                my_baselineID = json.baseLines[i].baselineId
+                my_baselineOrg = json.baseLines[i].baselineOrg
+		if(typeof json.baseLines[i].baselineURL != "undefined"){
+			my_baselineURL = json.baseLines[i].baselineURL;
+			my_baselineName = "<a href='"+my_baselineURL+"'>"+my_baselineName+"</a>"
+		}
                 for(var j=0;j< json.baseLines[i].baselineCategories.length; j++) {
                   // assign vars in this loop
-                  my_categoryName = json.baseLines[i].baselineCategories[j].categoryName
+                  my_categoryName = json.baseLines[i].baselineCategories[j].categoryNumber+"."+json.baseLines[i].baselineCategories[j].categoryName
                   for(var k=0;k < json.baseLines[i].baselineCategories[j].subCategories.length; k++) {
+		      var my_specName=" ";
+		      var my_specURL=" ";
                     // assign vars in this loop
                     if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryDescription != "undefined") {
                       my_subcategoryName=json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryDescription
                     }
+                    if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber != "undefined") {
+                      my_subcategoryNumber=json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber
+			my_subcategoryName = my_subcategoryNumber+". "+my_subcategoryName;
+                    }
                     if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification != "undefined") {
                       my_specName=json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification
+		    } 
+                    if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecificationURL != "undefined") {
+                      my_specURL=json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecificationURL
+			my_specName = "<a href='"+my_specURL+"'>"+my_specName+"</a>"
                     }
+		      var my_Clause=" ";
+		      var my_Notes=" ";
                     for(var l=0;l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
                          // assign vars in this loop and create the table entry 
                          if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
@@ -92,10 +114,14 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                          if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes != "undefined") {
                            my_Notes=json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes
                          }
-                         //alert ( my_baselineName + " " + my_categoryName + " " + my_subcategoryName);
+			    if (my_Clause == "12"){
+			    console.log(l+" "+my_baselineOrg+":"+my_subcategoryName+" "+my_Clause)
+			    }
+			 var row_data = [my_baselineName,my_baselineOrg,my_categoryName,my_subcategoryName,my_specName,my_Clause,my_Notes]
+	//		  return_data.push(row_data)
                          return_data.push({
-                            'a': my_baselineName,
-                            'b': my_baselineID,
+                            'a': my_baselineOrg,
+                            'b': my_baselineName,
                             'c': my_categoryName,
                             'e' : my_subcategoryName,
                             'f' : my_specName,
@@ -106,7 +132,6 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                   }
                 }
               }
-              //alert ( return_data)
               return return_data;
             }
         },
@@ -118,7 +143,10 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
           { "data": "f" },
           { "data": "g" },
           { "data": "h" }
-        ]
+        ],
+	'order':[],
+	 'rowsGroup':[0,1,2,3,4] //group like columns
+
       })
 	</script>
 </div>
