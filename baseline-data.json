@@ -315,9 +315,11 @@
             "baselineCategories": [
                 {
                     "categoryName": "Device Identifiers",
-                    "categoryNumber": "5.1",
+                    "categoryNumber": "5.1.1",
                     "subCategories": [
                         {
+                            "subCategoryDescription": "A unique value associated with the endpoint <or values associated with the functional entities within the endpoint> that exists in a namespace to allow it to be referenced without ambiguity. This value is distinct and distinguishes a device from all other devices.",
+                            "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -325,17 +327,17 @@
                                     "ocfMatchClause": "7.1.1",
                                     "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
                                 }
-                            ],
-                            "subCategoryDescription": "A unique value associated with the endpoint <or values associated with the functional entities within the endpoint> that exists in a namespace to allow it to be referenced without ambiguity. This value is distinct and distinguishes a device from all other devices.",
-                            "subCategoryNumber": "1"
+                            ]
                         }
                     ]
                 },
                 {
                     "categoryName": "Secured Access",
-                    "categoryNumber": "5.1",
+                    "categoryNumber": "5.1.2",
                     "subCategories": [
                         {
+                            "subCategoryDescription": "Protection of device operational and management capabilities by requiring user authentication to read or modify the software, firmware and configuration, including means to ensure device-unique credentials for administrative access, and by protecting access to interfaces. ",
+                            "subCategoryNumber": "2",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -343,12 +345,51 @@
                                     "ocfMatchClause": "5.3.3",
                                     "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
-                            ],
-                            "subCategoryDescription": "Protection of device operational and management capabilities by requiring user authentication to read or modify the software, firmware and configuration, including means to ensure device-unique credentials for administrative access, and by protecting access to interfaces. ",
-                            "subCategoryNumber": "2"
+                            ]
                         }
                     ]
-                }
+                },
+		{
+                    "categoryName": "Data In Transit Is Protected",
+                    "categoryNumber": "5.1.3",
+                    "subCategories":
+		    [
+                        {
+			}
+		    ]
+			
+		},
+		{
+                    "categoryName": "Data At Rest Is Protected",
+                    "categoryNumber": "5.1.4"
+			
+		},
+		{
+                    "categoryName": "Industry Accepted Protocols are Used for Communications",
+                    "categoryNumber": "5.1.5"
+			
+		},
+		{
+                    "categoryName": "Data Validation",
+                    "categoryNumber": "5.1.6"
+			
+		},
+		{
+                    "categoryName": "Event Logging",
+                    "categoryNumber": "5.1.7"
+			
+		},
+		{
+                    "categoryName": "Cryptography",
+                    "categoryNumber": "5.1.8"
+			
+		},
+		{
+                    "categoryName": "Patchability",
+                    "categoryNumber": "5.1.9"
+			
+		}
+
             ]
         }
     ]
