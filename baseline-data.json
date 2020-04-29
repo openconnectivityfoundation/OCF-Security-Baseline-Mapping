@@ -22,7 +22,7 @@
                         {
                             "subCategoryDescription": "A unique physical identifier at an external or internal location on the device authorized entities can access",
                             "subCategoryName": "2",
-                            "subCategoryNumber": "1",
+                            "subCategoryNumber": "2",
                             "ocfMatchSpecification": "",
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [ { } ]
@@ -80,6 +80,8 @@
                     "categoryNumber": "3",
                     "subCategories": [
                         {
+                            "subCategoryDescription": "The ability to use accepted cryptographic algorithms (e.g., encryption with authentication, cryptographic hashes, digital signature validation) to prevent the confidentiality and integrity of the device\u2019s stored and transmitted data from being compromised",
+                            "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -95,20 +97,20 @@
                                     "ocfMatchClause": "14.2.2",
                                     "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to use accepted cryptographic algorithms (e.g., encryption with authentication, cryptographic hashes, digital signature validation) to prevent the confidentiality and integrity of the device\u2019s stored and transmitted data from being compromised",
-                            "subCategoryNumber": "1"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability for authorized entities to configure the cryptography use itself when applicable, such as choosing a key length",
+                            "subCategoryNumber": "2",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {}
-                            ],
-                            "subCategoryDescription": "The ability for authorized entities to configure the cryptography use itself when applicable, such as choosing a key length",
-                            "subCategoryNumber": "2"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability for authorized entities to render all data on the device inaccessible by all entities, whether previously authorized or not (e.g., through a wipe of internal storage, destruction of cryptographic keys for encrypted data)",
+                            "subCategoryNumber": "3",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -116,9 +118,7 @@
                                     "ocfMatchClause": "8.2",
                                     "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings during device reset."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability for authorized entities to render all data on the device inaccessible by all entities, whether previously authorized or not (e.g., through a wipe of internal storage, destruction of cryptographic keys for encrypted data)",
-                            "subCategoryNumber": "3"
+                            ]
                         }
                     ]
                 },
@@ -127,6 +127,8 @@
                     "categoryNumber": "4",
                     "subCategories": [
                         {
+                            "subCategoryDescription": "The ability to logically or physically disable any local and network interfaces that are not necessary for the core functionality of the device.",
+                            "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -134,11 +136,11 @@
                                     "ocfMatchClause": "12",
                                     "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to logically or physically disable any local and network interfaces that are not necessary for the core functionality of the device.",
-                            "subCategoryNumber": "1"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to logically restrict access to each network interface (e.g., device authentication, user authentication)",
+                            "subCategoryNumber": "2",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -146,18 +148,16 @@
                                     "ocfMatchClause": "5",
                                     "ocfMatchNotes": "Figure 3 shows security enforcement points"
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to logically restrict access to each network interface (e.g., device authentication, user authentication)",
-                            "subCategoryNumber": "2"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to enable, disable, and adjust thresholds for any ability the device might have to lock or disable an account or to delay additional authentication attempts after too many failed authentication attempts. ",
+                            "subCategoryNumber": "3",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {}
-                            ],
-                            "subCategoryDescription": "The ability to enable, disable, and adjust thresholds for any ability the device might have to lock or disable an account or to delay additional authentication attempts after too many failed authentication attempts. ",
-                            "subCategoryNumber": "3"
+                            ]
                         }
                     ]
                 },
@@ -166,6 +166,8 @@
                     "categoryNumber": "5",
                     "subCategories": [
                         {
+                            "subCategoryDescription": "The ability to update all the device\u2019s software and firmware through remote <e.g., network download> and/or local means (e.g., removable media)",
+                            "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -173,11 +175,11 @@
                                     "ocfMatchClause": "14.5",
                                     "ocfMatchNotes": "The aspects of the software [update] include, but are not limited to, firmware, operating system, networking stack, application code, drivers, etc."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to update all the device\u2019s software and firmware through remote <e.g., network download> and/or local means (e.g., removable media)",
-                            "subCategoryNumber": "1"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to confirm the validity of any update before installing it",
+                            "subCategoryNumber": "2",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -185,23 +187,11 @@
                                     "ocfMatchClause": "14.5.3",
                                     "ocfMatchNotes": " Process where device validates the software version against a trusted source."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to confirm the validity of any update before installing it",
-                            "subCategoryNumber": "2"
+                            ]
                         },
                         {
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
-                            "ocfMatches": [
-                                {
-                                    "ocfMatchClause": "14.5.4",
-                                    "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
-                                }
-                            ],
                             "subCategoryDescription": "The ability to restrict updating actions to authorized entities only",
-                            "subCategoryNumber": "3"
-                        },
-                        {
+                            "subCategoryNumber": "3",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -209,11 +199,23 @@
                                     "ocfMatchClause": "14.5.4",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to enable or disable updating",
-                            "subCategoryNumber": "4"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to enable or disable updating",
+                            "subCategoryNumber": "4",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
+                                }
+                            ]
+                        },
+                        {
+                            "subCategoryDescription": "The ability to set remote update mechanisms to be either automatically or manually initiated for update downloads and installations",
+                            "subCategoryNumber": "5",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -221,18 +223,16 @@
                                     "ocfMatchClause": "14.5.4",
                                     "ocfMatchNotes": "Describes the use of a combination of software update bits that inform the device to look to a valid update."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to set remote update mechanisms to be either automatically or manually initiated for update downloads and installations",
-                            "subCategoryNumber": "5"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to enable or disable notification when an update is available and specify who or what is to be notified",
+                            "subCategoryNumber": "6",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {}
-                            ],
-                            "subCategoryDescription": "The ability to enable or disable notification when an update is available and specify who or what is to be notified",
-                            "subCategoryNumber": "6"
+                            ]
                         }
                     ]
                 },
@@ -241,6 +241,8 @@
                     "categoryNumber": "6",
                     "subCategories": [
                         {
+                            "subCategoryDescription": "The ability to report the device\u2019s cybersecurity state",
+                            "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -252,11 +254,11 @@
                                     "ocfMatchClause": "5.1",
                                     "ocfMatchNotes": "Describes access control architecture and the access based on state of device."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to report the device\u2019s cybersecurity state",
-                            "subCategoryNumber": "1"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to differentiate between when a device will likely operate as expected from when it may be in a degraded cybersecurity state",
+                            "subCategoryNumber": "2",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -264,23 +266,11 @@
                                     "ocfMatchClause": "8.6",
                                     "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to differentiate between when a device will likely operate as expected from when it may be in a degraded cybersecurity state",
-                            "subCategoryNumber": "2"
+                            ]
                         },
                         {
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
-                            "ocfMatches": [
-                                {
-                                    "ocfMatchClause": "13.8",
-                                    "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
-                                }
-                            ],
                             "subCategoryDescription": "The ability to restrict access to the state indicator so only authorized entities can view it",
-                            "subCategoryNumber": "3"
-                        },
-                        {
+                            "subCategoryNumber": "3",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -288,18 +278,28 @@
                                     "ocfMatchClause": "13.8",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 }
-                            ],
-                            "subCategoryDescription": "The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device\u2019s monitor",
-                            "subCategoryNumber": "4"
+                            ]
                         },
                         {
+                            "subCategoryDescription": "The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device\u2019s monitor",
+                            "subCategoryNumber": "4",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "13.8",
+                                    "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
+                                }
+                            ]
+                        },
+                        {
+                            "subCategoryDescription": "The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device\u2019s monitor",
+                            "subCategoryNumber": "5",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {}
-                            ],
-                            "subCategoryDescription": "The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device\u2019s monitor",
-                            "subCategoryNumber": "5"
+                            ]
                         }
                     ]
                 }
