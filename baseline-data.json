@@ -371,7 +371,7 @@
 		},
 		{
                     "categoryName": "Data At Rest Is Protected",
-                    "categoryNumber": "5.1.4"
+                    "categoryNumber": "5.1.4",
                     "subCategories":
 		    [
                         {
@@ -391,7 +391,7 @@
 		},
 		{
                     "categoryName": "Industry Accepted Protocols are Used for Communications",
-                    "categoryNumber": "5.1.5"
+                    "categoryNumber": "5.1.5",
                     "subCategories":
 		    [
                         {
@@ -411,7 +411,7 @@
 		},
 		{
                     "categoryName": "Data Validation",
-                    "categoryNumber": "5.1.6"
+                    "categoryNumber": "5.1.6",
                     "subCategories":
 		    [
                         {
@@ -431,7 +431,7 @@
 		},
 		{
                     "categoryName": "Event Logging",
-                    "categoryNumber": "5.1.7"
+                    "categoryNumber": "5.1.7",
                     "subCategories":
 		    [
                         {
@@ -451,7 +451,7 @@
 		},
 		{
                     "categoryName": "Cryptography",
-                    "categoryNumber": "5.1.8"
+                    "categoryNumber": "5.1.8",
                     "subCategories":
 		    [
                         {
@@ -471,7 +471,7 @@
 		},
 		{
                     "categoryName": "Patchability",
-                    "categoryNumber": "5.1.9"
+                    "categoryNumber": "5.1.9",
                     "subCategories":
 		    [
                         {
