@@ -355,6 +355,16 @@
                     "subCategories":
 		    [
                         {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
 			}
 		    ]
 			
@@ -362,31 +372,121 @@
 		{
                     "categoryName": "Data At Rest Is Protected",
                     "categoryNumber": "5.1.4"
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
 			
 		},
 		{
                     "categoryName": "Industry Accepted Protocols are Used for Communications",
                     "categoryNumber": "5.1.5"
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
 			
 		},
 		{
                     "categoryName": "Data Validation",
                     "categoryNumber": "5.1.6"
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
 			
 		},
 		{
                     "categoryName": "Event Logging",
                     "categoryNumber": "5.1.7"
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
 			
 		},
 		{
                     "categoryName": "Cryptography",
                     "categoryNumber": "5.1.8"
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
 			
 		},
 		{
                     "categoryName": "Patchability",
                     "categoryNumber": "5.1.9"
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
 			
 		}
 
