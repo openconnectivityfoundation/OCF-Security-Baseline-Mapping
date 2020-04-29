@@ -1,6 +1,9 @@
 {
     "baseLines": [
         {
+            "baselineOrg": "NIST",
+            "baselineName": "8529",
+	    "baselineURL":"https://doi.org/10.6028/NIST.IR.8259-draft2",
             "baselineCategories": [
                 {
                     "categoryName": "Device Identification",
@@ -293,7 +296,7 @@
                             ]
                         },
                         {
-                            "subCategoryDescription": "The ability to prevent any entities (authorized or unauthorized) from editing the state except for the device\u2019s monitor",
+                            "subCategoryDescription": "The ability to make the state information available to a service on another device, such as an event/state log server",
                             "subCategoryNumber": "5",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -303,12 +306,12 @@
                         }
                     ]
                 }
-            ],
-            "baselineOrg": "NIST",
-            "baselineName": "8529",
-	    "baselineURL":"https://doi.org/10.6028/NIST.IR.8259-draft2"
+            ]
         },
         {
+            "baselineOrg": "CTAC2",
+            "baselineName": "Conveners",
+	    "baselineURL":"https://securingdigitaleconomy.org/wp-content/uploads/2019/09/CSDE_IoT-C2-Consensus-Report_FINAL.pdf",
             "baselineCategories": [
                 {
                     "categoryName": "Device Identifiers",
@@ -346,10 +349,7 @@
                         }
                     ]
                 }
-            ],
-            "baselineOrg": "CTAC2",
-            "baselineName": "Conveners",
-	    "baselineURL":"https://securingdigitaleconomy.org/wp-content/uploads/2019/09/CSDE_IoT-C2-Consensus-Report_FINAL.pdf"
+            ]
         }
     ]
 }
