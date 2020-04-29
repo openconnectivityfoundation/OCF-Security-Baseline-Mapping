@@ -355,7 +355,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Protection of the confidentiality and integrity of selected categories of transmitted data via sound cryptographic means, e.g., HMACs, TLS/DTLS, IPsec, or SSH.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -375,7 +375,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Protection of the confidentiality and integrity of selected categories of stored data via sound cryptographic means.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -395,7 +395,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Use of secure, widely used protocols, excluding deprecated and replaced versions and protocols, for communications to and from the device.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -415,7 +415,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": ": Parsing and limiting input data to prevent it from being used directly as code, commands, or other execution flow inputs; and encoding output data in a form appropriate to and limited to its intended usage.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -435,7 +435,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "A limited persistent record in the device of relevant events, secured and available to authorized users.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -455,7 +455,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Where cryptography is used, use open, published, proven, and peer-reviewed cryptographic methods with appropriate parameter, algorithm and option selections.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -475,7 +475,27 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "The ability to verifiably update a device’s software and firmware, post-market, with patches that are authenticated to ensure that they have been deployed by an authorized entity as well as to verify the integrity of the patch.",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+			
+		},
+		{
+                    "categoryName": "Reprovisioning",
+                    "categoryNumber": "5.1.10",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "The ability for authorized users to securely reconfigure and redeploy a device post-market, especially to return the product to factory defaults or an authorized restore point, and securely remove data collected by the device <that is not essential to its operation>, within a defined period established by the organization.",
                             "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
