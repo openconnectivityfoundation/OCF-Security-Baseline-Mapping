@@ -473,8 +473,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.3.1",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 }
                             ]
 			}
@@ -493,8 +493,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchNotes": "Process where device validates the software version against a trusted source."
+                                },
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate a software update process."
                                 }
                             ]
 			}
@@ -513,8 +517,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchNotes": "Defines how resources on the device are returned to the manufacturer's default values."
                                 }
                             ]
 			}
