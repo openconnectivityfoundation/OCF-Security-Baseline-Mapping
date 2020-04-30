@@ -527,6 +527,298 @@
 		}
 
             ]
-        }
+        },
+        {
+            "baselineOrg": "ENISA",
+            "baselineName": "IOTSec",
+	    "baselineURL":"https://www.enisa.europa.eu/publications/baseline-security-recommendations-for-iot/at_download/fullReport",
+            "baselineCategories": [
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.1",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.2",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.3",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.4",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.5",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.6",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.7",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.8",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.9",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.10",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.11",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.12",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.13",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.14",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4.3.15",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		}
+	    ]
+	}
     ]
 }
