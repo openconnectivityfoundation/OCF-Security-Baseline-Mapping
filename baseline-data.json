@@ -534,7 +534,7 @@
 	    "baselineURL":"https://www.enisa.europa.eu/publications/baseline-security-recommendations-for-iot/at_download/fullReport",
             "baselineCategories": [
                 {
-                    "categoryName": "",
+                    "categoryName": "Hardware security",
                     "categoryNumber": "4.3.1",
                     "subCategories": 
 		    [
@@ -553,7 +553,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Trust and Integrity Management",
                     "categoryNumber": "4.3.2",
                     "subCategories": 
 		    [
@@ -572,7 +572,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Strong default security and privacy",
                     "categoryNumber": "4.3.3",
                     "subCategories": 
 		    [
@@ -591,7 +591,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Data protection and compliance",
                     "categoryNumber": "4.3.4",
                     "subCategories": 
 		    [
@@ -610,7 +610,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "System safety and reliability",
                     "categoryNumber": "4.3.5",
                     "subCategories": 
 		    [
@@ -629,7 +629,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Secure Software / Firmware updates",
                     "categoryNumber": "4.3.6",
                     "subCategories": 
 		    [
@@ -648,7 +648,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Authentication",
                     "categoryNumber": "4.3.7",
                     "subCategories": 
 		    [
@@ -667,7 +667,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Authorisation",
                     "categoryNumber": "4.3.8",
                     "subCategories": 
 		    [
@@ -686,7 +686,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Access Control - Physical and Environmental security",
                     "categoryNumber": "4.3.9",
                     "subCategories": 
 		    [
@@ -705,7 +705,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Cryptography",
                     "categoryNumber": "4.3.10",
                     "subCategories": 
 		    [
@@ -724,7 +724,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Secure and trusted communications",
                     "categoryNumber": "4.3.11",
                     "subCategories": 
 		    [
@@ -743,7 +743,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Secure Interfaces and network services",
                     "categoryNumber": "4.3.12",
                     "subCategories": 
 		    [
@@ -762,7 +762,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Secure input and output handling",
                     "categoryNumber": "4.3.13",
                     "subCategories": 
 		    [
@@ -781,7 +781,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Logging",
                     "categoryNumber": "4.3.14",
                     "subCategories": 
 		    [
@@ -800,7 +800,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Monitoring and Auditing",
                     "categoryNumber": "4.3.15",
                     "subCategories": 
 		    [

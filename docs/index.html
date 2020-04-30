@@ -28,6 +28,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
         src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 <script src="https://cdn.rawgit.com/ashl1/datatables-rowsgroup/v1.0.0/dataTables.rowsGroup.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.20/sorting/natural.js"></script>
 
 <div class=page>
 
@@ -85,7 +86,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 		}
                 for(var j=0;j< json.baseLines[i].baselineCategories.length; j++) {
                   // assign vars in this loop
-                  my_categoryName = json.baseLines[i].baselineCategories[j].categoryNumber+"."+json.baseLines[i].baselineCategories[j].categoryName
+                  my_categoryName = json.baseLines[i].baselineCategories[j].categoryNumber+".\r\n"+json.baseLines[i].baselineCategories[j].categoryName
                   for(var k=0;k < json.baseLines[i].baselineCategories[j].subCategories.length; k++) {
 		      var my_specName=" ";
 		      var my_specURL=" ";
@@ -144,6 +145,9 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
           { "data": "g" },
           { "data": "h" }
         ],
+     columnDefs: [
+		    { type: 'natural', targets: [0,1,2] }
+		  ],
 	'order':[],
 	 'rowsGroup':[0,1,2,3,4] //group like columns
 
