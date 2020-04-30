@@ -539,14 +539,26 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryDescription": "Employ a hardware-based immutable root of trust.",
+                            "subCategoryNumber": "GP-TM-01",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Use hardware that incorporates security features to strengthen the protection and integrity of the device ",
+                            "subCategoryNumber": "GP-TM-02",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.7",
+                                    "ocfMatchNotes": "Defines levels of Hardware Tamper Protection for cryptographic module."
                                 }
                             ]
 			}
