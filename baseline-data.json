@@ -570,14 +570,62 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryDescription": "Trust must be established in the boot environment before any trust in any other software or executable program can be claimed.",
+                            "subCategoryNumber": "GP-TM-03",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.8.3.6",
+                                    "ocfMatchNotes": "Security Profile Purple: secure boot, hardware backed secure storage"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Sign code cryptographically to ensure it has not been tampered with after signing it as safe for the device, and implement run-time protection and secure execution monitoring to make sure malicious attacks do not overwrite code after it is loaded.",
+                            "subCategoryNumber": "GP-TM-04",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not In Scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Control the installation of software in operating systems, to prevent unauthenticated software and files from being loaded onto it.",
+                            "subCategoryNumber": "GP-TM-05",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchNotes": "A the process whereby the Device validates the software (including firmware, operating system, Device drivers, networking stack, etc.) against a trusted source"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Enable a system to return to a state that was known to be secure, after a security breach has occurred or if an upgrade has not been successful.",
+                            "subCategoryNumber": "GP-TM-06",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not In Scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Use protocols and mechanisms able to represent and manage trust and trust relationships.",
+                            "subCategoryNumber": "GP-TM-07",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "9.4",
+                                    "ocfMatchNotes": "Certificate based key management based on public key infrastructure (PKI)."
                                 }
                             ]
 			}
@@ -590,9 +638,21 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-08",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-09",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -609,9 +669,57 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-10",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-11",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-12",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-13",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-14",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -628,9 +736,33 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-15",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-16",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-17",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -647,9 +779,33 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-18",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-19",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-20",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -666,9 +822,69 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-21",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-22",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-23",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-24",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-25",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-26",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -685,9 +901,21 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-27",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-28",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -704,9 +932,57 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-29",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-30",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-31",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-32",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-33",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -723,9 +999,45 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-34",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-35",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-36",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-37",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -742,9 +1054,117 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-38",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-39",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-40",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-41",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-42",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-43",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-44",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-45",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-46",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "47",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -761,9 +1181,81 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-47",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-48",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-49",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-50",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-51",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-52",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-53",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -780,9 +1272,9 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-54",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -799,9 +1291,9 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-55",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
@@ -818,9 +1310,21 @@
 		    [
                         {
                             "subCategoryDescription": "",
-                            "subCategoryNumber": "",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "subCategoryNumber": "GP-TM-56",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "GP-TM-57",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
