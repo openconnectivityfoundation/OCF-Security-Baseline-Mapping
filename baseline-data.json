@@ -1069,7 +1069,7 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Guarantee the different security aspects -confidentiality (privacy), integrity, availability and authenticity- of the information in transit on the networks or stored in the IoT application or in the Cloud.",
                             "subCategoryNumber": "GP-TM-38",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1081,7 +1081,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Ensure that communication security is provided using state-of-the-art, standardised security protocols, such as TLS for encryption.",
                             "subCategoryNumber": "GP-TM-39",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1093,7 +1093,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Ensure credentials are not exposed in internal or external network traffic.",
                             "subCategoryNumber": "GP-TM-40",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1105,7 +1105,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Guarantee data authenticity to enable reliable exchanges from data emission to data reception. Data should always be signed whenever and wherever it is captured and stored.",
                             "subCategoryNumber": "GP-TM-41",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1117,7 +1117,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do not trust data received and always verify any interconnections. Discover, identify and verify/authenticate the devices connected to the network before trust can be established, and preserve their integrity for reliable solutions and services.",
                             "subCategoryNumber": "GP-TM-42",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1129,7 +1129,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "IoT devices should be restrictive rather than permissive in communicating.",
                             "subCategoryNumber": "GP-TM-43",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1141,7 +1141,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Make intentional connections. Prevent unauthorised connections to it or other devices the product is connected to, at all levels of the protocols.",
                             "subCategoryNumber": "GP-TM-44",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1153,7 +1153,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Disable specific ports and/or network connections for selective connectivity.",
                             "subCategoryNumber": "GP-TM-45",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1165,20 +1165,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Rate limiting. Controlling the traffic sent or received by a network to reduce the risk of automated attacks.",
                             "subCategoryNumber": "GP-TM-46",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
-                            "ocfMatches": [
-                                {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
-                                }
-                            ]
-			},
-                        {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "47",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -1196,7 +1184,7 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Risk Segmentation. Splitting network elements into separate components to help isolate security breaches and minimise the overall risk.",
                             "subCategoryNumber": "GP-TM-47",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1208,7 +1196,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Protocols should be designed to ensure that, if a single device is compromised, it does not affect the whole set.",
                             "subCategoryNumber": "GP-TM-48",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1220,7 +1208,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Avoid provisioning the same secret key in an entire product family, since compromising a single device would be enough to expose the rest of the product family.",
                             "subCategoryNumber": "GP-TM-49",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1232,7 +1220,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Ensure only necessary ports are exposed and available.",
                             "subCategoryNumber": "GP-TM-50",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1244,7 +1232,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Implement a DDoS-resistant and Load-Balancing infrastructure.",
                             "subCategoryNumber": "GP-TM-51",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1256,7 +1244,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Ensure web interfaces fully encrypt the user session, from the device to the backend services, and that they are not susceptible to XSS, CSRF, SQL injection, etc.",
                             "subCategoryNumber": "GP-TM-52",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1268,7 +1256,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Avoid security issues when designing error messages.",
                             "subCategoryNumber": "GP-TM-53",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1287,7 +1275,7 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Data input validation (ensuring that data is safe prior to use) and output filtering.",
                             "subCategoryNumber": "GP-TM-54",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1306,7 +1294,7 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Implement a logging system that records events relating to user authentication, management of accounts and access rights, modifications to security rules, and the functioning of the system. Logs must be preserved on durable storage and retrievable via authenticated connections.",
                             "subCategoryNumber": "GP-TM-55",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1325,7 +1313,7 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Implement regular monitoring to verify the device behaviour, to detect malware and to discover integrity errors.",
                             "subCategoryNumber": "GP-TM-56",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
@@ -1337,7 +1325,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Conduct periodic audits and reviews of security controls to ensure that the controls are effective. Perform penetration tests at least biannually.",
                             "subCategoryNumber": "GP-TM-57",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
