@@ -684,62 +684,62 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Personal data must be collected and processed fairly and lawfully, it should never be collected and processed without the data subject’s consent.",
                             "subCategoryNumber": "GP-TM-10",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Make sure that personal data is used for the specified purposes for which they were collected, and that any further processing of personal data is compatible and that the data subjects are well informed.",
                             "subCategoryNumber": "GP-TM-11",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Minimise the data collected and retained.",
                             "subCategoryNumber": "GP-TM-12",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "IoT stakeholders must be compliant with the EU General Data Protection Regulation (GDPR).",
                             "subCategoryNumber": "GP-TM-13",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Users of IoT products and services must be able to exercise their rights to information, access, erasure, rectification, data portability, restriction of processing, objection to processing, and their right not to be evaluated on the basis of automated processing.",
                             "subCategoryNumber": "GP-TM-14",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
                                 }
                             ]
 			}
