@@ -637,26 +637,42 @@
                     "subCategories": 
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Any applicable security features should be enabled by default, and any unused or insecure functionalities should be disabled by default.",
                             "subCategoryNumber": "GP-TM-08",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
+                                },
+                                {
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                },
+                                {
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater, no insecure ciphers are enabled."
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Establish hard to crack, device-individual default passwords.",
                             "subCategoryNumber": "GP-TM-09",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchNotes": "Length of symmetric keys"
+                                },
+                                {
+                                    "ocfMatchClause": "7.3.3",
+                                    "ocfMatchNotes": "Certificate Credential Generation: The Certificate Credential will be used by Devices for secure bidirectional communication."
+                                },
+                                {
+                                    "ocfMatchClause": "9.3",
+                                    "ocfMatchNotes": "Shows pair-wise, group symmetrical credentials, symmetric credentials, and certificate credentials"
                                 }
                             ]
 			}
