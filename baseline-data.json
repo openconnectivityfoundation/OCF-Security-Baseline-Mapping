@@ -1099,12 +1099,12 @@
                         {
                             "subCategoryDescription": "Guarantee the different security aspects -confidentiality (privacy), integrity, availability and authenticity- of the information in transit on the networks or stored in the IoT application or in the Cloud.",
                             "subCategoryNumber": "GP-TM-38",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Cloud Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Cloud_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7.2",
+                                    "ocfMatchNotes": "Device connection with the OCF Cloud.  The Device should establish the TLS connection using the certificate based credential. Note: Availability is out of scope"
                                 }
                             ]
 			},
@@ -1115,8 +1115,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
                                 }
                             ]
 			},
@@ -1127,8 +1127,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
                                 }
                             ]
 			},
@@ -1139,8 +1139,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions. Data authenticity is provided by certificate authentication in DTLS handshake"
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2",
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 }
                             ]
 			},
@@ -1151,8 +1155,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions.  This includes proximal and non-proximal traffic.  All TLS/DTLS traffic is verified by device credential which forms the basis for trust."
                                 }
                             ]
 			},
@@ -1163,8 +1167,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources.Employs a deny-all, permit-by-exception policy to allow access to Resources (data and actuators) for Read/Write/Create/Delete/Notify.  Access control can be updated dynamically at the location of deployment to limit access (to a role, Device, or implementation)"
                                 }
                             ]
 			},
@@ -1175,8 +1179,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.3.1",
+                                    "ocfMatchNotes": "Stored Credentials used to authenticate server to clients."
                                 }
                             ]
 			},
@@ -1187,8 +1191,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources."
                                 }
                             ]
 			},
@@ -1200,7 +1204,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not implemented"
                                 }
                             ]
 			}
@@ -1219,7 +1223,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not Applicable"
                                 }
                             ]
 			},
@@ -1230,8 +1234,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources.  If asymmetric credentials are used compromising a single device would not increase the risk to other devices."
                                 }
                             ]
 			},
@@ -1242,8 +1246,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchNotes": "SharedKey credential is derived using a pseudo-random function that accepts the key_block value resulting from the DTLS handshake used for onboarding."
                                 }
                             ]
 			},
@@ -1254,8 +1258,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
                                 }
                             ]
 			},
@@ -1267,7 +1271,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope"
                                 }
                             ]
 			},
@@ -1278,20 +1282,20 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "Out of Scope, however CoAP interfaces are secured.  All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Avoid security issues when designing error messages.",
                             "subCategoryNumber": "GP-TM-53",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Cloud API for Cloud Services DRAFT",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/draftspecs/Gaborone-1/OCF%20Cloud%20API%20for%20Cloud%20Services.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.2",
+                                    "ocfMatchNotes": "The OCF Cloud API for Cloud Services is a RESTful API over HTTPS (IETF RFC 2818)."
                                 }
                             ]
 			}
@@ -1305,12 +1309,12 @@
                         {
                             "subCategoryDescription": "Data input validation (ensuring that data is safe prior to use) and output filtering.",
                             "subCategoryNumber": "GP-TM-54",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Core Specification ISO/IEC 30118-1:2018",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c053238_ISO_IEC_30118-1_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7",
+                                    "ocfMatchNotes": "Data model enforcement of encoding, type and length.  IoT devices often don't have user input fields but data model enforcement occurs on data inbound and outbound to the system. "
                                 }
                             ]
 			}
@@ -1328,8 +1332,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition."
                                 }
                             ]
 			}
@@ -1348,7 +1352,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope.  Logic is present but is vendor responsibility"
                                 }
                             ]
 			},
@@ -1360,7 +1364,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Vendor dependant"
                                 }
                             ]
 			}
