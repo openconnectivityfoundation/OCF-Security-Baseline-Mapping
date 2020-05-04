@@ -847,8 +847,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources, is unique per SVR per device."
                                 }
                             ]
 			},
@@ -859,8 +859,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			},
@@ -871,8 +871,16 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7.3.5.3",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more. 2fA/ MFA is out of scope."
+                                },
+                                {
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchNotes": "Shared Key Credential Calculation, length depends on the cipher suite."
+                                },
+                                {
+                                    "ocfMatchClause": "13.3.1",
+                                    "ocfMatchNotes": "Stored Credentials used to mutually authenticate servers and clients."
                                 }
                             ]
 			},
@@ -883,8 +891,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
 			},
@@ -896,7 +904,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope"
                                 }
                             ]
 			},
@@ -908,7 +916,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope, vendor requirements"
                                 }
                             ]
 			}
