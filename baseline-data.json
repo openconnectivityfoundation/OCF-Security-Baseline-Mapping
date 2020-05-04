@@ -947,7 +947,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": "Out of scope, vendor requirements"
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
                                 }
                             ]
 			}
@@ -994,7 +994,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Outside of scope, vendor dependant"
                                 }
                             ]
 			},
@@ -1005,8 +1005,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
 			},
@@ -1018,7 +1018,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
                                 }
                             ]
 			}
@@ -1036,8 +1036,16 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2",
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 }
                             ]
 			},
@@ -1048,8 +1056,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "9.4",
+                                    "ocfMatchNotes": "Device certificates and private keys are kept in 'cred' secure virtual resource"
                                 }
                             ]
 			},
@@ -1060,8 +1068,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "9.4.2.1",
+                                    "ocfMatchNotes": "Digital certificate profile, showing OCF approved cipher suites."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3.1",
+                                    "ocfMatchNotes": "General cipher suites defined for both ownership transfer and normal operation."
                                 }
                             ]
 			},
@@ -1072,8 +1084,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "9.4",
+                                    "ocfMatchNotes": "Certificate based key management based on public key infrastructure (PKI)."
                                 }
                             ]
 			}
