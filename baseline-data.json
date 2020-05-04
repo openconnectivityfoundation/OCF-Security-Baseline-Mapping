@@ -527,6 +527,850 @@
 		}
 
             ]
-        }
+        },
+        {
+            "baselineOrg": "ENISA",
+            "baselineName": "IOTSec",
+	    "baselineURL":"https://www.enisa.europa.eu/publications/baseline-security-recommendations-for-iot/at_download/fullReport",
+            "baselineCategories": [
+                {
+                    "categoryName": "Hardware security",
+                    "categoryNumber": "4.3.1",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Employ a hardware-based immutable root of trust.",
+                            "subCategoryNumber": "GP-TM-01",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Use hardware that incorporates security features to strengthen the protection and integrity of the device ",
+                            "subCategoryNumber": "GP-TM-02",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.7",
+                                    "ocfMatchNotes": "Defines levels of Hardware Tamper Protection for cryptographic module."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Trust and Integrity Management",
+                    "categoryNumber": "4.3.2",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Trust must be established in the boot environment before any trust in any other software or executable program can be claimed.",
+                            "subCategoryNumber": "GP-TM-03",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.8.3.6",
+                                    "ocfMatchNotes": "Security Profile Purple: secure boot, hardware backed secure storage"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Sign code cryptographically to ensure it has not been tampered with after signing it as safe for the device, and implement run-time protection and secure execution monitoring to make sure malicious attacks do not overwrite code after it is loaded.",
+                            "subCategoryNumber": "GP-TM-04",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not In Scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Control the installation of software in operating systems, to prevent unauthenticated software and files from being loaded onto it.",
+                            "subCategoryNumber": "GP-TM-05",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchNotes": "A the process whereby the Device validates the software (including firmware, operating system, Device drivers, networking stack, etc.) against a trusted source"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Enable a system to return to a state that was known to be secure, after a security breach has occurred or if an upgrade has not been successful.",
+                            "subCategoryNumber": "GP-TM-06",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not In Scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Use protocols and mechanisms able to represent and manage trust and trust relationships.",
+                            "subCategoryNumber": "GP-TM-07",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "9.4",
+                                    "ocfMatchNotes": "Certificate based key management based on public key infrastructure (PKI)."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Strong default security and privacy",
+                    "categoryNumber": "4.3.3",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Any applicable security features should be enabled by default, and any unused or insecure functionalities should be disabled by default.",
+                            "subCategoryNumber": "GP-TM-08",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
+                                },
+                                {
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                },
+                                {
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater, no insecure ciphers are enabled."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Establish hard to crack, device-individual default passwords.",
+                            "subCategoryNumber": "GP-TM-09",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchNotes": "Length of symmetric keys"
+                                },
+                                {
+                                    "ocfMatchClause": "7.3.3",
+                                    "ocfMatchNotes": "Certificate Credential Generation: The Certificate Credential will be used by Devices for secure bidirectional communication."
+                                },
+                                {
+                                    "ocfMatchClause": "9.3",
+                                    "ocfMatchNotes": "Shows pair-wise, group symmetrical credentials, symmetric credentials, and certificate credentials"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Data protection and compliance",
+                    "categoryNumber": "4.3.4",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Personal data must be collected and processed fairly and lawfully, it should never be collected and processed without the data subject’s consent.",
+                            "subCategoryNumber": "GP-TM-10",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Make sure that personal data is used for the specified purposes for which they were collected, and that any further processing of personal data is compatible and that the data subjects are well informed.",
+                            "subCategoryNumber": "GP-TM-11",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Minimise the data collected and retained.",
+                            "subCategoryNumber": "GP-TM-12",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "IoT stakeholders must be compliant with the EU General Data Protection Regulation (GDPR).",
+                            "subCategoryNumber": "GP-TM-13",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Users of IoT products and services must be able to exercise their rights to information, access, erasure, rectification, data portability, restriction of processing, objection to processing, and their right not to be evaluated on the basis of automated processing.",
+                            "subCategoryNumber": "GP-TM-14",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "System safety and reliability",
+                    "categoryNumber": "4.3.5",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Design with system and operational disruption in mind, preventing the system from causing an unacceptable risk of injury or physical damage.",
+                            "subCategoryNumber": "GP-TM-15",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Mechanisms for self-diagnosis and self-repair/healing to recover from failure, malfunction or a compromised state.",
+                            "subCategoryNumber": "GP-TM-16",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure standalone operation - essential features should continue to work with a loss of communications and chronicle negative impacts from compromised devices or cloud-based systems.",
+                            "subCategoryNumber": "GP-TM-17",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default. "
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Secure Software / Firmware updates",
+                    "categoryNumber": "4.3.6",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Ensure that the device software/firmware, its configuration and its applications have the ability to update Over-The-Air (OTA), that the update server is secure, that the update file is transmitted via a secure connection, that it does not contain sensitive data (e.g. hardcoded credentials), that it is signed by an authorised trust entity and encrypted using accepted encryption methods, and that the update package has its digital signature, signing certificate and signing certificate chain, verified by the device before the update process begins.",
+                            "subCategoryNumber": "GP-TM-18",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.4.1",
+                                    "ocfMatchNotes": "Indicates a request to initiate the process to check if new software is available.  Note: Security of channel is out of scope, vendor responsibility."
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Offer an automatic firmware update mechanism.",
+                            "subCategoryNumber": "GP-TM-19",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.2.1",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cmr' Property to 1 (TRUE), indicating that new software is available"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Backward compatibility of firmware updates. Automatic firmware updates should not modify user-configured preferences, security, and/or privacy settings without user notification.",
+                            "subCategoryNumber": "GP-TM-20",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "15.5.2.1",
+                                    "ocfMatchNotes": "The state of all resources implemented in the Device should be the same as after boot, meaning that the software update is not resetting user data and retaining a correct state."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Authentication",
+                    "categoryNumber": "4.3.7",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Design the authentication and authorisation schemes (unique per device) based on the ",
+                            "subCategoryNumber": "GP-TM-21",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources, is unique per SVR per device."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure that default passwords and even default usernames are changed during the initial setup, and that weak, null or blank passwords are not allowed.",
+                            "subCategoryNumber": "GP-TM-22",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication mechanisms must use strong passwords or personal identification numbers (PINs), and should consider using two-factor authentication (2FA) or multi-factor authentication (MFA) like Smartphones, Biometrics, etc., on top of certificates.",
+                            "subCategoryNumber": "GP-TM-23",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7.3.5.3",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more. 2fA/ MFA is out of scope."
+                                },
+                                {
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchNotes": "Shared Key Credential Calculation, length depends on the cipher suite."
+                                },
+                                {
+                                    "ocfMatchClause": "13.3.1",
+                                    "ocfMatchNotes": "Stored Credentials used to mutually authenticate servers and clients."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication credentials shall be salted, hashed and/or encrypted.",
+                            "subCategoryNumber": "GP-TM-24",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Protect against ‘brute force’ and/or other abusive login attempts. This protection should also consider keys stored in devices.",
+                            "subCategoryNumber": "GP-TM-25",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure password recovery or reset mechanism is robust and does not supply an attacker with information indicating a valid account. The same applies to key update and recovery mechanisms.",
+                            "subCategoryNumber": "GP-TM-26",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope, vendor requirements"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Authorisation",
+                    "categoryNumber": "4.3.8",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Limit the actions allowed for a given system by Implementing fine-grained authorisation mechanisms and using the Principle of least privilege (POLP): applications must operate at the lowest privilege level possible.",
+                            "subCategoryNumber": "GP-TM-27",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Device firmware should be designed to isolate privileged code, processes and data from portions of the firmware that do not need access to them. Device hardware should provide isolation concepts to prevent unprivileged from accessing security sensitive code.",
+                            "subCategoryNumber": "GP-TM-28",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Access Control - Physical and Environmental security",
+                    "categoryNumber": "4.3.9",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Data integrity and confidentiality must be enforced by access controls. When the subject requesting access has been authorised to access particular processes, it is necessary to enforce the defined security policy.",
+                            "subCategoryNumber": "GP-TM-29",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "13.10",
+                                    "ocfMatchNotes": "Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure a context-based security and privacy that reflects different levels of importance.",
+                            "subCategoryNumber": "GP-TM-30",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12.2.6",
+                                    "ocfMatchNotes": "Access control is asserted for established roles."
+                                },
+                                {
+                                    "ocfMatchClause": "13.10",
+                                    "ocfMatchNotes": "Describes the Roles resource."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Measures for tamper protection and detection. Detection and reaction to hardware tampering should not rely on network connectivity.",
+                            "subCategoryNumber": "GP-TM-31",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Outside of scope, vendor dependant"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure that the device cannot be easily disassembled and that the data storage medium is encrypted at rest and cannot be easily removed.",
+                            "subCategoryNumber": "GP-TM-32",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure that devices only feature the essential physical external ports (such as USB) necessary for them to function and that the test/debug modes are secure, so they cannot be used to maliciously access the devices. In general, lock down physical ports to only trusted connections.",
+                            "subCategoryNumber": "GP-TM-33",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Cryptography",
+                    "categoryNumber": "4.3.10",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Ensure a proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of data and information (including control messages), in transit and in rest. Ensure the proper selection of standard and strong encryption algorithms and strong keys, and disable insecure protocols. Verify the robustness of the implementation.",
+                            "subCategoryNumber": "GP-TM-34",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2",
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic keys must be securely managed.",
+                            "subCategoryNumber": "GP-TM-35",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "9.4",
+                                    "ocfMatchNotes": "Device certificates and private keys are kept in 'cred' secure virtual resource"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Build devices to be compatible with lightweight encryption and security techniques.",
+                            "subCategoryNumber": "GP-TM-36",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "9.4.2.1",
+                                    "ocfMatchNotes": "Digital certificate profile, showing OCF approved cipher suites."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3.1",
+                                    "ocfMatchNotes": "General cipher suites defined for both ownership transfer and normal operation."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Support scalable key management schemes.",
+                            "subCategoryNumber": "GP-TM-37",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "9.4",
+                                    "ocfMatchNotes": "Certificate based key management based on public key infrastructure (PKI)."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Secure and trusted communications",
+                    "categoryNumber": "4.3.11",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Guarantee the different security aspects -confidentiality (privacy), integrity, availability and authenticity- of the information in transit on the networks or stored in the IoT application or in the Cloud.",
+                            "subCategoryNumber": "GP-TM-38",
+                            "ocfMatchSpecification": "OCF Cloud Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Cloud_Security_Specification_v2.1.2.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7.2",
+                                    "ocfMatchNotes": "Device connection with the OCF Cloud.  The Device should establish the TLS connection using the certificate based credential. Note: Availability is out of scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure that communication security is provided using state-of-the-art, standardised security protocols, such as TLS for encryption.",
+                            "subCategoryNumber": "GP-TM-39",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure credentials are not exposed in internal or external network traffic.",
+                            "subCategoryNumber": "GP-TM-40",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Guarantee data authenticity to enable reliable exchanges from data emission to data reception. Data should always be signed whenever and wherever it is captured and stored.",
+                            "subCategoryNumber": "GP-TM-41",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions. Data authenticity is provided by certificate authentication in DTLS handshake"
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2",
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do not trust data received and always verify any interconnections. Discover, identify and verify/authenticate the devices connected to the network before trust can be established, and preserve their integrity for reliable solutions and services.",
+                            "subCategoryNumber": "GP-TM-42",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions.  This includes proximal and non-proximal traffic.  All TLS/DTLS traffic is verified by device credential which forms the basis for trust."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "IoT devices should be restrictive rather than permissive in communicating.",
+                            "subCategoryNumber": "GP-TM-43",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources.Employs a deny-all, permit-by-exception policy to allow access to Resources (data and actuators) for Read/Write/Create/Delete/Notify.  Access control can be updated dynamically at the location of deployment to limit access (to a role, Device, or implementation)"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Make intentional connections. Prevent unauthorised connections to it or other devices the product is connected to, at all levels of the protocols.",
+                            "subCategoryNumber": "GP-TM-44",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "13.3.1",
+                                    "ocfMatchNotes": "Stored Credentials used to authenticate server to clients."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Disable specific ports and/or network connections for selective connectivity.",
+                            "subCategoryNumber": "GP-TM-45",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Rate limiting. Controlling the traffic sent or received by a network to reduce the risk of automated attacks.",
+                            "subCategoryNumber": "GP-TM-46",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not implemented"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Secure Interfaces and network services",
+                    "categoryNumber": "4.3.12",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Risk Segmentation. Splitting network elements into separate components to help isolate security breaches and minimise the overall risk.",
+                            "subCategoryNumber": "GP-TM-47",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Not Applicable"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Protocols should be designed to ensure that, if a single device is compromised, it does not affect the whole set.",
+                            "subCategoryNumber": "GP-TM-48",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources.  If asymmetric credentials are used compromising a single device would not increase the risk to other devices."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Avoid provisioning the same secret key in an entire product family, since compromising a single device would be enough to expose the rest of the product family.",
+                            "subCategoryNumber": "GP-TM-49",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchNotes": "SharedKey credential is derived using a pseudo-random function that accepts the key_block value resulting from the DTLS handshake used for onboarding."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure only necessary ports are exposed and available.",
+                            "subCategoryNumber": "GP-TM-50",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Implement a DDoS-resistant and Load-Balancing infrastructure.",
+                            "subCategoryNumber": "GP-TM-51",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Ensure web interfaces fully encrypt the user session, from the device to the backend services, and that they are not susceptible to XSS, CSRF, SQL injection, etc.",
+                            "subCategoryNumber": "GP-TM-52",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "13.16",
+                                    "ocfMatchNotes": "Out of Scope, however CoAP interfaces are secured.  All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Avoid security issues when designing error messages.",
+                            "subCategoryNumber": "GP-TM-53",
+                            "ocfMatchSpecification": "OCF Cloud API for Cloud Services DRAFT",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/draftspecs/Gaborone-1/OCF%20Cloud%20API%20for%20Cloud%20Services.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.2",
+                                    "ocfMatchNotes": "The OCF Cloud API for Cloud Services is a RESTful API over HTTPS (IETF RFC 2818)."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Secure input and output handling",
+                    "categoryNumber": "4.3.13",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Data input validation (ensuring that data is safe prior to use) and output filtering.",
+                            "subCategoryNumber": "GP-TM-54",
+                            "ocfMatchSpecification": "OCF Core Specification ISO/IEC 30118-1:2018",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c053238_ISO_IEC_30118-1_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7",
+                                    "ocfMatchNotes": "Data model enforcement of encoding, type and length.  IoT devices often don't have user input fields but data model enforcement occurs on data inbound and outbound to the system. "
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Logging",
+                    "categoryNumber": "4.3.14",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Implement a logging system that records events relating to user authentication, management of accounts and access rights, modifications to security rules, and the functioning of the system. Logs must be preserved on durable storage and retrievable via authenticated connections.",
+                            "subCategoryNumber": "GP-TM-55",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Monitoring and Auditing",
+                    "categoryNumber": "4.3.15",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Implement regular monitoring to verify the device behaviour, to detect malware and to discover integrity errors.",
+                            "subCategoryNumber": "GP-TM-56",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope.  Logic is present but is vendor responsibility"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Conduct periodic audits and reviews of security controls to ensure that the controls are effective. Perform penetration tests at least biannually.",
+                            "subCategoryNumber": "GP-TM-57",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Vendor dependant"
+                                }
+                            ]
+			}
+		    ]
+		}
+	    ]
+	}
     ]
 }
