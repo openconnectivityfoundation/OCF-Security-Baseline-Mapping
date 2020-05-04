@@ -934,8 +934,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Access control is enforced over all Resources."
                                 }
                             ]
 			},
@@ -947,7 +947,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope, vendor requirements"
                                 }
                             ]
 			}
@@ -965,8 +965,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.10",
+                                    "ocfMatchNotes": "Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity"
                                 }
                             ]
 			},
@@ -977,8 +977,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12.2.6",
+                                    "ocfMatchNotes": "Access control is asserted for established roles."
+                                },
+                                {
+                                    "ocfMatchClause": "13.10",
+                                    "ocfMatchNotes": "Describes the Roles resource."
                                 }
                             ]
 			},
