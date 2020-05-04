@@ -758,7 +758,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Not in scope: applies to Vendor"
                                 }
                             ]
 			},
@@ -769,8 +769,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
                                 }
                             ]
 			},
@@ -781,8 +781,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default. "
                                 }
                             ]
 			}
@@ -800,8 +800,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4.1",
+                                    "ocfMatchNotes": "Indicates a request to initiate the process to check if new software is available.  Note: Security of channel is out of scope, vendor responsibility."
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -812,8 +816,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.2.1",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cmr' Property to 1 (TRUE), indicating that new software is available"
                                 }
                             ]
 			},
@@ -824,8 +828,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "15.5.2.1",
+                                    "ocfMatchNotes": "The state of all resources implemented in the Device should be the same as after boot, meaning that the software update is not resetting user data and retaining a correct state."
                                 }
                             ]
 			}
