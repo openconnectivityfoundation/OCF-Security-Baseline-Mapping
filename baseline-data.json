@@ -1371,6 +1371,293 @@
 		    ]
 		}
 	    ]
+	},
+        {
+            "baselineOrg": "Department for Digital, Culture, Media & Sport",
+            "baselineName": "IOTSecCode of Practice for Consumer IoT Security",
+	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
+            "baselineCategories": 
+	    [
+                {
+                    "categoryName": "No default passwords",
+                    "categoryNumber": "1",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "All IoT device passwords shall be unique and not resettable to any universal factory default value.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Implement a vulnerability disclosure policy",
+                    "categoryNumber": "2",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "All companies that provide internet-connected devices and services shall provide a public point of contact as part of a vulnerability disclosure policy in order that security researchers and others are able to report issues. Disclosed vulnerabilities should be acted on in a timely manner.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Incident Response Plan",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "1",
+                                    "ocfMatchNotes": "Single point of contact and guidelines for member companies to report security issues, including vulnerability reporting.  Vulnerabilities are triaged and addressed in a timely manner"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Keep software updated",
+                    "categoryNumber": "3",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Software components in internet-connected devices should be securely updateable. Updates shall be timely and should not impact on the functioning of the device. An end-of-life policy shall be published for end-point devices which explicitly states the minimum length of time for which a device will receive software updates and the reasons for the length of the support period. The need for each update should be made clear to consumers and an update should be easy to implement. For constrained devices that cannot physically be updated, the product should be isolatable and replaceable.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchNotes": "Process where device validates the software version against a trusted source."
+                                },
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate a software update process"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Securely store credentials and security-sensitive data",
+                    "categoryNumber": "4",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Any credentials shall be stored securely within services and on devices. Hard-coded credentials in device software are not acceptable.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2",
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
+                                },
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Communicate securely",
+                    "categoryNumber": "5",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Security-sensitive data, including any remote management and control, should be encrypted in transit, appropriate to the properties of the technology and usage. All keys should be managed securely.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Data in transit devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3.1",
+                                    "ocfMatchNotes": "This clause lists the cipher suites allowed during ownership transfer and normal operation.  All cipher suites are recognized IETF RFCs and most are IANA supported ciphers.  Strong, proven, updateable cryptography using open, peer-reviewed methods and algorithms."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Minimise exposed attack surfaces",
+                    "categoryNumber": "6",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "All devices and services should operate on the ‘principle of least privilege’; unused ports should be closed, hardware should not unnecessarily expose access, services should not be available if they are not used and code should be minimised to the functionality necessary for the service to operate. Software should run with appropriate privileges, taking account of both security and functionality.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
+                                },
+                                {
+                                    "ocfMatchClause": "5",
+                                    "ocfMatchNotes": "Figure 3:  Shows security enforcement points."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Ensure software integrity",
+                    "categoryNumber": "7",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Software on IoT devices should be verified using secure boot mechanisms. If an unauthorised change is detected, the device should alert the consumer/administrator to an issue and should not connect to wider networks than those necessary to perform the alerting function.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Ensure that personal data is protected",
+                    "categoryNumber": "8",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Where devices and/or services process personal data, they shall do so in accordance with applicable data protection law, such as the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. Device manufacturers and IoT service providers shall provide consumers with clear and transparent information about how their data is being used, by whom, and for what purposes, for each device and service. This also applies to any third parties that may be involved (including advertisers). Where personal data is processed on the basis of consumers’ consent, this shall be validly and lawfully obtained, with those consumers being given the opportunity to withdraw it at any time.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope for device spec.  This is provider dependant"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Make systems resilient to outages",
+                    "categoryNumber": "9",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Resilience should be built in to IoT devices and services where required by their usage or by other relying systems, taking into account the possibility of outages of data networks and power. As far as reasonably possible, IoT services should remain operating and locally functional in the case of a loss of network and should recover cleanly in the case of restoration of a loss of power. Devices should be able to return to a network in a sensible state and in an orderly fashion, rather than in a massive scale reconnect.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default." 
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Monitor system telemetry data",
+                    "categoryNumber": "10",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "If telemetry data is collected from IoT devices and services, such as usage and measurement data, it should be monitored for security anomalies.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchNotes": "Out of scope for OCF Spec.  Requirement targets IoT service providers"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Make it easy for consumers to delete personal data",
+                    "categoryNumber": "11",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Devices and services should be configured such that personal data can easily be removed from them when there is a transfer of ownership, when the consumer wishes to delete it and/or when the consumer wishes to dispose of the device. Consumers should be given clear instructions on how to delete their personal data.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchNotes": "Defines how resources on the device are returned to the manufacturer's default values."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Make installation and maintenance of devices easy",
+                    "categoryNumber": "12",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Installation and maintenance of IoT devices should employ minimal steps and should follow security best practice on usability. Consumers should also be provided with guidance on how to securely set up their device.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "3.1.31",
+                                    "ocfMatchNotes": "Includes the WiFi Easy Setup Resources, and the other transport-level onboarding (e.g. Bluetooth) are defined in other specification documents for OCF."
+                                },
+                                {
+                                    "ocfMatchClause": "5.3",
+                                    "ocfMatchNotes": "For non-transport onboarding, the process is specified in great detail as far as establishment of trust, authentication, verification, authorization, local credential issuance, etc."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Validate input data",
+                    "categoryNumber": "13",
+                    "subCategories": 
+		    [
+                        {
+                            "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Core Specification ISO/IEC 30118-1:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c053238_ISO_IEC_30118-1_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "4.3",
+                                    "ocfMatchNotes": "All data inputs are validated against JSON Schemas."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Resource Type Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Resource_Type_Specification_v2.1.2.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5",
+                                    "ocfMatchNotes": "Baseline Model Constructs"
+                                }
+                            ]
+			}
+		    ]
+		}
+	    ]
 	}
     ]
 }
