@@ -1390,8 +1390,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			}
@@ -1405,12 +1405,12 @@
                         {
                             "subCategoryDescription": "All companies that provide internet-connected devices and services shall provide a public point of contact as part of a vulnerability disclosure policy in order that security researchers and others are able to report issues. Disclosed vulnerabilities should be acted on in a timely manner.",
                             "subCategoryNumber": "1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Incident Response Plan",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "1",
+                                    "ocfMatchNotes": "Single point of contact and guidelines for member companies to report security issues, including vulnerability reporting.  Vulnerabilities are triaged and addressed in a timely manner"
                                 }
                             ]
 			}
@@ -1428,8 +1428,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchNotes": "Process where device validates the software version against a trusted source."
+                                },
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate a software update process"
                                 }
                             ]
 			}
@@ -1447,8 +1451,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2",
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
+                                },
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			}
@@ -1466,8 +1474,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchNotes": "Data in transit devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3.1",
+                                    "ocfMatchNotes": "This clause lists the cipher suites allowed during ownership transfer and normal operation.  All cipher suites are recognized IETF RFCs and most are IANA supported ciphers.  Strong, proven, updateable cryptography using open, peer-reviewed methods and algorithms."
                                 }
                             ]
 			}
@@ -1485,8 +1497,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
+                                },
+                                {
+                                    "ocfMatchClause": "5",
+                                    "ocfMatchNotes": "Figure 3:  Shows security enforcement points."
                                 }
                             ]
 			}
@@ -1505,7 +1521,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
                                 }
                             ]
 			}
@@ -1524,7 +1540,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope for device spec.  This is provider dependant"
                                 }
                             ]
 			}
@@ -1542,8 +1558,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default." 
                                 }
                             ]
 			}
@@ -1562,7 +1578,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchNotes": "Out of scope for OCF Spec.  Requirement targets IoT service providers"
                                 }
                             ]
 			}
@@ -1580,8 +1596,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchNotes": "Defines how resources on the device are returned to the manufacturer's default values."
                                 }
                             ]
 			}
@@ -1599,8 +1615,12 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "3.1.31",
+                                    "ocfMatchNotes": "Includes the WiFi Easy Setup Resources, and the other transport-level onboarding (e.g. Bluetooth) are defined in other specification documents for OCF."
+                                },
+                                {
+                                    "ocfMatchClause": "5.3",
+                                    "ocfMatchNotes": "For non-transport onboarding, the process is specified in great detail as far as establishment of trust, authentication, verification, authorization, local credential issuance, etc."
                                 }
                             ]
 			}
@@ -1614,12 +1634,24 @@
                         {
                             "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
                             "subCategoryNumber": "1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Core Specification ISO/IEC 30118-1:2018]",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c053238_ISO_IEC_30118-1_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "4.3",
+                                    "ocfMatchNotes": "All data inputs are validated against JSON Schemas."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Resource Type Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Resource_Type_Specification_v2.1.2.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5",
+                                    "ocfMatchNotes": "Baseline Model Constructs"
                                 }
                             ]
 			}
