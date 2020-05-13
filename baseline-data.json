@@ -110,8 +110,8 @@
                         {
                             "subCategoryDescription": "The ability for authorized entities to configure the cryptography use itself when applicable, such as choosing a key length",
                             "subCategoryNumber": "2",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -168,8 +168,8 @@
                         {
                             "subCategoryDescription": "The ability to enable, disable, and adjust thresholds for any ability the device might have to lock or disable an account or to delay additional authentication attempts after too many failed authentication attempts. ",
                             "subCategoryNumber": "3",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -246,8 +246,8 @@
                         {
                             "subCategoryDescription": "The ability to enable or disable notification when an update is available and specify who or what is to be notified",
                             "subCategoryNumber": "6",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -320,8 +320,8 @@
                         {
                             "subCategoryDescription": "The ability to make the state information available to a service on another device, such as an event/state log server",
                             "subCategoryNumber": "5",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
