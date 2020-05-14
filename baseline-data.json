@@ -345,8 +345,8 @@
                         {
                             "subCategoryDescription": "A unique value associated with the endpoint <or values associated with the functional entities within the endpoint> that exists in a namespace to allow it to be referenced without ambiguity. This value is distinct and distinguishes a device from all other devices.",
                             "subCategoryNumber": "1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.1.1",
@@ -363,8 +363,8 @@
                         {
                             "subCategoryDescription": "Protection of device operational and management capabilities by requiring user authentication to read or modify the software, firmware and configuration, including means to ensure device-unique credentials for administrative access, and by protecting access to interfaces. ",
                             "subCategoryNumber": "2",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
@@ -382,8 +382,8 @@
                         {
                             "subCategoryDescription": "Protection of the confidentiality and integrity of selected categories of transmitted data via sound cryptographic means, e.g., HMACs, TLS/DTLS, IPsec, or SSH.",
                             "subCategoryNumber": "3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
@@ -406,8 +406,8 @@
                         {
                             "subCategoryDescription": "Protection of the confidentiality and integrity of selected categories of stored data via sound cryptographic means.",
                             "subCategoryNumber": "4",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.2",
@@ -426,8 +426,8 @@
                         {
                             "subCategoryDescription": "Use of secure, widely used protocols, excluding deprecated and replaced versions and protocols, for communications to and from the device.",
                             "subCategoryNumber": "5",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5",
@@ -494,8 +494,8 @@
                         {
                             "subCategoryDescription": "Where cryptography is used, use open, published, proven, and peer-reviewed cryptographic methods with appropriate parameter, algorithm and option selections.",
                             "subCategoryNumber": "8",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.3.1",
@@ -514,8 +514,8 @@
                         {
                             "subCategoryDescription": "The ability to verifiably update a device’s software and firmware, post-market, with patches that are authenticated to ensure that they have been deployed by an authorized entity as well as to verify the integrity of the patch.",
                             "subCategoryNumber": "9",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.3",
@@ -538,8 +538,8 @@
                         {
                             "subCategoryDescription": "The ability for authorized users to securely reconfigure and redeploy a device post-market, especially to return the product to factory defaults or an authorized restore point, and securely remove data collected by the device <that is not essential to its operation>, within a defined period established by the organization.",
                             "subCategoryNumber": "10",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
