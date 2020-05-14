@@ -609,8 +609,8 @@
                         {
                             "subCategoryDescription": "Sign code cryptographically to ensure it has not been tampered with after signing it as safe for the device, and implement run-time protection and secure execution monitoring to make sure malicious attacks do not overwrite code after it is loaded.",
                             "subCategoryNumber": "GP-TM-04",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -633,8 +633,8 @@
                         {
                             "subCategoryDescription": "Enable a system to return to a state that was known to be secure, after a security breach has occurred or if an upgrade has not been successful.",
                             "subCategoryNumber": "GP-TM-06",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -711,8 +711,8 @@
                         {
                             "subCategoryDescription": "Personal data must be collected and processed fairly and lawfully, it should never be collected and processed without the data subject’s consent.",
                             "subCategoryNumber": "GP-TM-10",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -723,8 +723,8 @@
                         {
                             "subCategoryDescription": "Make sure that personal data is used for the specified purposes for which they were collected, and that any further processing of personal data is compatible and that the data subjects are well informed.",
                             "subCategoryNumber": "GP-TM-11",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -735,8 +735,8 @@
                         {
                             "subCategoryDescription": "Minimise the data collected and retained.",
                             "subCategoryNumber": "GP-TM-12",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -747,8 +747,8 @@
                         {
                             "subCategoryDescription": "IoT stakeholders must be compliant with the EU General Data Protection Regulation (GDPR).",
                             "subCategoryNumber": "GP-TM-13",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -759,8 +759,8 @@
                         {
                             "subCategoryDescription": "Users of IoT products and services must be able to exercise their rights to information, access, erasure, rectification, data portability, restriction of processing, objection to processing, and their right not to be evaluated on the basis of automated processing.",
                             "subCategoryNumber": "GP-TM-14",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -778,8 +778,8 @@
                         {
                             "subCategoryDescription": "Design with system and operational disruption in mind, preventing the system from causing an unacceptable risk of injury or physical damage.",
                             "subCategoryNumber": "GP-TM-15",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -790,8 +790,8 @@
                         {
                             "subCategoryDescription": "Mechanisms for self-diagnosis and self-repair/healing to recover from failure, malfunction or a compromised state.",
                             "subCategoryNumber": "GP-TM-16",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.6",
@@ -924,8 +924,8 @@
                         {
                             "subCategoryDescription": "Protect against ‘brute force’ and/or other abusive login attempts. This protection should also consider keys stored in devices.",
                             "subCategoryNumber": "GP-TM-25",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -936,8 +936,8 @@
                         {
                             "subCategoryDescription": "Ensure password recovery or reset mechanism is robust and does not supply an attacker with information indicating a valid account. The same applies to key update and recovery mechanisms.",
                             "subCategoryNumber": "GP-TM-26",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -967,8 +967,8 @@
                         {
                             "subCategoryDescription": "Device firmware should be designed to isolate privileged code, processes and data from portions of the firmware that do not need access to them. Device hardware should provide isolation concepts to prevent unprivileged from accessing security sensitive code.",
                             "subCategoryNumber": "GP-TM-28",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1014,8 +1014,8 @@
                         {
                             "subCategoryDescription": "Measures for tamper protection and detection. Detection and reaction to hardware tampering should not rely on network connectivity.",
                             "subCategoryNumber": "GP-TM-31",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1038,8 +1038,8 @@
                         {
                             "subCategoryDescription": "Ensure that devices only feature the essential physical external ports (such as USB) necessary for them to function and that the test/debug modes are secure, so they cannot be used to maliciously access the devices. In general, lock down physical ports to only trusted connections.",
                             "subCategoryNumber": "GP-TM-33",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1224,8 +1224,8 @@
                         {
                             "subCategoryDescription": "Rate limiting. Controlling the traffic sent or received by a network to reduce the risk of automated attacks.",
                             "subCategoryNumber": "GP-TM-46",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1243,8 +1243,8 @@
                         {
                             "subCategoryDescription": "Risk Segmentation. Splitting network elements into separate components to help isolate security breaches and minimise the overall risk.",
                             "subCategoryNumber": "GP-TM-47",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1291,8 +1291,8 @@
                         {
                             "subCategoryDescription": "Implement a DDoS-resistant and Load-Balancing infrastructure.",
                             "subCategoryNumber": "GP-TM-51",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1372,8 +1372,8 @@
                         {
                             "subCategoryDescription": "Implement regular monitoring to verify the device behaviour, to detect malware and to discover integrity errors.",
                             "subCategoryNumber": "GP-TM-56",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1384,8 +1384,8 @@
                         {
                             "subCategoryDescription": "Conduct periodic audits and reviews of security controls to ensure that the controls are effective. Perform penetration tests at least biannually.",
                             "subCategoryNumber": "GP-TM-57",
-                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
