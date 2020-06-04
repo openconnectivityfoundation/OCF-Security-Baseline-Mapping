@@ -51,7 +51,9 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
-                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network.",
+                                    "ocfMatchFlag":"Yes"
+
                                 }
                             ]
                         },
@@ -63,11 +65,14 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
-                                    "ocfMatchNotes":"Access control is enforced over all Resources."
+                                    "ocfMatchNotes":"Access control is enforced over all Resources.",
+                                    "ocfMatchFlag":"Yes"
+
 				},
 				{
                                     "ocfMatchClause": "13.3.1",
-                                    "ocfMatchNotes": "Stored Credentials used to authenticate server to clients."
+                                    "ocfMatchNotes": "Stored Credentials used to authenticate server to clients.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         },
@@ -79,7 +84,9 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
-                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings."
+                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings.",
+                                    "ocfMatchFlag":"Yes"
+
                                 }
                             ]
                         }
@@ -97,15 +104,18 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
-                                    "ocfMatchNotes": " Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                    "ocfMatchNotes": " Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions.",
+                                    "ocfMatchFlag":"Yes"
                                 },
                                 {
                                     "ocfMatchClause": "11.3",
-                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater.",
+                                    "ocfMatchFlag":"Yes"
                                 },
                                 {
                                     "ocfMatchClause": "14.2.2",
-                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         },
@@ -116,9 +126,15 @@
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable:  Specification stipulates minimum key lengths, based on cipher suite used."
-				}
+                                    "ocfMatchClause": "5.4.3",
+                                  "ocfMatchNotes": "Credentials are proactively monitored and can be updated.",
+                                    "ocfMatchFlag":"Yes"
+				},
+                                {
+                                  "ocfMatchClause":"5.6",
+                                  "ocfMatchNotes":"Credential Overview, credentials can be pairwise symmetric keys, certificates, or raw asymmetric keys.",
+                                    "ocfMatchFlag":"Yes"
+                                }
                             ]
                         },
                         {
@@ -129,7 +145,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
-                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings during device reset."
+                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings during device reset.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         }
@@ -147,7 +164,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
-                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         },
@@ -159,10 +177,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Figure 3 shows security enforcement points"
                                 },
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
                                 }
                             ]
@@ -175,7 +195,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not applicable: Passwords are not used in normal operation of devices."
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "There is currently no provision for limiting authentication attempts"
 				}
                             ]
                         }
@@ -193,6 +214,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "The aspects of the software [update] include, but are not limited to, firmware, operating system, networking stack, application code, drivers, etc."
                                 }
                             ]
@@ -205,6 +227,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": " Process where device validates the software version against a trusted source."
                                 }
                             ]
@@ -217,6 +240,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
                                 }
                             ]
@@ -229,6 +253,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
                                 }
                             ]
@@ -241,6 +266,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes the use of a combination of software update bits that inform the device to look to a valid update."
                                 }
                             ]
@@ -253,7 +279,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Notifications for software updates not currently in OCF specification."
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Notifications for software updates not currently in OCF specification."
 				}
                             ]
                         }
@@ -271,6 +298,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition"
                                 }
                             ]
@@ -283,6 +311,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
                                 }
                             ]
@@ -295,14 +324,17 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.16",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 },
                                 {
                                     "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control architecture and the access based on state of device."
                                 },
                                 {
                                     "ocfMatchClause": "13.8",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 }
                             ]
@@ -315,6 +347,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.8",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 }
                             ]
@@ -327,6 +360,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Implemented",
                                     "ocfMatchNotes": "Not Applicable: Work in Progress for remote event logging."
 				}
                             ]
