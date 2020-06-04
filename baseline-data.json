@@ -15,7 +15,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.1.1",
-                                    "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
+                                    "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique.",
+                                    "ocfMatchType":"Met"
                                 }
                             ],
                             "subCategoryDescription": "A unique logical identifier",
@@ -28,11 +29,11 @@
                             "subCategoryNumber": "2",
                             "ocfMatchSpecification": "",
                             "ocfMatchSpecificationURL": "",
-                            "ocfMatches": [ 
-				    { 
+                            "ocfMatches": [
+				    {
                                     "ocfMatchClause": "None",
                                     "ocfMatchNotes": "Not Applicable: Physical Identifiers are out of scope of the OCF specification."
-				    } 
+				    }
 			    ]
                         }
                     ]
@@ -396,7 +397,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Data At Rest Is Protected",
@@ -416,7 +417,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Industry Accepted Protocols are Used for Communications",
@@ -444,7 +445,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Data Validation",
@@ -464,7 +465,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Event Logging",
@@ -484,7 +485,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Cryptography",
@@ -504,7 +505,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Patchability",
@@ -528,7 +529,7 @@
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Reprovisioning",
@@ -548,7 +549,7 @@
                             ]
 			}
 		    ]
-			
+
 		}
 
             ]
@@ -561,7 +562,7 @@
                 {
                     "categoryName": "Hardware security",
                     "categoryNumber": "4.3.1",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Employ a hardware-based immutable root of trust.",
@@ -592,7 +593,7 @@
                 {
                     "categoryName": "Trust and Integrity Management",
                     "categoryNumber": "4.3.2",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Trust must be established in the boot environment before any trust in any other software or executable program can be claimed.",
@@ -659,7 +660,7 @@
                 {
                     "categoryName": "Strong default security and privacy",
                     "categoryNumber": "4.3.3",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Any applicable security features should be enabled by default, and any unused or insecure functionalities should be disabled by default.",
@@ -706,7 +707,7 @@
                 {
                     "categoryName": "Data protection and compliance",
                     "categoryNumber": "4.3.4",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Personal data must be collected and processed fairly and lawfully, it should never be collected and processed without the data subject’s consent.",
@@ -773,7 +774,7 @@
                 {
                     "categoryName": "System safety and reliability",
                     "categoryNumber": "4.3.5",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Design with system and operational disruption in mind, preventing the system from causing an unacceptable risk of injury or physical damage.",
@@ -816,7 +817,7 @@
                 {
                     "categoryName": "Secure Software / Firmware updates",
                     "categoryNumber": "4.3.6",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Ensure that the device software/firmware, its configuration and its applications have the ability to update Over-The-Air (OTA), that the update server is secure, that the update file is transmitted via a secure connection, that it does not contain sensitive data (e.g. hardcoded credentials), that it is signed by an authorised trust entity and encrypted using accepted encryption methods, and that the update package has its digital signature, signing certificate and signing certificate chain, verified by the device before the update process begins.",
@@ -863,7 +864,7 @@
                 {
                     "categoryName": "Authentication",
                     "categoryNumber": "4.3.7",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Design the authentication and authorisation schemes (unique per device) based on the ",
@@ -950,7 +951,7 @@
                 {
                     "categoryName": "Authorisation",
                     "categoryNumber": "4.3.8",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Limit the actions allowed for a given system by Implementing fine-grained authorisation mechanisms and using the Principle of least privilege (POLP): applications must operate at the lowest privilege level possible.",
@@ -981,7 +982,7 @@
                 {
                     "categoryName": "Access Control - Physical and Environmental security",
                     "categoryNumber": "4.3.9",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Data integrity and confidentiality must be enforced by access controls. When the subject requesting access has been authorised to access particular processes, it is necessary to enforce the defined security policy.",
@@ -1052,7 +1053,7 @@
                 {
                     "categoryName": "Cryptography",
                     "categoryNumber": "4.3.10",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Ensure a proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of data and information (including control messages), in transit and in rest. Ensure the proper selection of standard and strong encryption algorithms and strong keys, and disable insecure protocols. Verify the robustness of the implementation.",
@@ -1119,7 +1120,7 @@
                 {
                     "categoryName": "Secure and trusted communications",
                     "categoryNumber": "4.3.11",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Guarantee the different security aspects -confidentiality (privacy), integrity, availability and authenticity- of the information in transit on the networks or stored in the IoT application or in the Cloud.",
@@ -1238,7 +1239,7 @@
                 {
                     "categoryName": "Secure Interfaces and network services",
                     "categoryNumber": "4.3.12",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Risk Segmentation. Splitting network elements into separate components to help isolate security breaches and minimise the overall risk.",
@@ -1329,7 +1330,7 @@
                 {
                     "categoryName": "Secure input and output handling",
                     "categoryNumber": "4.3.13",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Data input validation (ensuring that data is safe prior to use) and output filtering.",
@@ -1348,7 +1349,7 @@
                 {
                     "categoryName": "Logging",
                     "categoryNumber": "4.3.14",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Implement a logging system that records events relating to user authentication, management of accounts and access rights, modifications to security rules, and the functioning of the system. Logs must be preserved on durable storage and retrievable via authenticated connections.",
@@ -1367,7 +1368,7 @@
                 {
                     "categoryName": "Monitoring and Auditing",
                     "categoryNumber": "4.3.15",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Implement regular monitoring to verify the device behaviour, to detect malware and to discover integrity errors.",
@@ -1401,12 +1402,12 @@
             "baselineOrg": "Department for Digital, Culture, Media & Sport",
             "baselineName": "IOTSecCode of Practice for Consumer IoT Security",
 	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
-            "baselineCategories": 
+            "baselineCategories":
 	    [
                 {
                     "categoryName": "No default passwords",
                     "categoryNumber": "1",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "All IoT device passwords shall be unique and not resettable to any universal factory default value.",
@@ -1425,7 +1426,7 @@
                 {
                     "categoryName": "Implement a vulnerability disclosure policy",
                     "categoryNumber": "2",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "All companies that provide internet-connected devices and services shall provide a public point of contact as part of a vulnerability disclosure policy in order that security researchers and others are able to report issues. Disclosed vulnerabilities should be acted on in a timely manner.",
@@ -1444,7 +1445,7 @@
                 {
                     "categoryName": "Keep software updated",
                     "categoryNumber": "3",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Software components in internet-connected devices should be securely updateable. Updates shall be timely and should not impact on the functioning of the device. An end-of-life policy shall be published for end-point devices which explicitly states the minimum length of time for which a device will receive software updates and the reasons for the length of the support period. The need for each update should be made clear to consumers and an update should be easy to implement. For constrained devices that cannot physically be updated, the product should be isolatable and replaceable.",
@@ -1467,7 +1468,7 @@
                 {
                     "categoryName": "Securely store credentials and security-sensitive data",
                     "categoryNumber": "4",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Any credentials shall be stored securely within services and on devices. Hard-coded credentials in device software are not acceptable.",
@@ -1490,7 +1491,7 @@
                 {
                     "categoryName": "Communicate securely",
                     "categoryNumber": "5",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Security-sensitive data, including any remote management and control, should be encrypted in transit, appropriate to the properties of the technology and usage. All keys should be managed securely.",
@@ -1513,7 +1514,7 @@
                 {
                     "categoryName": "Minimise exposed attack surfaces",
                     "categoryNumber": "6",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "All devices and services should operate on the ‘principle of least privilege’; unused ports should be closed, hardware should not unnecessarily expose access, services should not be available if they are not used and code should be minimised to the functionality necessary for the service to operate. Software should run with appropriate privileges, taking account of both security and functionality.",
@@ -1536,7 +1537,7 @@
                 {
                     "categoryName": "Ensure software integrity",
                     "categoryNumber": "7",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Software on IoT devices should be verified using secure boot mechanisms. If an unauthorised change is detected, the device should alert the consumer/administrator to an issue and should not connect to wider networks than those necessary to perform the alerting function.",
@@ -1555,7 +1556,7 @@
                 {
                     "categoryName": "Ensure that personal data is protected",
                     "categoryNumber": "8",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Where devices and/or services process personal data, they shall do so in accordance with applicable data protection law, such as the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. Device manufacturers and IoT service providers shall provide consumers with clear and transparent information about how their data is being used, by whom, and for what purposes, for each device and service. This also applies to any third parties that may be involved (including advertisers). Where personal data is processed on the basis of consumers’ consent, this shall be validly and lawfully obtained, with those consumers being given the opportunity to withdraw it at any time.",
@@ -1574,7 +1575,7 @@
                 {
                     "categoryName": "Make systems resilient to outages",
                     "categoryNumber": "9",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Resilience should be built in to IoT devices and services where required by their usage or by other relying systems, taking into account the possibility of outages of data networks and power. As far as reasonably possible, IoT services should remain operating and locally functional in the case of a loss of network and should recover cleanly in the case of restoration of a loss of power. Devices should be able to return to a network in a sensible state and in an orderly fashion, rather than in a massive scale reconnect.",
@@ -1584,7 +1585,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.1",
-                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default." 
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default."
                                 }
                             ]
 			}
@@ -1593,7 +1594,7 @@
                 {
                     "categoryName": "Monitor system telemetry data",
                     "categoryNumber": "10",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "If telemetry data is collected from IoT devices and services, such as usage and measurement data, it should be monitored for security anomalies.",
@@ -1612,7 +1613,7 @@
                 {
                     "categoryName": "Make it easy for consumers to delete personal data",
                     "categoryNumber": "11",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Devices and services should be configured such that personal data can easily be removed from them when there is a transfer of ownership, when the consumer wishes to delete it and/or when the consumer wishes to dispose of the device. Consumers should be given clear instructions on how to delete their personal data.",
@@ -1631,7 +1632,7 @@
                 {
                     "categoryName": "Make installation and maintenance of devices easy",
                     "categoryNumber": "12",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Installation and maintenance of IoT devices should employ minimal steps and should follow security best practice on usability. Consumers should also be provided with guidance on how to securely set up their device.",
@@ -1654,7 +1655,7 @@
                 {
                     "categoryName": "Validate input data",
                     "categoryNumber": "13",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
