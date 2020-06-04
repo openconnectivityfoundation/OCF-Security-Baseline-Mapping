@@ -32,7 +32,7 @@
                             "ocfMatches": [
 				    {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Physical Identifiers are out of scope of the OCF specification."
+                                    "ocfMatchNotes": "Not Applicable: Physical Identifiers are out of scope of the OCF specification.",
                                     "ocfMatchType":"Un-Met(Not Applicable)"
 				    }
 			    ]
