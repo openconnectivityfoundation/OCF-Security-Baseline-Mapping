@@ -15,7 +15,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.1.1",
-                                    "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
+                                    "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ],
                             "subCategoryDescription": "A unique logical identifier",
@@ -28,11 +29,12 @@
                             "subCategoryNumber": "2",
                             "ocfMatchSpecification": "",
                             "ocfMatchSpecificationURL": "",
-                            "ocfMatches": [ 
-				    { 
+                            "ocfMatches": [
+				    {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Physical Identifiers are out of scope of the OCF specification."
-				    } 
+                                    "ocfMatchNotes": "Not Applicable: Physical Identifiers are out of scope of the OCF specification.",
+                                    "ocfMatchFlag":"Not Applicable"
+				    }
 			    ]
                         }
                     ]
@@ -49,7 +51,9 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
-                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network."
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices, implement role-based and/or subject based access control for each resource they present to the network.",
+                                    "ocfMatchFlag":"Yes"
+
                                 }
                             ]
                         },
@@ -61,11 +65,14 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
-                                    "ocfMatchNotes":"Access control is enforced over all Resources."
+                                    "ocfMatchNotes":"Access control is enforced over all Resources.",
+                                    "ocfMatchFlag":"Yes"
+
 				},
 				{
                                     "ocfMatchClause": "13.3.1",
-                                    "ocfMatchNotes": "Stored Credentials used to authenticate server to clients."
+                                    "ocfMatchNotes": "Stored Credentials used to authenticate server to clients.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         },
@@ -77,7 +84,9 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
-                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings."
+                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings.",
+                                    "ocfMatchFlag":"Yes"
+
                                 }
                             ]
                         }
@@ -95,15 +104,18 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
-                                    "ocfMatchNotes": " Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
+                                    "ocfMatchNotes": " Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions.",
+                                    "ocfMatchFlag":"Yes"
                                 },
                                 {
                                     "ocfMatchClause": "11.3",
-                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater.",
+                                    "ocfMatchFlag":"Yes"
                                 },
                                 {
                                     "ocfMatchClause": "14.2.2",
-                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
+                                    "ocfMatchNotes": "Secure storage for credentials is strongly recommended.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         },
@@ -114,9 +126,15 @@
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable:  Specification stipulates minimum key lengths, based on cipher suite used."
-				}
+                                    "ocfMatchClause": "5.4.3",
+                                  "ocfMatchNotes": "Credentials are proactively monitored and can be updated.",
+                                    "ocfMatchFlag":"Yes"
+				},
+                                {
+                                  "ocfMatchClause":"5.6",
+                                  "ocfMatchNotes":"Credential Overview, credentials can be pairwise symmetric keys, certificates, or raw asymmetric keys.",
+                                    "ocfMatchFlag":"Yes"
+                                }
                             ]
                         },
                         {
@@ -127,7 +145,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
-                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings during device reset."
+                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings during device reset.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         }
@@ -145,7 +164,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
-                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources.",
+                                    "ocfMatchFlag":"Yes"
                                 }
                             ]
                         },
@@ -157,10 +177,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Figure 3 shows security enforcement points"
                                 },
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
                                 }
                             ]
@@ -173,7 +195,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not applicable: Passwords are not used in normal operation of devices."
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "There is currently no provision for limiting authentication attempts"
 				}
                             ]
                         }
@@ -191,6 +214,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "The aspects of the software [update] include, but are not limited to, firmware, operating system, networking stack, application code, drivers, etc."
                                 }
                             ]
@@ -203,6 +227,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": " Process where device validates the software version against a trusted source."
                                 }
                             ]
@@ -215,6 +240,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
                                 }
                             ]
@@ -227,6 +253,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process."
                                 }
                             ]
@@ -239,6 +266,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes the use of a combination of software update bits that inform the device to look to a valid update."
                                 }
                             ]
@@ -251,7 +279,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Notifications for software updates not currently in OCF specification."
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Notifications for software updates not currently in OCF specification."
 				}
                             ]
                         }
@@ -269,6 +298,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition"
                                 }
                             ]
@@ -281,6 +311,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
                                 }
                             ]
@@ -293,14 +324,17 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.16",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 },
                                 {
                                     "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control architecture and the access based on state of device."
                                 },
                                 {
                                     "ocfMatchClause": "13.8",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 }
                             ]
@@ -313,6 +347,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.8",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Definition of pstat state resource.  Pstat resource is an SVR and has protected access."
                                 }
                             ]
@@ -325,6 +360,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Implemented",
                                     "ocfMatchNotes": "Not Applicable: Work in Progress for remote event logging."
 				}
                             ]
@@ -350,6 +386,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.1.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique."
                                 }
                             ]
@@ -368,6 +405,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
@@ -387,16 +425,18 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Data in transit devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
                                 },
                                 {
                                     "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Data At Rest Is Protected",
@@ -411,12 +451,13 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Industry Accepted Protocols are Used for Communications",
@@ -431,20 +472,23 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Shows transport, session and application layer standards."
                                 },
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Devices must support CoAP, and CoAP over DTLS."
                                 },
                                 {
                                     "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Data Validation",
@@ -459,12 +503,13 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Data model enforcement of encoding, type and length.  IoT devices often don't have user input fields but data model enforcement occurs on data inbound and outbound to the system. "
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Event Logging",
@@ -479,12 +524,13 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition."
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Cryptography",
@@ -499,12 +545,13 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.3.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Patchability",
@@ -519,16 +566,18 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Process where device validates the software version against a trusted source."
                                 },
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process."
                                 }
                             ]
 			}
 		    ]
-			
+
 		},
 		{
                     "categoryName": "Reprovisioning",
@@ -543,12 +592,13 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Defines how resources on the device are returned to the manufacturer's default values."
                                 }
                             ]
 			}
 		    ]
-			
+
 		}
 
             ]
@@ -561,7 +611,7 @@
                 {
                     "categoryName": "Hardware security",
                     "categoryNumber": "4.3.1",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Employ a hardware-based immutable root of trust.",
@@ -571,6 +621,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
@@ -583,6 +634,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Defines levels of Hardware Tamper Protection for cryptographic module."
                                 }
                             ]
@@ -592,7 +644,7 @@
                 {
                     "categoryName": "Trust and Integrity Management",
                     "categoryNumber": "4.3.2",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Trust must be established in the boot environment before any trust in any other software or executable program can be claimed.",
@@ -602,6 +654,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.8.3.6",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Security Profile Purple: secure boot, hardware backed secure storage"
                                 }
                             ]
@@ -614,7 +667,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Vendor Dependant"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "This is platform specific."
                                 }
                             ]
 			},
@@ -626,6 +680,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A the process whereby the Device validates the software (including firmware, operating system, Device drivers, networking stack, etc.) against a trusted source"
                                 }
                             ]
@@ -637,8 +692,9 @@
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Known secure state is non-deterministic."
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
                                 }
                             ]
 			},
@@ -650,6 +706,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "9.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Certificate based key management based on public key infrastructure (PKI)."
                                 }
                             ]
@@ -659,7 +716,7 @@
                 {
                     "categoryName": "Strong default security and privacy",
                     "categoryNumber": "4.3.3",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Any applicable security features should be enabled by default, and any unused or insecure functionalities should be disabled by default.",
@@ -669,14 +726,17 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
                                 },
                                 {
                                     "ocfMatchClause": "13.16",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
                                 },
                                 {
                                     "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater, no insecure ciphers are enabled."
                                 }
                             ]
@@ -689,14 +749,17 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.3.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Length of symmetric keys"
                                 },
                                 {
                                     "ocfMatchClause": "7.3.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Certificate Credential Generation: The Certificate Credential will be used by Devices for secure bidirectional communication."
                                 },
                                 {
                                     "ocfMatchClause": "9.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Shows pair-wise, group symmetrical credentials, symmetric credentials, and certificate credentials"
                                 }
                             ]
@@ -706,7 +769,7 @@
                 {
                     "categoryName": "Data protection and compliance",
                     "categoryNumber": "4.3.4",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Personal data must be collected and processed fairly and lawfully, it should never be collected and processed without the data subject’s consent.",
@@ -716,7 +779,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Applies to Vendor"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Applies to Vendor"
                                 }
                             ]
 			},
@@ -728,7 +792,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Applies to Vendor"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Applies to Vendor"
                                 }
                             ]
 			},
@@ -740,7 +805,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Applies to Vendor"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Applies to Vendor"
                                 }
                             ]
 			},
@@ -752,7 +818,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Applies to Vendor"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Applies to Vendor"
                                 }
                             ]
 			},
@@ -764,7 +831,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope for device specification"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
                                 }
                             ]
 			}
@@ -773,7 +841,7 @@
                 {
                     "categoryName": "System safety and reliability",
                     "categoryNumber": "4.3.5",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Design with system and operational disruption in mind, preventing the system from causing an unacceptable risk of injury or physical damage.",
@@ -783,7 +851,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of Scope, applies to Vendor"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope, applies to Vendor"
                                 }
                             ]
 			},
@@ -795,6 +864,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Device transitions to a self-recovery state SRESET if certain conditions of the device are corrupt."
                                 }
                             ]
@@ -807,6 +877,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default. "
                                 }
                             ]
@@ -816,7 +887,7 @@
                 {
                     "categoryName": "Secure Software / Firmware updates",
                     "categoryNumber": "4.3.6",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Ensure that the device software/firmware, its configuration and its applications have the ability to update Over-The-Air (OTA), that the update server is secure, that the update file is transmitted via a secure connection, that it does not contain sensitive data (e.g. hardcoded credentials), that it is signed by an authorised trust entity and encrypted using accepted encryption methods, and that the update package has its digital signature, signing certificate and signing certificate chain, verified by the device before the update process begins.",
@@ -826,10 +897,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.4.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Indicates a request to initiate the process to check if new software is available.  Note: Security of channel is out of scope, vendor responsibility."
                                 },
                                 {
                                     "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
@@ -842,6 +915,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cmr' Property to 1 (TRUE), indicating that new software is available"
                                 }
                             ]
@@ -854,6 +928,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "15.5.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "The state of all resources implemented in the Device should be the same as after boot, meaning that the software update is not resetting user data and retaining a correct state."
                                 }
                             ]
@@ -863,7 +938,7 @@
                 {
                     "categoryName": "Authentication",
                     "categoryNumber": "4.3.7",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Design the authentication and authorisation schemes (unique per device) based on the ",
@@ -873,6 +948,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control and policy management for both local and network resources, is unique per SVR per device."
                                 }
                             ]
@@ -885,6 +961,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
@@ -897,14 +974,17 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.3.5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more. 2fA/ MFA is out of scope."
                                 },
                                 {
                                     "ocfMatchClause": "7.3.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Shared Key Credential Calculation, length depends on the cipher suite."
                                 },
                                 {
                                     "ocfMatchClause": "13.3.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Stored Credentials used to mutually authenticate servers and clients."
                                 }
                             ]
@@ -917,6 +997,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
@@ -929,7 +1010,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Implemented: Not currently in OCF specification."
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Not currently in OCF specification."
                                 }
                             ]
 			},
@@ -941,7 +1023,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope, vendor requirements"
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Out of scope, vendor requirements"
                                 }
                             ]
 			}
@@ -950,7 +1033,7 @@
                 {
                     "categoryName": "Authorisation",
                     "categoryNumber": "4.3.8",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Limit the actions allowed for a given system by Implementing fine-grained authorisation mechanisms and using the Principle of least privilege (POLP): applications must operate at the lowest privilege level possible.",
@@ -960,6 +1043,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Access control is enforced over all Resources."
                                 }
                             ]
@@ -972,7 +1056,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope, vendor dependant"
+				    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Firmare is vendor dependant"
                                 }
                             ]
 			}
@@ -981,7 +1066,7 @@
                 {
                     "categoryName": "Access Control - Physical and Environmental security",
                     "categoryNumber": "4.3.9",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Data integrity and confidentiality must be enforced by access controls. When the subject requesting access has been authorised to access particular processes, it is necessary to enforce the defined security policy.",
@@ -991,6 +1076,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.10",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity"
                                 }
                             ]
@@ -1003,10 +1089,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12.2.6",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Access control is asserted for established roles."
                                 },
                                 {
                                     "ocfMatchClause": "13.10",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes the Roles resource."
                                 }
                             ]
@@ -1019,7 +1107,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Outside of scope, vendor dependant"
+				    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Hardware tampering is out of scope for device specification"
                                 }
                             ]
 			},
@@ -1031,6 +1120,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
@@ -1043,7 +1133,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope, vendor dependant"
+                                    "ocfMatchFlag":"not Applicable",
+                                    "ocfMatchNotes": "Out of scope, vendor dependant"
                                 }
                             ]
 			}
@@ -1052,7 +1143,7 @@
                 {
                     "categoryName": "Cryptography",
                     "categoryNumber": "4.3.10",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Ensure a proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of data and information (including control messages), in transit and in rest. Ensure the proper selection of standard and strong encryption algorithms and strong keys, and disable insecure protocols. Verify the robustness of the implementation.",
@@ -1062,14 +1153,17 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
                                 },
                                 {
                                     "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 },
                                 {
                                     "ocfMatchClause": "14.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 }
                             ]
@@ -1082,6 +1176,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "9.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Device certificates and private keys are kept in 'cred' secure virtual resource"
                                 }
                             ]
@@ -1094,10 +1189,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "9.4.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Digital certificate profile, showing OCF approved cipher suites."
                                 },
                                 {
                                     "ocfMatchClause": "11.3.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "General cipher suites defined for both ownership transfer and normal operation."
                                 }
                             ]
@@ -1110,6 +1207,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "9.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Certificate based key management based on public key infrastructure (PKI)."
                                 }
                             ]
@@ -1119,7 +1217,7 @@
                 {
                     "categoryName": "Secure and trusted communications",
                     "categoryNumber": "4.3.11",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Guarantee the different security aspects -confidentiality (privacy), integrity, availability and authenticity- of the information in transit on the networks or stored in the IoT application or in the Cloud.",
@@ -1129,6 +1227,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Device connection with the OCF Cloud.  The Device should establish the TLS connection using the certificate based credential. Note: Availability is out of scope"
                                 }
                             ]
@@ -1141,6 +1240,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
                                 }
                             ]
@@ -1153,6 +1253,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.16",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
                                 }
                             ]
@@ -1165,10 +1266,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions. Data authenticity is provided by certificate authentication in DTLS handshake"
                                 },
                                 {
                                     "ocfMatchClause": "14.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 }
                             ]
@@ -1181,6 +1284,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Devices must support TLS/DTLS version 1.2 or greater for all unicast sessions.  This includes proximal and non-proximal traffic.  All TLS/DTLS traffic is verified by device credential which forms the basis for trust."
                                 }
                             ]
@@ -1193,6 +1297,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Access control is enforced over all Resources.Employs a deny-all, permit-by-exception policy to allow access to Resources (data and actuators) for Read/Write/Create/Delete/Notify.  Access control can be updated dynamically at the location of deployment to limit access (to a role, Device, or implementation)"
                                 }
                             ]
@@ -1205,6 +1310,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.3.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Stored Credentials used to authenticate server to clients."
                                 }
                             ]
@@ -1217,6 +1323,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Access control is enforced over all Resources."
                                 }
                             ]
@@ -1229,7 +1336,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope for a device specification"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for a device specification requires the network to account for traffic"
                                 }
                             ]
 			}
@@ -1238,7 +1346,7 @@
                 {
                     "categoryName": "Secure Interfaces and network services",
                     "categoryNumber": "4.3.12",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Risk Segmentation. Splitting network elements into separate components to help isolate security breaches and minimise the overall risk.",
@@ -1247,7 +1355,8 @@
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "None",
+                                    "ocfMatchClause": "None", 
+                                    "ocfMatchFlag":"Not Applicable",
                                     "ocfMatchNotes": "Not Applicable: Out of scope for a device specification"
                                 }
                             ]
@@ -1260,6 +1369,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Access control is enforced over all Resources.  If asymmetric credentials are used compromising a single device would not increase the risk to other devices."
                                 }
                             ]
@@ -1272,6 +1382,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7.3.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "SharedKey credential is derived using a pseudo-random function that accepts the key_block value resulting from the DTLS handshake used for onboarding."
                                 }
                             ]
@@ -1284,6 +1395,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.16",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
                                 }
                             ]
@@ -1296,7 +1408,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope for a device specifcation"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for a device specifcation"
                                 }
                             ]
 			},
@@ -1308,7 +1421,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.16",
-                                    "ocfMatchNotes": "Out of Scope, however CoAP interfaces are secured.  All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint.  These are COAPS rather than https."
                                 }
                             ]
 			},
@@ -1320,6 +1434,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "The OCF Cloud API for Cloud Services is a RESTful API over HTTPS (IETF RFC 2818)."
                                 }
                             ]
@@ -1329,7 +1444,7 @@
                 {
                     "categoryName": "Secure input and output handling",
                     "categoryNumber": "4.3.13",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Data input validation (ensuring that data is safe prior to use) and output filtering.",
@@ -1339,6 +1454,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Data model enforcement of encoding, type and length.  IoT devices often don't have user input fields but data model enforcement occurs on data inbound and outbound to the system. "
                                 }
                             ]
@@ -1348,7 +1464,7 @@
                 {
                     "categoryName": "Logging",
                     "categoryNumber": "4.3.14",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Implement a logging system that records events relating to user authentication, management of accounts and access rights, modifications to security rules, and the functioning of the system. Logs must be preserved on durable storage and retrievable via authenticated connections.",
@@ -1358,6 +1474,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition."
                                 }
                             ]
@@ -1367,7 +1484,7 @@
                 {
                     "categoryName": "Monitoring and Auditing",
                     "categoryNumber": "4.3.15",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Implement regular monitoring to verify the device behaviour, to detect malware and to discover integrity errors.",
@@ -1377,7 +1494,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope.  Logic is present but is vendor responsibility"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope.  Logic is present but is vendor responsibility"
                                 }
                             ]
 			},
@@ -1389,7 +1507,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Vendor dependant"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Vendor dependant"
                                 }
                             ]
 			}
@@ -1401,12 +1520,12 @@
             "baselineOrg": "Department for Digital, Culture, Media & Sport",
             "baselineName": "IOTSecCode of Practice for Consumer IoT Security",
 	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
-            "baselineCategories": 
+            "baselineCategories":
 	    [
                 {
                     "categoryName": "No default passwords",
                     "categoryNumber": "1",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "All IoT device passwords shall be unique and not resettable to any universal factory default value.",
@@ -1416,6 +1535,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
@@ -1425,7 +1545,7 @@
                 {
                     "categoryName": "Implement a vulnerability disclosure policy",
                     "categoryNumber": "2",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "All companies that provide internet-connected devices and services shall provide a public point of contact as part of a vulnerability disclosure policy in order that security researchers and others are able to report issues. Disclosed vulnerabilities should be acted on in a timely manner.",
@@ -1435,6 +1555,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Single point of contact and guidelines for member companies to report security issues, including vulnerability reporting.  Vulnerabilities are triaged and addressed in a timely manner"
                                 }
                             ]
@@ -1444,7 +1565,7 @@
                 {
                     "categoryName": "Keep software updated",
                     "categoryNumber": "3",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Software components in internet-connected devices should be securely updateable. Updates shall be timely and should not impact on the functioning of the device. An end-of-life policy shall be published for end-point devices which explicitly states the minimum length of time for which a device will receive software updates and the reasons for the length of the support period. The need for each update should be made clear to consumers and an update should be easy to implement. For constrained devices that cannot physically be updated, the product should be isolatable and replaceable.",
@@ -1454,10 +1575,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Process where device validates the software version against a trusted source."
                                 },
                                 {
                                     "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "A client with the correct authorization can initiate a software update process"
                                 }
                             ]
@@ -1467,7 +1590,7 @@
                 {
                     "categoryName": "Securely store credentials and security-sensitive data",
                     "categoryNumber": "4",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Any credentials shall be stored securely within services and on devices. Hard-coded credentials in device software are not acceptable.",
@@ -1477,10 +1600,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "14.2.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Secure storage for credentials is strongly recommended."
                                 },
                                 {
                                     "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
@@ -1490,7 +1615,7 @@
                 {
                     "categoryName": "Communicate securely",
                     "categoryNumber": "5",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Security-sensitive data, including any remote management and control, should be encrypted in transit, appropriate to the properties of the technology and usage. All keys should be managed securely.",
@@ -1500,10 +1625,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Data in transit devices must support TLS/DTLS version 1.2 or greater for all unicast sessions."
                                 },
                                 {
                                     "ocfMatchClause": "11.3.1",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "This clause lists the cipher suites allowed during ownership transfer and normal operation.  All cipher suites are recognized IETF RFCs and most are IANA supported ciphers.  Strong, proven, updateable cryptography using open, peer-reviewed methods and algorithms."
                                 }
                             ]
@@ -1513,7 +1640,7 @@
                 {
                     "categoryName": "Minimise exposed attack surfaces",
                     "categoryNumber": "6",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "All devices and services should operate on the ‘principle of least privilege’; unused ports should be closed, hardware should not unnecessarily expose access, services should not be available if they are not used and code should be minimised to the functionality necessary for the service to operate. Software should run with appropriate privileges, taking account of both security and functionality.",
@@ -1523,10 +1650,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Describes access control and policy management for both local and network resources."
                                 },
                                 {
                                     "ocfMatchClause": "5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Figure 3:  Shows security enforcement points."
                                 }
                             ]
@@ -1536,7 +1665,7 @@
                 {
                     "categoryName": "Ensure software integrity",
                     "categoryNumber": "7",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Software on IoT devices should be verified using secure boot mechanisms. If an unauthorised change is detected, the device should alert the consumer/administrator to an issue and should not connect to wider networks than those necessary to perform the alerting function.",
@@ -1545,8 +1674,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchNotes": "Out of scope, vendor dependant"
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			}
@@ -1555,7 +1685,7 @@
                 {
                     "categoryName": "Ensure that personal data is protected",
                     "categoryNumber": "8",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Where devices and/or services process personal data, they shall do so in accordance with applicable data protection law, such as the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. Device manufacturers and IoT service providers shall provide consumers with clear and transparent information about how their data is being used, by whom, and for what purposes, for each device and service. This also applies to any third parties that may be involved (including advertisers). Where personal data is processed on the basis of consumers’ consent, this shall be validly and lawfully obtained, with those consumers being given the opportunity to withdraw it at any time.",
@@ -1564,7 +1694,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
                                     "ocfMatchNotes": "Out of scope for device spec.  This is provider dependant"
                                 }
                             ]
@@ -1574,7 +1705,7 @@
                 {
                     "categoryName": "Make systems resilient to outages",
                     "categoryNumber": "9",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Resilience should be built in to IoT devices and services where required by their usage or by other relying systems, taking into account the possibility of outages of data networks and power. As far as reasonably possible, IoT services should remain operating and locally functional in the case of a loss of network and should recover cleanly in the case of restoration of a loss of power. Devices should be able to return to a network in a sensible state and in an orderly fashion, rather than in a massive scale reconnect.",
@@ -1584,7 +1715,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5.1",
-                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default." 
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default."
                                 }
                             ]
 			}
@@ -1593,7 +1725,7 @@
                 {
                     "categoryName": "Monitor system telemetry data",
                     "categoryNumber": "10",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "If telemetry data is collected from IoT devices and services, such as usage and measurement data, it should be monitored for security anomalies.",
@@ -1602,7 +1734,8 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
                                     "ocfMatchNotes": "Out of scope for OCF Spec.  Requirement targets IoT service providers"
                                 }
                             ]
@@ -1612,7 +1745,7 @@
                 {
                     "categoryName": "Make it easy for consumers to delete personal data",
                     "categoryNumber": "11",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Devices and services should be configured such that personal data can easily be removed from them when there is a transfer of ownership, when the consumer wishes to delete it and/or when the consumer wishes to dispose of the device. Consumers should be given clear instructions on how to delete their personal data.",
@@ -1622,6 +1755,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Defines how resources on the device are returned to the manufacturer's default values."
                                 }
                             ]
@@ -1631,7 +1765,7 @@
                 {
                     "categoryName": "Make installation and maintenance of devices easy",
                     "categoryNumber": "12",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Installation and maintenance of IoT devices should employ minimal steps and should follow security best practice on usability. Consumers should also be provided with guidance on how to securely set up their device.",
@@ -1641,10 +1775,12 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "3.1.31",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Includes the WiFi Easy Setup Resources, and the other transport-level onboarding (e.g. Bluetooth) are defined in other specification documents for OCF."
                                 },
                                 {
                                     "ocfMatchClause": "5.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "For non-transport onboarding, the process is specified in great detail as far as establishment of trust, authentication, verification, authorization, local credential issuance, etc."
                                 }
                             ]
@@ -1654,7 +1790,7 @@
                 {
                     "categoryName": "Validate input data",
                     "categoryNumber": "13",
-                    "subCategories": 
+                    "subCategories":
 		    [
                         {
                             "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
@@ -1664,6 +1800,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "4.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "All data inputs are validated against JSON Schemas."
                                 }
                             ]
@@ -1676,6 +1813,7 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "5",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "Baseline Model Constructs"
                                 }
                             ]

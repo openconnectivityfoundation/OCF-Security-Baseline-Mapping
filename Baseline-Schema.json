@@ -94,6 +94,11 @@
           "type":"string",
           "description":"Clause number that matches baseline sub category"
         },
+        "ocfMatchFlag":{
+          "type":"string",
+          "description":"One of three match types.  Met, Unmet(Not Applicable), Met(Not Implemented)",
+          "enum":["Yes","Not Applicable","Not Implemented"]
+        },
        "ocfMatchNotes":{
           "type":"string",
           "description":"Clause number that matches baseline sub category"
