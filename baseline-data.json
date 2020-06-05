@@ -1420,7 +1420,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "13.16",
-                                    "ocfMatchNotes": "Out of Scope, however CoAP interfaces are secured.  All implemented discoverable SVRs shall expose a Secure OCF Endpoint"
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "All implemented discoverable SVRs shall expose a Secure OCF Endpoint.  These are COAPS rather than https."
                                 }
                             ]
 			},
