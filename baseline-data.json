@@ -1023,7 +1023,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Out of scope, vendor requirements"
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Out of scope, vendor requirements"
                                 }
                             ]
 			}
