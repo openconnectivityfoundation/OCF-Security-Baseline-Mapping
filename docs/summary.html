@@ -41,10 +41,20 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
       <a class="nav-link " href="index.html">Baseline Overview</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link active" href="summary.html">Baseline Summary</a>
     </li>
   </ul>
+<h2> Score </h2>
 
+The scores are calculated as follows:
+<p>
+score = (Met-Unmet(Not Implemented))/(Total-Unmet (Not Applicable))
+<p>
+raw score = Met / Total
+<p>
+The Items are the most granular compliance statements.
 
   <table border="1" id="example" class="display" width="100%" cellspacing="0" data-page-length='20'
     style="border-color:#D5D8DC">
@@ -52,9 +62,10 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
       <tr>
         <th>Baseline Name </th>
         <th>Baseline Organization </th>
-        <th>Baseline Items</th>
-        <th>Baseline Sub Items</th>
-        <th>Baseline Compliance</th>
+        <th>Items</th>
+        <th>Items Compliance</th>
+        <th>Item score</th>
+        <th>Item raw score</th>
       </tr>
     </thead>
   </table>
@@ -75,18 +86,26 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
           var my_specURL = " ";
           var my_Clause = " ";
           var my_Notes = " ";
-          var my_nr_items = 0;
+                    
           var my_nr_sub_items = 0;
-          var my_nr_items_compliant = 0;
-          var my_tot_nr_items = 0;
+          var my_nr_sub_items_compliant = 0;
+          var my_nr_sub_items_not_compliant = 0;
+          var my_nr_sub_items_not_applicable = 0
+          var my_nr_sub_items_not_met = 0
+                    
           var my_tot_nr_sub_items = 0;
-          var my_tot_nr_items_compliant = 0;
+          var my_tot_nr_sub_items_compliant = 0;
+          var my_tot_nr_sub_items_not_compliant = 0;
+          var my_tot_nr_sub_items_not_applicable = 0
+          var my_tot_nr_sub_items_not_met = 0
 
           for (var i = 0; i < json.baseLines.length; i++) {
             // assign var in this loop
-            my_nr_items = 0;
             my_nr_sub_items = 0;
-            my_nr_items_compliant = 0;
+            my_nr_sub_items_compliant = 0;
+            my_nr_sub_items_not_compliant = 0;
+            my_nr_sub_items_not_applicable = 0;
+            my_nr_sub_items_not_met = 0;
 
             my_baselineName = json.baseLines[i].baselineName
             my_baselineOrg = json.baseLines[i].baselineOrg
@@ -118,43 +137,61 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 var my_Clause = " ";
                 var my_Notes = " ";
-                my_nr_items++
                 
-
+                var compliant = false;
                 for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
                   // assign vars in this loop and create the table entry 
                   if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
                     my_Clause = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause
                   }
                   if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes != "undefined") {
-                    my_Notes = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes
-                    var n = my_Notes.includes("Not Applicable");
-                    if (n == false) {
-                      my_nr_items_compliant++
-                      my_tot_nr_items_compliant++
+                    var my_ocfMatchFlag = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchFlag
+                    var n = my_ocfMatchFlag.includes("Yes");
+                    if (n == true) {
+                      my_tot_nr_sub_items_compliant++;
+                      my_nr_sub_items_compliant++;
+                      compliant = true;
+                    }
+                    else
+                    {
+                        if (my_ocfMatchFlag.includes("Not Applicable")) {
+                          my_nr_sub_items_not_applicable++;
+                          my_tot_nr_sub_items_not_applicable++;
+                        }
+                        else {
+                          my_nr_sub_items_not_met++;
+                          my_tot_nr_sub_items_not_met++
+                        }
+                        my_tot_nr_sub_items_not_compliant++;
+                        my_nr_sub_items_not_compliant++;
                     }
                     my_nr_sub_items++;
                     my_tot_nr_sub_items++;
                   }
                 }
               }
-
             }
-            console.log(my_baselineOrg + my_baselineName + my_nr_items + my_nr_items_compliant);
+            console.log(l + " " + my_baselineOrg + ":"  + 
+                " tot: " + my_nr_sub_items+ 
+                " compl: " + my_nr_sub_items_compliant+
+                " not met: " + my_nr_sub_items_not_met +
+                " not appl:" + my_nr_sub_items_not_applicable)
             return_data.push({
               'a': my_baselineOrg,
               'b': my_baselineName,
-              'c': my_nr_items,
-              'd': my_nr_sub_items,
-              'e': my_nr_items_compliant
+              'c': my_nr_sub_items,
+              'd': my_nr_sub_items_compliant,
+              'e': ((my_nr_sub_items_compliant- my_nr_sub_items_not_met)/(my_nr_sub_items-my_nr_sub_items_not_applicable)).toFixed(2), 
+              'f': (my_nr_sub_items_compliant/my_nr_sub_items).toFixed(2)
             })
           }
           return_data.push({
               'a': " ",
               'b': " Total",
-              'c': my_tot_nr_items,
-              'd': my_tot_nr_sub_items,
-              'e': my_tot_nr_items_compliant
+              'c': my_tot_nr_sub_items,
+              'd': my_tot_nr_sub_items_compliant,
+              'e': ((my_tot_nr_sub_items_compliant-my_tot_nr_sub_items_not_met)/(my_tot_nr_sub_items-my_tot_nr_sub_items_not_applicable)).toFixed(2),
+              'f': (my_tot_nr_sub_items_compliant/my_tot_nr_sub_items).toFixed(2)
             })
 
           return return_data;
@@ -165,7 +202,8 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
         { "data": "b" },
         { "data": "c" },
         { "data": "d" },
-        { "data": "e" }
+        { "data": "e" },
+        { "data": "f" }
       ]
     })
   </script>
