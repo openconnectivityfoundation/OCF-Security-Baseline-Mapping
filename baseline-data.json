@@ -32,7 +32,7 @@
                             "ocfMatches": [
 				    {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchNotes": "Not Applicable: Physical Identifiers are out of scope of the OCF specification.",
+                                    "ocfMatchNotes": "Physical Identifiers are out of scope of the OCF specification.",
                                     "ocfMatchFlag":"Not Applicable"
 				    }
 			    ]
@@ -361,7 +361,7 @@
                                 {
                                     "ocfMatchClause": "None",
                                     "ocfMatchFlag":"Not Implemented",
-                                    "ocfMatchNotes": "Not Applicable: Work in Progress for remote event logging."
+                                    "ocfMatchNotes": "Work in Progress for remote event logging."
 				}
                             ]
                         }
