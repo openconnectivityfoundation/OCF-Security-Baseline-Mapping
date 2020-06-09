@@ -36,46 +36,150 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 
 <div class=page>
 
-  <h1>OCF Security Baseline mapping overview </h1>
+  <h1>OCF Security Baseline Summary Graph </h1>
 
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
       <a class="nav-link " href="index.html">Baseline Overview</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="summary.html">Baseline Summary</a>
+      <a class="nav-link active" href="summary.html">Baseline Summary graph</a>
     </li>
   </ul>
-<h2> Score </h2>
+<div>
+  <canvas id="myChart" width="400" height="100"></canvas>
+</div>
 
-The scores are calculated as follows:
-<p>
-score = (Met-Unmet(Not Implemented))/(Total-Unmet (Not Applicable))
-<p>
-raw score = Met / Total
-<p>
-The Items are the most granular compliance statements.
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script>
+$(function () {
+    var ctx = document.getElementById("myChart").getContext("2d");
+    // examine example_data.json for expected response data
+    //var json_url = "example_data.json";
+    var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json";
+    // draw empty chart
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: [],
+            datasets: [
+                {
+                    label: "Total requirements",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(175,192,192,0.4)",
+                    borderColor: "rgba(175,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(175,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(175,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                },
 
-  <table border="1" id="example" class="display" width="100%" cellspacing="0" data-page-length='20'
-    style="border-color:#D5D8DC">
-    <thead>
-      <tr>
-        <th>Baseline Name </th>
-        <th>Baseline Organization </th>
-        <th>Items</th>
-        <th>Items Compliance</th>
-        <th>Item score</th>
-        <th>Item raw score</th>
-      </tr>
-    </thead>
-  </table>
+                {
+                    label: "Fulfilled",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(75,192,75,0.4)",
+                    borderColor: "rgba(75,192,75,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(75,192,75,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(75,192,75,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                },
+                {
+                    label: "Not Applicable",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(75,192,192,0.4)",
+                    borderColor: "rgba(75,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(175,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                },
+                {
+                    label: "Not Met",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(275,192,192,0.4)",
+                    borderColor: "rgba(275,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(175,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(275,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                }
+            ]
+        },
+        options: {
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
 
-  <script>
-    $('#example').DataTable({
-      "ajax": {
-        "url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json",
-        "dataSrc": function (json) {
-          var return_data = new Array();
+    ajax_chart(myChart, json_url);
+
+    // function to update our chart
+    function ajax_chart(chart, url, data) {
+        var data = data || {};
+
+        $.getJSON(url, data).done(function(json) {
+        
+          var labels = new Array();
+          var datasets = new Array();
+        
           var my_baselineName = " ";
           var my_baselineOrg = " ";
           var my_baselineURL = " ";
@@ -98,6 +202,11 @@ The Items are the most granular compliance statements.
           var my_tot_nr_sub_items_not_compliant = 0;
           var my_tot_nr_sub_items_not_applicable = 0
           var my_tot_nr_sub_items_not_met = 0
+          
+          var nr_sub = new Array();
+          var nr_sub_comp = new Array();
+          var nr_sub_not_app = new Array();
+          var nr_sub_not_met = new Array();
 
           for (var i = 0; i < json.baseLines.length; i++) {
             // assign var in this loop
@@ -106,6 +215,8 @@ The Items are the most granular compliance statements.
             my_nr_sub_items_not_compliant = 0;
             my_nr_sub_items_not_applicable = 0;
             my_nr_sub_items_not_met = 0;
+            
+            labels.push(json.baseLines[i].baselineName)
 
             my_baselineName = json.baseLines[i].baselineName
             my_baselineOrg = json.baseLines[i].baselineOrg
@@ -171,40 +282,23 @@ The Items are the most granular compliance statements.
                 }
               }
             }
-            console.log(l + " " + my_baselineOrg + ":"  + 
-                " tot: " + my_nr_sub_items+ 
-                " compl: " + my_nr_sub_items_compliant+
-                " not met: " + my_nr_sub_items_not_met +
-                " not appl:" + my_nr_sub_items_not_applicable)
-            return_data.push({
-              'a': my_baselineOrg,
-              'b': my_baselineName,
-              'c': my_nr_sub_items,
-              'd': my_nr_sub_items_compliant,
-              'e': ((my_nr_sub_items_compliant- my_nr_sub_items_not_met)/(my_nr_sub_items-my_nr_sub_items_not_applicable)).toFixed(2), 
-              'f': (my_nr_sub_items_compliant/my_nr_sub_items).toFixed(2)
-            })
+            //datasets[i].data = my_nr_sub_items;
+            nr_sub.push(my_nr_sub_items);
+            nr_sub_comp.push(my_nr_sub_items_compliant);
+            nr_sub_not_app.push(my_nr_sub_items_not_applicable);
+            nr_sub_not_met.push(my_nr_sub_items_not_met);
           }
-          return_data.push({
-              'a': " ",
-              'b': " Total",
-              'c': my_tot_nr_sub_items,
-              'd': my_tot_nr_sub_items_compliant,
-              'e': ((my_tot_nr_sub_items_compliant-my_tot_nr_sub_items_not_met)/(my_tot_nr_sub_items-my_tot_nr_sub_items_not_applicable)).toFixed(2),
-              'f': (my_tot_nr_sub_items_compliant/my_tot_nr_sub_items).toFixed(2)
-            })
+        
+          chart.type = 'bar',
+          chart.data.labels = labels;
+          chart.data.datasets[0].data = nr_sub; // or you can iterate for multiple datasets
+          chart.data.datasets[1].data = nr_sub_comp; // or you can iterate for multiple datasets
+          chart.data.datasets[2].data = nr_sub_not_app; // or you can iterate for multiple datasets
+          chart.data.datasets[3].data = nr_sub_not_met; // or you can iterate for multiple datasets
+          chart.update(); // finally update our chart
+        });
+    }
+});
+</script>
 
-          return return_data;
-        }
-      },
-      "columns": [
-        { "data": "a" },
-        { "data": "b" },
-        { "data": "c" },
-        { "data": "d" },
-        { "data": "e" },
-        { "data": "f" }
-      ]
-    })
-  </script>
 </div>
