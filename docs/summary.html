@@ -47,13 +47,22 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
     </li>
   </ul>
 <div>
+
+
+<div>
+<canvas id="myChart2" width="400" height="100"></canvas>
+</div>
+<div>
   <canvas id="myChart" width="400" height="100"></canvas>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+
 <script>
 $(function () {
     var ctx = document.getElementById("myChart").getContext("2d");
+    var ctx2 = document.getElementById("myChart2").getContext("2d");
     // examine example_data.json for expected response data
     //var json_url = "example_data.json";
     var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json";
@@ -64,7 +73,7 @@ $(function () {
             labels: [],
             datasets: [
                 {
-                    label: "Total requirements",
+                    label: "Total Specification Matches on the Requirements",
                     fill: false,
                     lineTension: 0.1,
                     backgroundColor: "rgba(175,192,192,0.4)",
@@ -85,9 +94,30 @@ $(function () {
                     data: [],
                     spanGaps: false,
                 },
-
                 {
-                    label: "Fulfilled",
+                    label: "Total requirements",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(192,192,192,0.4)",
+                    borderColor: "rgba(192,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(192,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(192,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                },
+                {
+                    label: "Total Matches Fulfilled",
                     fill: false,
                     lineTension: 0.1,
                     backgroundColor: "rgba(75,192,75,0.4)",
@@ -109,7 +139,7 @@ $(function () {
                     spanGaps: false,
                 },
                 {
-                    label: "Not Applicable",
+                    label: "Requirement Not Applicable",
                     fill: false,
                     lineTension: 0.1,
                     backgroundColor: "rgba(75,192,192,0.4)",
@@ -131,7 +161,7 @@ $(function () {
                     spanGaps: false,
                 },
                 {
-                    label: "Not Met",
+                    label: "Requirement Not Met",
                     fill: false,
                     lineTension: 0.1,
                     backgroundColor: "rgba(275,192,192,0.4)",
@@ -165,20 +195,77 @@ $(function () {
                         beginAtZero:true
                     }
                 }]
+            },
+            title: {
+                 display: true,
+                 text: 'Security Requirements overview per Baseline'
+            },
+        }
+    });
+    
+    
+       var myChart2 = new Chart(ctx2, {
+        type: 'pie',
+        data: {
+            labels: [],
+            datasets: [
+                {
+                    label: "Total Specification Matches on the Requirements",
+                    fill: false,
+                    lineTension: 0.1,
+                    //backgroundColor: "rgba(175,192,192,0.4)",
+                    //borderColor: "rgba(175,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    //pointBorderColor: "rgba(175,192,192,1)",
+                    //pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    //pointHoverBackgroundColor: "rgba(175,192,192,1)",
+                    //pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                }
+            ]
+        },
+        options: {
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            title: {
+                 display: true,
+                 text: 'Amount of Security requirements per Baseline'
+            },
+            //scales: {
+            //    yAxes: [{
+            //        ticks: {
+            //            beginAtZero:true
+            //        }
+            //    }]
+            //},
+            plugins: {
+                colorschemes: {
+                  scheme: 'brewer.Paired12'
+                }
             }
         }
     });
 
-    ajax_chart(myChart, json_url);
 
-    // function to update our chart
+    ajax_chart(myChart, json_url);
+    ajax_chart2(myChart2, json_url);
+
+    // function to update the bar chart
     function ajax_chart(chart, url, data) {
         var data = data || {};
-
         $.getJSON(url, data).done(function(json) {
-        
           var labels = new Array();
-          var datasets = new Array();
         
           var my_baselineName = " ";
           var my_baselineOrg = " ";
@@ -191,18 +278,21 @@ $(function () {
           var my_Clause = " ";
           var my_Notes = " ";
                     
+          var my_nr_clauses = 0;
           var my_nr_sub_items = 0;
           var my_nr_sub_items_compliant = 0;
           var my_nr_sub_items_not_compliant = 0;
           var my_nr_sub_items_not_applicable = 0
           var my_nr_sub_items_not_met = 0
                     
+          var my_tot_nr_clauses = 0;
           var my_tot_nr_sub_items = 0;
           var my_tot_nr_sub_items_compliant = 0;
           var my_tot_nr_sub_items_not_compliant = 0;
           var my_tot_nr_sub_items_not_applicable = 0
           var my_tot_nr_sub_items_not_met = 0
           
+          var nr_clauses = new Array();
           var nr_sub = new Array();
           var nr_sub_comp = new Array();
           var nr_sub_not_app = new Array();
@@ -211,18 +301,25 @@ $(function () {
           for (var i = 0; i < json.baseLines.length; i++) {
             // assign var in this loop
             my_nr_sub_items = 0;
+            my_nr_clauses = 0; 
             my_nr_sub_items_compliant = 0;
             my_nr_sub_items_not_compliant = 0;
             my_nr_sub_items_not_applicable = 0;
             my_nr_sub_items_not_met = 0;
             
-            labels.push(json.baseLines[i].baselineName)
-
             my_baselineName = json.baseLines[i].baselineName
             my_baselineOrg = json.baseLines[i].baselineOrg
-            if (typeof json.baseLines[i].baselineURL != "undefined") {
-              my_baselineURL = json.baseLines[i].baselineURL;
-              my_baselineName = "<a href='" + my_baselineURL + "'>" + my_baselineName + "</a>"
+            //if (typeof json.baseLines[i].baselineURL != "undefined") {
+            //  my_baselineURL = json.baseLines[i].baselineURL;
+            //  my_baselineName = "<a href='" + my_baselineURL + "'>" + my_baselineName + "</a>"
+            //}
+            my_label = my_baselineOrg  + " " + my_baselineName
+            if (my_label.length > 20)
+            {
+              labels.push(my_baselineName)
+            }
+            else {
+                labels.push(my_baselineOrg  + " " + my_baselineName)
             }
             for (var j = 0; j < json.baseLines[i].baselineCategories.length; j++) {
               // assign vars in this loop
@@ -248,6 +345,146 @@ $(function () {
                 }
                 var my_Clause = " ";
                 var my_Notes = " ";
+                my_tot_nr_clauses ++;
+                my_nr_clauses ++;
+                
+                var compliant = false;
+                for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
+                  // assign vars in this loop and create the table entry 
+                  if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
+                    my_Clause = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause
+                  }
+                  if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes != "undefined") {
+                    var my_ocfMatchFlag = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchFlag
+                    var n = my_ocfMatchFlag.includes("Yes");
+                    if (n == true) {
+                      my_tot_nr_sub_items_compliant++;
+                      my_nr_sub_items_compliant++;
+                      compliant = true;
+                    }
+                    else
+                    {
+                        if (my_ocfMatchFlag.includes("Not Applicable")) {
+                          my_nr_sub_items_not_applicable++;
+                          my_tot_nr_sub_items_not_applicable++;
+                        }
+                        else {
+                          my_nr_sub_items_not_met++;
+                          my_tot_nr_sub_items_not_met++
+                        }
+                        my_tot_nr_sub_items_not_compliant++;
+                        my_nr_sub_items_not_compliant++;
+                    }
+                    my_nr_sub_items++;
+                    my_tot_nr_sub_items++;
+                  }
+                }
+              }
+            }
+            nr_sub.push(my_nr_sub_items);
+            nr_clauses.push(my_nr_clauses);
+            nr_sub_comp.push(my_nr_sub_items_compliant);
+            nr_sub_not_app.push(my_nr_sub_items_not_applicable);
+            nr_sub_not_met.push(my_nr_sub_items_not_met);
+          }
+        
+          chart.data.labels = labels;
+          chart.data.datasets[0].data = nr_sub; // or you can iterate for multiple datasets
+          chart.data.datasets[1].data = nr_clauses; // or you can iterate for multiple datasets
+          chart.data.datasets[2].data = nr_sub_comp; // or you can iterate for multiple datasets
+          chart.data.datasets[3].data = nr_sub_not_app; // or you can iterate for multiple datasets
+          chart.data.datasets[4].data = nr_sub_not_met; // or you can iterate for multiple datasets
+          chart.update(); // finally update our chart
+        });
+    }
+    
+    // function to update the pie chart
+    function ajax_chart2(chart, url, data) {
+        var data = data || {};
+        $.getJSON(url, data).done(function(json) {
+          var labels = new Array();
+          var datasets = new Array();
+        
+          var my_baselineName = " ";
+          var my_baselineOrg = " ";
+          var my_baselineURL = " ";
+          var my_categoryName = " ";
+          var my_subcategoryName = " ";
+          var my_subcategoryNumber = " ";
+          var my_specName = " ";
+          var my_specURL = " ";
+          var my_Clause = " ";
+          var my_Notes = " ";
+                    
+          var my_nr_clauses = 0;
+          var my_nr_sub_items = 0;
+          var my_nr_sub_items_compliant = 0;
+          var my_nr_sub_items_not_compliant = 0;
+          var my_nr_sub_items_not_applicable = 0
+          var my_nr_sub_items_not_met = 0
+                    
+          var my_tot_nr_clauses = 0;
+          var my_tot_nr_sub_items = 0;
+          var my_tot_nr_sub_items_compliant = 0;
+          var my_tot_nr_sub_items_not_compliant = 0;
+          var my_tot_nr_sub_items_not_applicable = 0
+          var my_tot_nr_sub_items_not_met = 0
+          
+          var nr_clauses = new Array();
+          var nr_sub = new Array();
+          var nr_sub_comp = new Array();
+          var nr_sub_not_app = new Array();
+          var nr_sub_not_met = new Array();
+
+          for (var i = 0; i < json.baseLines.length; i++) {
+            // assign var in this loop
+            my_nr_sub_items = 0;
+            my_nr_clauses = 0; 
+            my_nr_sub_items_compliant = 0;
+            my_nr_sub_items_not_compliant = 0;
+            my_nr_sub_items_not_applicable = 0;
+            my_nr_sub_items_not_met = 0;
+            
+            my_baselineName = json.baseLines[i].baselineName
+            my_baselineOrg = json.baseLines[i].baselineOrg
+            //if (typeof json.baseLines[i].baselineURL != "undefined") {
+            //  my_baselineURL = json.baseLines[i].baselineURL;
+            //  my_baselineName = "<a href='" + my_baselineURL + "'>" + my_baselineName + "</a>"
+            //}
+            my_label = my_baselineOrg  + " " + my_baselineName
+            if (my_label.length > 20)
+            {
+              labels.push(my_baselineName)
+            }
+            else {
+                labels.push(my_baselineOrg  + " " + my_baselineName)
+            }
+            for (var j = 0; j < json.baseLines[i].baselineCategories.length; j++) {
+              // assign vars in this loop
+              my_categoryName = json.baseLines[i].baselineCategories[j].categoryNumber + ".\r\n" + json.baseLines[i].baselineCategories[j].categoryName
+              for (var k = 0; k < json.baseLines[i].baselineCategories[j].subCategories.length; k++) {
+                var my_specName = " ";
+                var my_specURL = " ";
+                // assign vars in this loop
+                if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryDescription != "undefined") {
+                  my_subcategoryName = json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryDescription
+                }
+                if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber != "undefined") {
+                  my_subcategoryNumber = json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber
+                  my_subcategoryName = my_subcategoryNumber + ". " + my_subcategoryName;
+
+                }
+                if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification != "undefined") {
+                  my_specName = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification
+                }
+                if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecificationURL != "undefined") {
+                  my_specURL = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecificationURL
+                  my_specName = "<a href='" + my_specURL + "'>" + my_specName + "</a>"
+                }
+                var my_Clause = " ";
+                var my_Notes = " ";
+                my_tot_nr_clauses ++;
+                my_nr_clauses ++;
                 
                 var compliant = false;
                 for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
@@ -284,20 +521,19 @@ $(function () {
             }
             //datasets[i].data = my_nr_sub_items;
             nr_sub.push(my_nr_sub_items);
+            nr_clauses.push(my_nr_clauses);
             nr_sub_comp.push(my_nr_sub_items_compliant);
             nr_sub_not_app.push(my_nr_sub_items_not_applicable);
             nr_sub_not_met.push(my_nr_sub_items_not_met);
           }
         
-          chart.type = 'bar',
           chart.data.labels = labels;
           chart.data.datasets[0].data = nr_sub; // or you can iterate for multiple datasets
-          chart.data.datasets[1].data = nr_sub_comp; // or you can iterate for multiple datasets
-          chart.data.datasets[2].data = nr_sub_not_app; // or you can iterate for multiple datasets
-          chart.data.datasets[3].data = nr_sub_not_met; // or you can iterate for multiple datasets
           chart.update(); // finally update our chart
         });
     }
+    
+    
 });
 </script>
 
