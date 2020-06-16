@@ -1518,7 +1518,7 @@
 	},
         {
             "baselineOrg": "Department for Digital, Culture, Media & Sport",
-            "baselineName": "IOTSecCode of Practice for Consumer IoT Security",
+            "baselineName": "UK of Practice for Consumer IoT Security",
 	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
             "baselineCategories":
 	    [
@@ -1840,9 +1840,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			},
@@ -1853,9 +1853,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7.3.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more.  This is only used for transferring ownership, afterward replaced with locally generated credential."
                                 }
                             ]
 			},
@@ -1866,22 +1866,22 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and compliant with IETF standards.  Aligns with NIST recommendations 800-52 Rev 2."
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Where a user can authenticate against a device, the device shall provide to the user or an administrator a simple mechanism to change the authentication value used.",
                             "subCategoryNumber": "5.1-4",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Onboarding Tool Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Onboarding_Tool_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes methods to provision credentials on a device."
                                 }
                             ]
 			},
@@ -1892,9 +1892,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "This is not currently specificied in OCF"
                                 }
                             ]
 			}
@@ -1908,26 +1908,26 @@
                         {
                             "subCategoryDescription": "The manufacturer shall make a vulnerability disclosure policy publicly available. This policy shall include, at a minimum:contact information for the reporting of issues; and •	information on timelines for: 1)  initial acknowledgement of receipt; and 2)  status updates until the resolution of the reported issues.",
                             "subCategoryNumber": "5.2-1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Incident Response Plan",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Vulnerabilities are triaged and acted on in a timely manner"
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Disclosed vulnerabilities should be acted on in a timely manner. A 'timely manner' for acting on vulnerabilities varies considerably and is incident-specific; however, conventionally, the vulnerability process is completed within 90 days for a software solution",
                             "subCategoryNumber": "5.2-2",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Incident Response Plan",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Vulnerabilities are triaged and acted on in a timely manner"
                                 }
                             ]
 			},
@@ -1938,9 +1938,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor expects to support security updates to the software, operating system, drivers, networking, firmware and hardware of the device."
                                 }
                             ]
 			}
@@ -1958,9 +1958,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -1971,9 +1971,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -1984,9 +1984,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "User experience is out of scope for device specification"
                                 }
                             ]
 			},
@@ -1997,9 +1997,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Software Update Setting the Initiate Secure Software Update bit in the '/oic/sec/pstat.tm' Property (see Table 37 of clause 13.8) indicates a request to initiate the software update process."
                                 }
                             ]
 			},
@@ -2010,9 +2010,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Software Update Setting the Initiate Secure Software Update bit in the '/oic/sec/pstat.tm' Property (see Table 37 of clause 13.8) indicates a request to initiate the software update process."
                                 }
                             ]
 			},
@@ -2023,9 +2023,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cm' Property to 1 (TRUE), indicating that new software is available.  Update notifications are not currenly implemented "
                                 }
                             ]
 			},
@@ -2036,22 +2036,22 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Security updates shall be timely.",
                             "subCategoryNumber": "5.3-8",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Security Incident Response Plan",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Vulnerabilities are triaged and acted on in a timely manner"
                                 }
                             ]
 			},
@@ -2062,9 +2062,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -2075,9 +2075,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -2088,9 +2088,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "This is vendor dependant"
                                 }
                             ]
 			},
@@ -2101,22 +2101,22 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "basic functioning clause is device and   vendor dependent. This is user experience.  Protocol level support for this."
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "The manufacturer shall publish, in an accessible way that is clear and transparent to the user, the defined support period.",
                             "subCategoryNumber": "5.3-13",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Certified Product List",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/certified-products",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "manufacturers should notify OCF that device is End of Life (EoL)."
                                 }
                             ]
 			},
