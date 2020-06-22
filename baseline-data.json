@@ -1519,7 +1519,7 @@
         {
 
             "baselineOrg": "UK",
-
+            "baselineName": "UK: Iot Requirements",
 	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
             "baselineCategories":
 	    [
@@ -1825,7 +1825,7 @@
 	},
         {
             "baselineOrg": "European Telecommunications Standards Institute (ETSI)",
-            "baselineName": "CYBER:  Iot Baseline Requirements",
+            "baselineName": "ETSI:  Iot Baseline Requirements",
 	    "baselineURL":"https://www.etsi.org/deliver/etsi_ts/103600_103699/103645/01.01.01_60/ts_103645v010101p.pdf",
             "baselineCategories":
 	    [
