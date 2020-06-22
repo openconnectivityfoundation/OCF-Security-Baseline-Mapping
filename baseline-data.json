@@ -1803,15 +1803,7 @@
                                     "ocfMatchClause": "4.3",
                                     "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "All data inputs are validated against JSON Schemas."
-                                }
-                            ]
-			},
-                        {
-                            "subCategoryDescription": "Data input via user interfaces and transferred via application programming interfaces <APIs> or between networks in services and devices shall be validated.",
-                            "subCategoryNumber": "1",
-                            "ocfMatchSpecification": "OCF Resource Type Specification",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Resource_Type_Specification_v2.1.2.pdf",
-                            "ocfMatches": [
+                                },
                                 {
                                     "ocfMatchClause": "5",
                                     "ocfMatchFlag":"Yes",
