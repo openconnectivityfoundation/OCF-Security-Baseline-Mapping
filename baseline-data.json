@@ -1823,7 +1823,7 @@
 	    ]
 	},
         {
-            "baselineOrg": "European Telecommunications Standards Institute",
+            "baselineOrg": "European Telecommunications Standards Institute (ETSI)",
             "baselineName": "CYBER:  Iot Baseline Requirements",
 	    "baselineURL":"https://www.etsi.org/deliver/etsi_ts/103600_103699/103645/01.01.01_60/ts_103645v010101p.pdf",
             "baselineCategories":
