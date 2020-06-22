@@ -1906,7 +1906,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "The manufacturer shall make a vulnerability disclosure policy publicly available. This policy shall include, at a minimum:contact information for the reporting of issues; and •	information on timelines for: 1)  initial acknowledgement of receipt; and 2)  status updates until the resolution of the reported issues.",
+                            "subCategoryDescription": "The manufacturer shall make a vulnerability disclosure policy publicly available. This policy shall include, at a minimum:contact information for the reporting of issues and information on timelines for: 1 initial acknowledgement of receipt and 2  status updates until the resolution of the reported issues.",
                             "subCategoryNumber": "5.2-1",
                             "ocfMatchSpecification": "OCF Security Incident Response Plan",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
