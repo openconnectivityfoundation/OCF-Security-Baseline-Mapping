@@ -1517,8 +1517,9 @@
 	    ]
 	},
         {
-            "baselineOrg": "Department for Digital, Culture, Media & Sport",
-            "baselineName": "UK of Practice for Consumer IoT Security",
+
+            "baselineOrg": "UK",
+
 	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
             "baselineCategories":
 	    [

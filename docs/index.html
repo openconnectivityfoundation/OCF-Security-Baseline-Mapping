@@ -21,7 +21,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
     crossorigin="anonymous"></script>
 
 
-  <title>OCF Security Baseline mapping overview</title>
+  <title>OCF Security Baseline overview</title>
   <a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64"
       align="right"></a>
 
@@ -34,42 +34,132 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 <script src="https://cdn.rawgit.com/ashl1/datatables-rowsgroup/v1.0.0/dataTables.rowsGroup.js"></script>
 <script src="https://cdn.datatables.net/plug-ins/1.10.20/sorting/natural.js"></script>
 
-<div class=page>
 
-  <h1>OCF Security Baseline mapping overview </h1>
+
+<div class=page>
+  <h1>OCF Security Baseline overview </h1>
 
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" href="index.html">Baseline Overview</a>  
+      <a class="nav-link active " href="index.html">Baseline Overview</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="summary.html">Baseline Summary Graph</a>
+      <a class="nav-link " href="summary.html">Baseline Summary Graph</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="table.html">Baseline Table</a>
     </li>
   </ul>
+<div>
+
+<div>
+<p>The OCF specification's security-first approach brings it into close alignment with several of the security guidelines from government and industry, including:
+</p>
+
+<ul>
+	<li>National Institute for Standards and Technology (NIST) NISTIR 8259 draft of recommendations IoT device manufacturers.</li>
+	<li>The Consumer Technology Association (CTA) C2 Consensus on IoT Device Security Baseline Capabilities.</li>
+	<li>UK's Code of Practice for Consumer IoT Security.</li>
+	<li>European Union Agency for CyberSecurity (ENISA) Baseline Security Recommendations for IoT.</li>
+
+</ul>
 
 
-  <table border="1" id="example" class="display" width="100%" cellspacing="0" data-page-length='20'
-    style="border-color:#D5D8DC">
-    <thead>
-      <tr>
-        <th>Baseline Organization </th>
-        <th>Baseline Name</th>
-        <th>Baseline Category</th>
-        <th>Baseline Sub-Category</th>
-        <th>OCF Specification</th>
-        <th>OCF Clause</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-  </table>
+The graph below indicates how many security requirements per baseline are defined.
+<div>
+<canvas id="myChart2" width="400" height="100"></canvas>
+</div>
 
-  <script>
-    $('#example').DataTable({
-      "ajax": {
-        "url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json",
-        "dataSrc": function (json) {
-          var return_data = new Array();
-          var return_data = new Array();
+The Tab <em>Baseline Summary Graph</em> shows graphically the percentages met of security requirements per baseline.
+<p>
+The Tab <em>Baseline table</em> shows all requirement and how they are met. This is a searchable table.
+Usefull search criteria:
+<ul>
+<li>Search <em>None</em> will show all requirements that are not met.</li>
+<li>Search <em>Not Applicable;</em> will show all requirements that are not met and are not applicable.</li>
+<li>Search <em>Not Implemented;</em> will show all requirements that are not met.</li>
+</ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+<script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+
+<script>
+//make sure we can depend on setting stuff from ajax calls
+$(function () {
+    
+    var ctx2 = document.getElementById("myChart2").getContext("2d");
+    var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json";
+        
+       var myChart2 = new Chart(ctx2, {
+        type: 'pie',
+        data: {
+            labels: [],
+            datasets: [
+                {
+                    label: "Total Specification Matches on the Requirements",
+                    fill: false,
+                    lineTension: 0.1,
+                    //backgroundColor: "rgba(175,192,192,0.4)",
+                    //borderColor: "rgba(175,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    //pointBorderColor: "rgba(175,192,192,1)",
+                    //pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    //pointHoverBackgroundColor: "rgba(175,192,192,1)",
+                    //pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                }
+            ]
+        },
+        options: {
+            tooltips: {
+                mode: 'index',
+                intersect: false
+            },
+            title: {
+                 display: true,
+                 text: 'Number of Security requirements per Baseline'
+            },
+            //scales: {
+            //    yAxes: [{
+            //        ticks: {
+            //            beginAtZero:true
+            //        }
+            //    }]
+            //},
+            plugins: {
+                colorschemes: {
+                  scheme: 'brewer.Paired12'
+                },
+		    labels:{
+			    render:'value',
+			    fontStyle:'bold'
+		    }
+            }
+        }
+    });
+
+
+    ajax_chart2(myChart2, json_url);
+
+
+    // function to update the pie chart
+    function ajax_chart2(chart, url, data) {
+        var data = data || {};
+        $.getJSON(url, data).done(function(json) {
+          var labels = new Array();
+          var datasets = new Array();
+        
           var my_baselineName = " ";
           var my_baselineOrg = " ";
           var my_baselineURL = " ";
@@ -80,17 +170,49 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
           var my_specURL = " ";
           var my_Clause = " ";
           var my_Notes = " ";
-
-
-
+                    
+          var my_nr_clauses = 0;
+          var my_nr_sub_items = 0;
+          var my_nr_sub_items_compliant = 0;
+          var my_nr_sub_items_not_compliant = 0;
+          var my_nr_sub_items_not_applicable = 0
+          var my_nr_sub_items_not_met = 0
+                    
+          var my_tot_nr_clauses = 0;
+          var my_tot_nr_sub_items = 0;
+          var my_tot_nr_sub_items_compliant = 0;
+          var my_tot_nr_sub_items_not_compliant = 0;
+          var my_tot_nr_sub_items_not_applicable = 0
+          var my_tot_nr_sub_items_not_met = 0
+          
+          var nr_clauses = new Array();
+          var nr_sub = new Array();
+          var nr_sub_comp = new Array();
+          var nr_sub_not_app = new Array();
+          var nr_sub_not_met = new Array();
 
           for (var i = 0; i < json.baseLines.length; i++) {
             // assign var in this loop
+            my_nr_sub_items = 0;
+            my_nr_clauses = 0; 
+            my_nr_sub_items_compliant = 0;
+            my_nr_sub_items_not_compliant = 0;
+            my_nr_sub_items_not_applicable = 0;
+            my_nr_sub_items_not_met = 0;
+            
             my_baselineName = json.baseLines[i].baselineName
             my_baselineOrg = json.baseLines[i].baselineOrg
-            if (typeof json.baseLines[i].baselineURL != "undefined") {
-              my_baselineURL = json.baseLines[i].baselineURL;
-              my_baselineName = "<a href='" + my_baselineURL + "'>" + my_baselineName + "</a>"
+            //if (typeof json.baseLines[i].baselineURL != "undefined") {
+            //  my_baselineURL = json.baseLines[i].baselineURL;
+            //  my_baselineName = "<a href='" + my_baselineURL + "'>" + my_baselineName + "</a>"
+            //}
+            my_label = my_baselineOrg  + " " + my_baselineName
+            if (my_label.length > 20)
+            {
+              labels.push(my_baselineName)
+            }
+            else {
+                labels.push(my_baselineOrg  + " " + my_baselineName)
             }
             for (var j = 0; j < json.baseLines[i].baselineCategories.length; j++) {
               // assign vars in this loop
@@ -105,6 +227,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber != "undefined") {
                   my_subcategoryNumber = json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber
                   my_subcategoryName = my_subcategoryNumber + ". " + my_subcategoryName;
+
                 }
                 if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification != "undefined") {
                   my_specName = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification
@@ -115,57 +238,57 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 var my_Clause = " ";
                 var my_Notes = " ";
+                my_tot_nr_clauses ++;
+                my_nr_clauses ++;
+                
+                var compliant = false;
                 for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
                   // assign vars in this loop and create the table entry 
                   if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
                     my_Clause = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause
                   }
                   if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes != "undefined") {
-                    if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
-                    var ocfMatchFlag = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchFlag;
-                    if (ocfMatchFlag.includes("Yes")  == false){
-                        my_Notes = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchFlag;
-                        my_Notes += ";\n "
-                      }
-                      my_Notes += json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes
+                    var my_ocfMatchFlag = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchFlag
+                    var n = my_ocfMatchFlag.includes("Yes");
+                    if (n == true) {
+                      my_tot_nr_sub_items_compliant++;
+                      my_nr_sub_items_compliant++;
+                      compliant = true;
                     }
+                    else
+                    {
+                        if (my_ocfMatchFlag.includes("Not Applicable")) {
+                          my_nr_sub_items_not_applicable++;
+                          my_tot_nr_sub_items_not_applicable++;
+                        }
+                        else {
+                          my_nr_sub_items_not_met++;
+                          my_tot_nr_sub_items_not_met++
+                        }
+                        my_tot_nr_sub_items_not_compliant++;
+                        my_nr_sub_items_not_compliant++;
+                    }
+                    my_nr_sub_items++;
+                    my_tot_nr_sub_items++;
                   }
-                  if (my_Clause == "12") {
-                    console.log(l + " " + my_baselineOrg + ":" + my_subcategoryName + " " + my_Clause)
-                  }
-                  var row_data = [my_baselineName, my_baselineOrg, my_categoryName, my_subcategoryName, my_specName, my_Clause, my_Notes]
-                  //		  return_data.push(row_data)
-                  return_data.push({
-                    'a': my_baselineOrg,
-                    'b': my_baselineName,
-                    'c': my_categoryName,
-                    'e': my_subcategoryName,
-                    'f': my_specName,
-                    'g': my_Clause,
-                    'h': my_Notes
-                  })
                 }
               }
             }
+            //datasets[i].data = my_nr_sub_items;
+            nr_sub.push(my_nr_sub_items);
+            nr_clauses.push(my_nr_clauses);
+            nr_sub_comp.push(my_nr_sub_items_compliant);
+            nr_sub_not_app.push(my_nr_sub_items_not_applicable);
+            nr_sub_not_met.push(my_nr_sub_items_not_met);
           }
-          return return_data;
-        }
-      },
-      "columns": [
-        { "data": "a" },
-        { "data": "b" },
-        { "data": "c" },
-        { "data": "e" },
-        { "data": "f" },
-        { "data": "g" },
-        { "data": "h" }
-      ],
-      columnDefs: [
-        { type: 'natural', targets: [0, 1, 2] }
-      ],
-      'order': [],
-      'rowsGroup': [0, 1, 2, 3, 4] //group like columns
+        
+          chart.data.labels = labels;
+          chart.data.datasets[0].data = nr_sub; // or you can iterate for multiple datasets
+          chart.update(); // finally update our chart
+        });
+    }
 
-    })
-  </script>
+});
+</script>
+
 </div>
