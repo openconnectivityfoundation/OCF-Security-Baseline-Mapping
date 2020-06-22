@@ -61,6 +61,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 	<li>The Consumer Technology Association (CTA) C2 Consensus on IoT Device Security Baseline Capabilities.</li>
 	<li>UK's Code of Practice for Consumer IoT Security.</li>
 	<li>European Union Agency for CyberSecurity (ENISA) Baseline Security Recommendations for IoT.</li>
+	<li>European Telecommunications Standards Institute (ETSI) Baseline Security Requirements for IoT.</li>
 
 </ul>
 
@@ -240,7 +241,8 @@ $(function () {
                 var my_Notes = " ";
                 my_tot_nr_clauses ++;
                 my_nr_clauses ++;
-                
+	        my_nr_sub_items++;
+
                 var compliant = false;
                 for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
                   // assign vars in this loop and create the table entry 
@@ -268,7 +270,6 @@ $(function () {
                         my_tot_nr_sub_items_not_compliant++;
                         my_nr_sub_items_not_compliant++;
                     }
-                    my_nr_sub_items++;
                     my_tot_nr_sub_items++;
                   }
                 }
