@@ -21,9 +21,134 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
     crossorigin="anonymous"></script>
 
 
-  <title>OCF Security Baseline table</title>
+  <title>OCF Security Baseline Table</title>
   <a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64"
       align="right"></a>
+
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+
+</style>
+
+
+
 
 </head>
 
@@ -49,13 +174,29 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
       <a class="nav-link active" href="table.html">Baseline Table</a>
     </li>
   </ul>
+  <label for="baselines">Choose a baseline:</label>
+	<!---eventually need to make  this dynamic-->
+	<select class='custom-select' name="baselines" id="baselines" onChange="filter_table()" style="width:200px">
+	  <option value="">---</option>
+	  <option value="NIST">NIST</option>
+	  <option value="CTAC2">CTAC2</option>
+	  <option value="ENISA">ENISA</option>
+	  <option value="ETSI">ETSI</option>
+	  <option value="UK">UK</option>
+	</select>
+Unmatched Requirements:
+<label class="switch">
+  <input type="checkbox" name="unmatched" id="unmatched" onChange="filter_table()">
+  <span class="slider round"></span>
+</label>
+
 
 
   <table border="1" id="example" class="display" width="100%" cellspacing="0" data-page-length='20'
     style="border-color:#D5D8DC">
     <thead>
       <tr>
-        <th>Baseline Organization </th>
+        <th>Baseline Organization</th>
         <th>Baseline Name</th>
         <th>Baseline Category</th>
         <th>Baseline Sub-Category</th>
@@ -67,7 +208,9 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
   </table>
 
   <script>
-    $('#example').DataTable({
+
+
+    table = $('#example').DataTable({
       "ajax": {
         "url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json",
         "dataSrc": function (json) {
@@ -133,9 +276,6 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                       my_Notes += json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchNotes
                     }
                   }
-                  if (my_Clause == "12") {
-                    console.log(l + " " + my_baselineOrg + ":" + my_subcategoryName + " " + my_Clause)
-                  }
                   var row_data = [my_baselineName, my_baselineOrg, my_categoryName, my_subcategoryName, my_specName, my_Clause, my_Notes]
                   //		  return_data.push(row_data)
                   return_data.push({
@@ -170,5 +310,19 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
       'rowsGroup': [0, 1, 2, 3, 4] //group like columns
 
     })
+
+     function filter_table(){
+	 var x = document.getElementById('baselines')
+	 my_filter = x.value
+	 var um = document.getElementById('unmatched').checked
+	 if (um){
+		 table.columns(0).search(my_filter).draw();
+		 table.columns(5).search('None').draw();
+	 }
+	 else{
+		 table.columns(0).search(my_filter).draw();
+		 table.columns(5).search('').draw();
+	 }
+     }
   </script>
 </div>
