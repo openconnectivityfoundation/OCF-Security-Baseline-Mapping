@@ -193,7 +193,6 @@ $(function () {
 		    labels:{
 			    //render:'percentage'
 			    render: function(args){
-				    console.log(args)
 				    if (args.dataset.label == 'Total Matches Fulfilled'){
 					    return "Total Requirements Met: "+ args.percentage+"%\n\n"
 				    }
@@ -289,8 +288,15 @@ $(function () {
                 var my_Notes = " ";
                 my_tot_nr_clauses ++;
                 my_nr_clauses ++;
+	        my_nr_sub_items++;
+	        my_tot_nr_sub_items++;
+	
                 
                 var compliant = false;
+		  var my_tot_nr_sub_items_compliant = 0;
+		  var my_tot_nr_sub_items_not_compliant = 0;
+		  var my_tot_nr_sub_items_not_applicable = 0
+		  var my_tot_nr_sub_items_not_met = 0
                 for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
                   // assign vars in this loop and create the table entry 
                   if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
@@ -303,6 +309,7 @@ $(function () {
                       my_tot_nr_sub_items_compliant++;
                       my_nr_sub_items_compliant++;
                       compliant = true;
+		      break;
                     }
                     else
                     {
@@ -316,9 +323,8 @@ $(function () {
                         }
                         my_tot_nr_sub_items_not_compliant++;
                         my_nr_sub_items_not_compliant++;
+		        break;
                     }
-                    my_nr_sub_items++;
-                    my_tot_nr_sub_items++;
                   }
                 }
               }
