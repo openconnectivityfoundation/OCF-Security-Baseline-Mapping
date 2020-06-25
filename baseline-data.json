@@ -1881,8 +1881,8 @@
                         {
                             "subCategoryDescription": "When the device is not a constrained device, it shall have a mechanism available which makes brute- force attacks on authentication mechanisms via network interfaces impracticable.",
                             "subCategoryNumber": "5.1-5",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -1973,8 +1973,8 @@
                         {
                             "subCategoryDescription": "An update shall be simple for the user to apply.",
                             "subCategoryNumber": "5.3-3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2077,8 +2077,8 @@
                         {
                             "subCategoryDescription": "The manufacturer should inform the user in a recognizable and apparent manner that a security update is required together with information on the risks mitigated by that update.",
                             "subCategoryNumber": "5.3-11",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2090,8 +2090,8 @@
                         {
                             "subCategoryDescription": "The device should notify the user when the application of a software update will disrupt the basic functioning of the device.",
                             "subCategoryNumber": "5.3-12",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2116,8 +2116,8 @@
                         {
                             "subCategoryDescription": "For constrained devices that cannot have their software updated, the rationale for the absence of software updates, the period and method of hardware replacement support and a defined support period should be published by the manufacturer in an accessible way that is clear and transparent to the user.",
                             "subCategoryNumber": "5.3-14",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2129,8 +2129,8 @@
                         {
                             "subCategoryDescription": "For constrained devices that cannot have their software updated, the product should be isolable and the hardware replaceable.",
                             "subCategoryNumber": "5.3-15",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2142,8 +2142,8 @@
                         {
                             "subCategoryDescription": "The model designation of the consumer IoT device shall be clearly recognizable, either by labelling on the device or via a physical interface.",
                             "subCategoryNumber": "5.3-16",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2188,8 +2188,8 @@
                         {
                             "subCategoryDescription": "Hard-coded critical security parameters in device software source code shall not be used.",
                             "subCategoryNumber": "5.4-3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2337,8 +2337,8 @@
                         {
                             "subCategoryDescription": "All unused network and logical interfaces shall be disabled.",
                             "subCategoryNumber": "5.6-1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2363,8 +2363,8 @@
                         {
                             "subCategoryDescription": "Device hardware should not unnecessarily expose physical interfaces to attack.",
                             "subCategoryNumber": "5.6-3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2376,8 +2376,8 @@
                         {
                             "subCategoryDescription": "Where a debug interface is physically accessible, it shall be disabled in software.",
                             "subCategoryNumber": "5.6-4",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2389,8 +2389,8 @@
                         {
                             "subCategoryDescription": "The manufacturer should only enable software services that are used or required for the intended use or operation of the device.",
                             "subCategoryNumber": "5.6-5",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2402,8 +2402,8 @@
                         {
                             "subCategoryDescription": "Code should be minimized to the functionality necessary for the service/device to operate.",
                             "subCategoryNumber": "5.6-6",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2415,8 +2415,8 @@
                         {
                             "subCategoryDescription": "Software should run with least necessary privileges, taking account of both security and functionality.",
                             "subCategoryNumber": "5.6-7",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2428,8 +2428,8 @@
                         {
                             "subCategoryDescription": "The device should include a hardware-level access control mechanism for memory.",
                             "subCategoryNumber": "5.6-8",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2441,8 +2441,8 @@
                         {
                             "subCategoryDescription": "The manufacturer should follow secure development processes for software deployed on the device.",
                             "subCategoryNumber": "5.6-9",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2474,8 +2474,8 @@
                         {
                             "subCategoryDescription": "If an unauthorized change is detected to the software, the device should alert the user and/or administrator to the issue and should not connect to wider networks than those necessary to perform the alerting function.",
                             "subCategoryNumber": "5.7-2",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2530,8 +2530,8 @@
                         {
                             "subCategoryDescription": "All external sensing capabilities of the device shall be documented in an accessible way that is clear and transparent for the user.",
                             "subCategoryNumber": "5.8-3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2601,8 +2601,8 @@
                         {
                             "subCategoryDescription": "",
                             "subCategoryNumber": "5.10-1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2652,8 +2652,8 @@
                         {
                             "subCategoryDescription": "Users should be given clear instructions on how to delete their personal data.",
                             "subCategoryNumber": "5.11-3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2665,8 +2665,8 @@
                         {
                             "subCategoryDescription": "Users should be provided with clear confirmation that personal data has been deleted from services, devices and applications.",
                             "subCategoryNumber": "5.11-4",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2756,8 +2756,8 @@
                         {
                             "subCategoryDescription": "The manufacturer shall provide consumers with clear and transparent information about what personal data is processed, how it is being used, by whom, and for what purposes, for each device and service. This also applies to third parties that can be involved, including advertisers.",
                             "subCategoryNumber": "6-1",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2769,8 +2769,8 @@
                         {
                             "subCategoryDescription": "Where personal data is processed on the basis of consumers' consent, this consent shall be obtained in a valid way.",
                             "subCategoryNumber": "6-2",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2782,8 +2782,8 @@
                         {
                             "subCategoryDescription": "Consumers who gave consent for the processing of their personal data shall have the capability to withdraw it at any time.",
                             "subCategoryNumber": "6-3",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2795,8 +2795,8 @@
                         {
                             "subCategoryDescription": "If telemetry data is collected from consumer IoT devices and services, the processing of personal data should be kept to the minimum necessary for the intended functionality.",
                             "subCategoryNumber": "6-4",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
@@ -2808,8 +2808,8 @@
                         {
                             "subCategoryDescription": "If telemetry data is collected from consumer IoT devices and services, consumers shall be provided with information on what telemetry data is collected, how it is being used, by whom, and for what purposes.",
                             "subCategoryNumber": "6-5",
-                            "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
