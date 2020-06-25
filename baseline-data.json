@@ -688,8 +688,8 @@
                         {
                             "subCategoryDescription": "Enable a system to return to a state that was known to be secure, after a security breach has occurred or if an upgrade has not been successful.",
                             "subCategoryNumber": "GP-TM-06",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.6",
@@ -859,8 +859,8 @@
                         {
                             "subCategoryDescription": "Mechanisms for self-diagnosis and self-repair/healing to recover from failure, malfunction or a compromised state.",
                             "subCategoryNumber": "GP-TM-16",
-                            "ocfMatchSpecification": "",
-                            "ocfMatchSpecificationURL": "",
+                            "ocfMatchSpecification": "OCF Security Specification 2.1.2",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification_v2.1.2.pdf",
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "8.6",
