@@ -3,7 +3,7 @@
         {
             "baselineOrg": "NIST",
             "baselineName": "8529",
-	    "baselineURL":"https://doi.org/10.6028/NIST.IR.8259-draft2",
+	    "baselineURL":"https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8259.pdf",
             "baselineCategories": [
                 {
                     "categoryName": "Device Identification",
