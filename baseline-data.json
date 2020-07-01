@@ -1818,7 +1818,7 @@
         {
             "baselineOrg": "European Telecommunications Standards Institute (ETSI)",
             "baselineName": "ETSI:  Iot Baseline Requirements",
-	    "baselineURL":"https://www.etsi.org/deliver/etsi_ts/103600_103699/103645/01.01.01_60/ts_103645v010101p.pdf",
+	    "baselineURL":"https://www.etsi.org/deliver/etsi_en/303600_303699/303645/02.01.01_60/en_303645v020101p.pdf",
             "baselineCategories":
 	    [
                 {
