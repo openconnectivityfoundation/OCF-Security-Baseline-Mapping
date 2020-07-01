@@ -1520,7 +1520,7 @@
 
             "baselineOrg": "UK",
             "baselineName": "UK: Iot Requirements",
-	    "baselineURL":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/773867/Code_of_Practice_for_Consumer_IoT_Security_October_2018.pdf",
+	    "baselineURL":"https://www.gov.uk/government/publications/code-of-practice-for-consumer-iot-security/code-of-practice-for-consumer-iot-security",
             "baselineCategories":
 	    [
                 {
