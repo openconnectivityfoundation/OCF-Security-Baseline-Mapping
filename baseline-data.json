@@ -1946,7 +1946,7 @@
 		    [
                         {
                             "subCategoryDescription": "All software components in consumer IoT devices should be securely updateable.",
-                            "subCategoryNumber": "5.3.1",
+                            "subCategoryNumber": "5.3.01",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -1959,7 +1959,7 @@
 			},
                         {
                             "subCategoryDescription": "When the device is not a constrained device, it shall have an update mechanism for the secure installation of updates.",
-                            "subCategoryNumber": "5.3.2",
+                            "subCategoryNumber": "5.3.02",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -1972,7 +1972,7 @@
 			},
                         {
                             "subCategoryDescription": "An update shall be simple for the user to apply.",
-                            "subCategoryNumber": "5.3.3",
+                            "subCategoryNumber": "5.3.03",
                             "ocfMatchSpecification": "",
                             "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
@@ -1985,7 +1985,7 @@
 			},
                         {
                             "subCategoryDescription": "Automatic mechanisms should be used for software updates.",
-                            "subCategoryNumber": "5.3.4",
+                            "subCategoryNumber": "5.3.04",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -1998,7 +1998,7 @@
 			},
                         {
                             "subCategoryDescription": "The device should check after initialization, and then periodically, whether security updates are available.  For some products, it can be more appropriate for the associated service, rather than the device, to perform such checks.",
-                            "subCategoryNumber": "5.3.5",
+                            "subCategoryNumber": "5.3.05",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -2011,7 +2011,7 @@
 			},
                         {
                             "subCategoryDescription": "If the device supports automatic updates and/or update notifications, these should be enabled in the initialized state and configurable so that the user can enable, disable, or postpone installation of security updates and/or update notifications.",
-                            "subCategoryNumber": "5.3.6",
+                            "subCategoryNumber": "5.3.06",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -2024,7 +2024,7 @@
 			},
                         {
                             "subCategoryDescription": "The device shall use best practice cryptography to facilitate secure update mechanisms.",
-                            "subCategoryNumber": "5.3.7",
+                            "subCategoryNumber": "5.3.07",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
@@ -2037,7 +2037,7 @@
 			},
                         {
                             "subCategoryDescription": "Security updates shall be timely.",
-                            "subCategoryNumber": "5.3.8",
+                            "subCategoryNumber": "5.3.08",
                             "ocfMatchSpecification": "OCF Security Incident Response Plan",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/contact-us/report-an-issue",
                             "ocfMatches": [
@@ -2050,7 +2050,7 @@
 			},
                         {
                             "subCategoryDescription": "The device should verify the authenticity and integrity of software updates.",
-                            "subCategoryNumber": "5.3.9",
+                            "subCategoryNumber": "5.3.09",
                             "ocfMatchSpecification": "OCF Security Specification ISO/IEC 30118-2:2018]",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
