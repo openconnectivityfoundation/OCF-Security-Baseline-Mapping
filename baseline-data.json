@@ -2,7 +2,7 @@
     "baseLines": [
         {
             "baselineOrg": "NIST",
-            "baselineName": "8529",
+            "baselineName": "8529A",
 	    "baselineURL":"https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8259.pdf",
             "baselineCategories": [
                 {
