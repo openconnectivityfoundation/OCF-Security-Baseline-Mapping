@@ -2840,9 +2840,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope for device centric specification"
                                 }
                             ]
 			},
@@ -2853,22 +2853,22 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Onboarding process establishes credetials and access control for every client and server device.  Guidance is manufacturer dependant."
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Do you make it simple for users to identify the model of the product, either through a label on the device or via a hardware interface (after authentication)?",
                             "subCategoryNumber": "C2.6",
-                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecification": "OCF Resource Type Secification Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.4.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "All resources are identified by type and name and are available during discovery"
                                 }
                             ]
 			}
@@ -2880,93 +2880,103 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you ensure that all device passwords are unique-per device or user defined and that no default passwords are in use?",
                             "subCategoryNumber": "C3.1",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": ""
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "If you provide a unique per-device password, do you ensure that the method of generating this password is not predictable so that the device is not at risk of automated attacks? Explain how you achieve this.",
                             "subCategoryNumber": "C3.2",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more.  This is only used for transferring ownership, afterward replaced with locally generated credential."
+                                },
+                                {
+                                    "ocfMatchClause": "7.3.5",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more.  This is only used for transferring ownership, afterward replaced with locally generated credential."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Operational Credentials: Shared Key Credential Calculation: Length of symmetric keys 32 bits.   Assymetric 128-256 bit depending on the ciphersuite."
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Does your device / service use any hard-coded passwords or credentials, including those used from communications or verifying security updates?",
                             "subCategoryNumber": "C3.3",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network. "
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you provide a simple and clear method for the user to change their password or security credentials?",
                             "subCategoryNumber": "C3.4",
-                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecification": "OCF Onboarding Tool Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes methods to provision credentials on a device."
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Are security credentials for your device / service stored using industry-standard secure methods? Please describe the methods used.",
                             "subCategoryNumber": "C3.5",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "How do you ensure that if the device is tampered with or has an error it still maintains the security of stored passwords or credentials? ",
                             "subCategoryNumber": "C3.6",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device transitions to a self-recovery state if certain conditions of the device are corrupt"
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you authenticate users using best-practice encryption which is suitable for the type of device and its usage, and is your authentication protected from brute-force attacks? Describe how you achieve this",
                             "subCategoryNumber": "C3.7",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and compliant with IETF standards.  Aligns with NIST recommendations 800-52 Rev 2."
                                 }
                             ]
 			}
