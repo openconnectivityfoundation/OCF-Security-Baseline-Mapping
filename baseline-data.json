@@ -2988,80 +2988,80 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you have a vulnerability disclosure policy that covers the device and that is publicly available, ideally on your website?  Please provide details of your policy and how it is made available.",
                             "subCategoryNumber": "C4.1",
-                            "ocfMatchSpecification": "OCF Security Specification",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Incident Response Plan",
+                            "ocfMatchSpecificationURL": "",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "1.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Single point of contact and guidelines for member companies to report security issues, including vulnerability reporting. Vulnerabilities are triaged and acted on in a timely manner  Vulnerbilities reports through: Contact: https://openconnectivity.org/contact-us/report-an-issue "
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you have a process to discover and address vulnerabilities in your device / service during its lifetime? ",
                             "subCategoryNumber": "C4.2",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4-7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor expected to support security updates to the software, operating system, drivers, networking, firmware and hardware of the device. "
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "How quickly do you act on any vulnerabilities that are discovered in your device / service? Please provide details and recent examples.",
                             "subCategoryNumber": "C4.3",
-                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecification": "OCF Incident Response Plan",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Incidents are immediately assigned to the Security Oversight Working Group.  Urgency on resolving the issue is based on the severity of the incident."
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you report vulnerabilities to customers? Describe how you do this.",
                             "subCategoryNumber": "C4.4",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4-7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor expected to support security updates to the software, operating system, drivers, networking, firmware and hardware of the device."
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "Do you report vulnerabilities to other organisations? Describe how you do this.",
                             "subCategoryNumber": "C4.5",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF is the organisation"
                                 }
                             ]
 			},
                         {
-                            "subCategoryDescription": "",
+                            "subCategoryDescription": "If Yes to C4.5, to which organisations do you report them?",
                             "subCategoryNumber": "C4.6",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF is the organisation"
                                 }
                             ]
 			}
