@@ -3312,9 +3312,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Platform implementations should only expose information, network interfaces, ports and other functions that are necessary for the correct functioning of the Platform. It is also strongly recommended that Vendors configure a Platform to expose only a fixed set of explicitly documented open network ports and/or port ranges."
                                 }
                             ]
 			},
@@ -3325,9 +3325,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			},
@@ -3338,9 +3338,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor has not implemented test or debug interfaces on the Device which are operable  or which can be enabled which might present an attack vector"
                                 }
                             ]
 			},
@@ -3351,9 +3351,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources"
                                 }
                             ]
 			},
@@ -3364,9 +3364,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			},
@@ -3377,9 +3377,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
                                 }
                             ]
 			},
@@ -3390,9 +3390,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Note:  The specificaton does not denote privilege for the software stack"
                                 }
                             ]
 			},
@@ -3403,9 +3403,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Implementation Specific"
                                 }
                             ]
 			}
