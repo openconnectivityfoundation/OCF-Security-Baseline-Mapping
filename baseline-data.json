@@ -3423,9 +3423,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "This is out of scope for a device specification."
                                 }
                             ]
 			},
@@ -3436,9 +3436,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 }
                             ]
 			},
@@ -3449,9 +3449,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cryptography can be uopdated via firmware update."
                                 }
                             ]
 			},
@@ -3462,9 +3462,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Devices shall support DTLS for secured communications as defined in IETF RFC 6347. Devices using TCP shall support TLS v1.2 for secured communications as defined in IETF RFC 5246."
                                 }
                             ]
 			},
@@ -3475,9 +3475,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
                                 }
                             ]
 			},
@@ -3488,9 +3488,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition. "
                                 }
                             ]
 			},
@@ -3501,9 +3501,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Monitoring is not part of a device centric specification"
                                 }
                             ]
 			},
@@ -3514,22 +3514,22 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Monitoring is not part of a device centric specification"
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Does your device / service validate the data it receives and highlight to the user any data which is invalid? How is this achieved?",
                             "subCategoryNumber": "C7.9",
-                            "ocfMatchSpecification": "OCF Security Specification",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecification": "OCF Core Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Core_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "4.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "All data inputs are validated against JSON schemas"
                                 }
                             ]
 			},
@@ -3540,9 +3540,14 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clause 5.1: Shows the layers of connectivity and access control all remain proximally functional by default."
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clause 14.2.2.2:  SVRs (Secure Virtual Resource) are stored in non-volatile storage"
                                 }
                             ]
 			},
@@ -3553,9 +3558,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default"
                                 }
                             ]
 			}
