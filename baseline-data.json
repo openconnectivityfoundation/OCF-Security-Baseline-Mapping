@@ -3079,9 +3079,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The software of a Device shall be updatable."
                                 }
                             ]
 			},
@@ -3092,9 +3092,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -3105,9 +3105,14 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.3.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clause 14.3.1:  Describes how to securely boot, inlcuding varification of software modules."
+                                },
+                                {
+                                    "ocfMatchClause": "14.5",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clasue 14.5.1:  describes the software update process.  The combination of these two clauses describes how updates can be done in a secure manner."
                                 }
                             ]
 			},
@@ -3118,9 +3123,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources"
                                 }
                             ]
 			},
@@ -3131,9 +3136,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cm' Property to 1 (TRUE), indicating that new software is available.  Update notifications are not currently implemented."
                                 }
                             ]
 			},
@@ -3144,9 +3149,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cm' Property to 1 (TRUE), indicating that new software is available.  Update notifications are not currently implemented."
                                 }
                             ]
 			},
@@ -3157,9 +3162,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate or query for a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process. "
                                 }
                             ]
 			},
@@ -3170,9 +3175,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
                                 }
                             ]
 			},
@@ -3183,9 +3188,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "OCF Certification",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The open source implementation IoTivity must pass certification tests.  This includes hundreds of checks for proper security alignment."
                                 }
                             ]
 			},
@@ -3196,9 +3201,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
                                 }
                             ]
 			},
@@ -3209,9 +3214,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
                                 }
                             ]
 			},
@@ -3222,9 +3227,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
                                 }
                             ]
 			},
@@ -3235,9 +3240,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope:  OCF is a session based protocol"
                                 }
                             ]
 			},
@@ -3248,9 +3253,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope:  OCF is a session based protocol"
                                 }
                             ]
 			},
@@ -3261,9 +3266,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "OCF Certified Product List",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "https://openconnectivity.org/certified-products/"
                                 }
                             ]
 			},
@@ -3274,9 +3279,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "When performing a secure boot, it is required that the integrity of each boot loader is verified before executing the boot loader stage. As mentioned, while the signature and verification key for the lowest level bootloader is typically stored in tamper-proof memory, the signature and verification key for higher levels "
                                 }
                             ]
 			},
@@ -3287,9 +3292,9 @@
                             "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Process where device validates the software version against a trusted source."
                                 }
                             ]
 			}
