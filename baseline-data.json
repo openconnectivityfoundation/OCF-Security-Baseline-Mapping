@@ -2821,6 +2821,941 @@
 		    ]
 		}
 	  ]
+	},
+        {
+            "baselineOrg": "IASME",
+            "baselineName": "IASME",
+	    "baselineURL":"IASME",
+            "baselineCategories":
+	    [
+                {
+                    "categoryName": "About The Device",
+                    "categoryNumber": "C2",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Clear instructions to customers make it more likely that your device will be setup correctly which can improve its security. ",
+                            "subCategoryNumber": "C2.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope for device centric specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you provide guidance for users to check whether their device has been set up in a secure way? ",
+                            "subCategoryNumber": "C2.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Onboarding process establishes credetials and access control for every client and server device.  Guidance is manufacturer dependant."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you make it simple for users to identify the model of the product, either through a label on the device or via a hardware interface (after authentication)?",
+                            "subCategoryNumber": "C2.6",
+                            "ocfMatchSpecification": "OCF Resource Type Secification Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.4.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "All resources are identified by type and name and are available during discovery"
+                                }
+                            ]
+			}
+	           ]
+		},
+                {
+                    "categoryName": "Passwords and credentials",
+                    "categoryNumber": "C3",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Do you ensure that all device passwords are unique-per device or user defined and that no default passwords are in use?",
+                            "subCategoryNumber": "C3.1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If you provide a unique per-device password, do you ensure that the method of generating this password is not predictable so that the device is not at risk of automated attacks? Explain how you achieve this.",
+                            "subCategoryNumber": "C3.2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7.3.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more.  This is only used for transferring ownership, afterward replaced with locally generated credential."
+                                },
+                                {
+                                    "ocfMatchClause": "7.3.5",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended that the entropy of the Random PIN be enough to withstand an online brute-force attack, 40 bits or more.  This is only used for transferring ownership, afterward replaced with locally generated credential."
+                                },
+                                {
+                                    "ocfMatchClause": "11.3.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Operational Credentials: Shared Key Credential Calculation: Length of symmetric keys 32 bits.   Assymetric 128-256 bit depending on the ciphersuite."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your device / service use any hard-coded passwords or credentials, including those used from communications or verifying security updates?",
+                            "subCategoryNumber": "C3.3",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network. "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you provide a simple and clear method for the user to change their password or security credentials?",
+                            "subCategoryNumber": "C3.4",
+                            "ocfMatchSpecification": "OCF Onboarding Tool Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Onboarding_Tool_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes methods to provision credentials on a device."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Are security credentials for your device / service stored using industry-standard secure methods? Please describe the methods used.",
+                            "subCategoryNumber": "C3.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "How do you ensure that if the device is tampered with or has an error it still maintains the security of stored passwords or credentials? ",
+                            "subCategoryNumber": "C3.6",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device transitions to a self-recovery state if certain conditions of the device are corrupt"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you authenticate users using best-practice encryption which is suitable for the type of device and its usage, and is your authentication protected from brute-force attacks? Describe how you achieve this",
+                            "subCategoryNumber": "C3.7",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and compliant with IETF standards.  Aligns with NIST recommendations 800-52 Rev 2."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Vulnerabilities and anomalies",
+                    "categoryNumber": "C4",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Do you have a vulnerability disclosure policy that covers the device and that is publicly available, ideally on your website?  Please provide details of your policy and how it is made available.",
+                            "subCategoryNumber": "C4.1",
+                            "ocfMatchSpecification": "OCF Incident Response Plan",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "1.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Single point of contact and guidelines for member companies to report security issues, including vulnerability reporting. Vulnerabilities are triaged and acted on in a timely manner  Vulnerbilities reports through: Contact: https://openconnectivity.org/contact-us/report-an-issue "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you have a process to discover and address vulnerabilities in your device / service during its lifetime? ",
+                            "subCategoryNumber": "C4.2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.4-7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor expected to support security updates to the software, operating system, drivers, networking, firmware and hardware of the device. "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "How quickly do you act on any vulnerabilities that are discovered in your device / service? Please provide details and recent examples.",
+                            "subCategoryNumber": "C4.3",
+                            "ocfMatchSpecification": "OCF Incident Response Plan",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Incidents are immediately assigned to the Security Oversight Working Group.  Urgency on resolving the issue is based on the severity of the incident."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you report vulnerabilities to customers? Describe how you do this.",
+                            "subCategoryNumber": "C4.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.4-7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor expected to support security updates to the software, operating system, drivers, networking, firmware and hardware of the device."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you report vulnerabilities to other organisations? Describe how you do this.",
+                            "subCategoryNumber": "C4.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF is the organisation"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C4.5, to which organisations do you report them?",
+                            "subCategoryNumber": "C4.6",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF is the organisation"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Software",
+                    "categoryNumber": "C5",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Do you provide security updates to software and firmware on your device via an update mechanism during its lifespan? Please provide details.",
+                            "subCategoryNumber": "C5.1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The software of a Device shall be updatable."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C5.1, does your device verify that the updates it receives are from an authorised and trusted source? ",
+                            "subCategoryNumber": "C5.2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.4.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C5.1, are the updates transferred to the device in a secure manner using best practice encryption? Provide details of how you achieve this.",
+                            "subCategoryNumber": "C5.3",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.3.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clause 14.3.1:  Describes how to securely boot, inlcuding varification of software modules."
+                                },
+                                {
+                                    "ocfMatchClause": "14.5",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clasue 14.5.1:  describes the software update process.  The combination of these two clauses describes how updates can be done in a secure manner."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C5.1, do you ensure your device uses a unique per-device key or other unique security parameter to verify the integrity of security updates? How do you achieve this?",
+                            "subCategoryNumber": "C5.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C5.1, do you use an automatic method to apply software updates where the device regularly checks if new updates are available?",
+                            "subCategoryNumber": "C5.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cm' Property to 1 (TRUE), indicating that new software is available.  Update notifications are not currently implemented."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C5.1, if  your device uses automatic updates, is this turned on by default and can the user change the update settings?",
+                            "subCategoryNumber": "C5.6",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once the Device has determined if an newer software version is available, it sets the Initiate Software Availability Check bit in the '/oic/sec/pstat.cm' Property to 1 (TRUE), indicating that new software is available.  Update notifications are not currently implemented."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C5.1, if  your device uses automatic updates, is this turned on by default and can the user change the update settings?",
+                            "subCategoryNumber": "C5.7",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate or query for a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process. "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C5.1, are your updates simple to apply for someone with limited technical knowledge? Explain how you achieve this",
+                            "subCategoryNumber": "C5.8",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C5.1, do you follow secure development processes for all software and updates deployed on the device? How do you do this?",
+                            "subCategoryNumber": "C5.9",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "OCF Certification",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The open source implementation IoTivity must pass certification tests.  This includes hundreds of checks for proper security alignment."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C5.1, if the core functions of your device will be affected by an update, does your device notify the user about this when performing an update? ",
+                            "subCategoryNumber": "C5.10",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C5.1, what is the time period between finding a vulnerability and sending out a software update? What is the reason for this time period?",
+                            "subCategoryNumber": "C5.11",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If No to C5.1, is this because the nature of your device means that it is not able to be updated?",
+                            "subCategoryNumber": "C5.12",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Manufacturer Dependant"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If No to C5.1, is the hardware easy to disconnect from the network and simple to replace by a person with a limited technical background?",
+                            "subCategoryNumber": "C5.13",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope:  OCF is a session based protocol"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If No to C5.1, do you provide the user the reason for the absence of software updates together with details of the period and method of hardware replacement support?",
+                            "subCategoryNumber": "C5.14",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope:  OCF is a session based protocol"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you publish in a clear and transparent manner details of the defined support period for your device? How do you achieve this?",
+                            "subCategoryNumber": "C5.15",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "OCF Certified Product List",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "https://openconnectivity.org/certified-products/"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you ensure that software on your device is genuine? Explain how you achieve this.",
+                            "subCategoryNumber": "C5.16",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "When performing a secure boot, it is required that the integrity of each boot loader is verified before executing the boot loader stage. As mentioned, while the signature and verification key for the lowest level bootloader is typically stored in tamper-proof memory, the signature and verification key for higher levels "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you alert customers if the software on their devices has been changed and is not genuine and limit network access to only that required to issue the alert?",
+                            "subCategoryNumber": "C5.17",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Process where device validates the software version against a trusted source."
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Secure configuration",
+                    "categoryNumber": "C6",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Have you ensured that only the minimal, necessary physical and logical data access methods are enabled on the device / service? Please detail how you have achieved this.",
+                            "subCategoryNumber": "C6.1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Platform implementations should only expose information, network interfaces, ports and other functions that are necessary for the correct functioning of the Platform. It is also strongly recommended that Vendors configure a Platform to expose only a fixed set of explicitly documented open network ports and/or port ranges."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you ensure that the network interfaces of the device only give out minimal and necessary information about device configuration and software/firmware versions to unauthenticated users? How do you achieve this?",
+                            "subCategoryNumber": "C6.2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Are any debug interfaces on the device disabled by default?",
+                            "subCategoryNumber": "C6.3",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device vendor has not implemented test or debug interfaces on the Device which are operable  or which can be enabled which might present an attack vector"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you have to authenticate with the device before it will give you access to functionality such as configuration and security settings? How do you achieve this? ",
+                            "subCategoryNumber": "C6.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "12",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes access control and policy management for both local and network resources"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you ensure that only necessary software functionality is enabled in your device / service? ",
+                            "subCategoryNumber": "C6.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your device / service assist the user to disable any unused or unnecessary functionality on an ongoing basis? How is this achieved?",
+                            "subCategoryNumber": "C6.6",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you ensure that all software code runs with the minimal necessary privileges and functionality required to operate the device? How do you achieve this?",
+                            "subCategoryNumber": "C6.7",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Implemented",
+                                    "ocfMatchNotes": "Note:  The specificaton does not denote privilege for the software stack"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your device include hardware level access control for memory? How do you achieve this?",
+                            "subCategoryNumber": "C6.8",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Implementation Specific"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Communications",
+                    "categoryNumber": "C7",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Does your device / service communicate sensitive data (such as personal information or usage data) across the internet or local network?",
+                            "subCategoryNumber": "C7.1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "This is out of scope for a device specification."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C7.1, is this through an encrypted communication method which has been independently reviewed? Which method do you use?",
+                            "subCategoryNumber": "C7.2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Can the method of encryption used by your device be updated during the lifetime of the device to ensure it stays secure? How do you achieve this?",
+                            "subCategoryNumber": "C7.3",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cryptography can be uopdated via firmware update."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you encrypt critical security parameters such as passwords and keys when they are transmitted over your devices network interface?",
+                            "subCategoryNumber": "C7.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "11.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Devices shall support DTLS for secured communications as defined in IETF RFC 6347. Devices using TCP shall support TLS v1.2 for secured communications as defined in IETF RFC 5246."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you follow secure management processes for critical security parameters such as passwords and keys that relate to your devices? How do you achieve this?",
+                            "subCategoryNumber": "C7.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you securely remotely monitor your device/ service for unusual activity and take actions to investigate such instances? How do you achieve this?",
+                            "subCategoryNumber": "C7.6",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition. "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C7.6, how do you ensure only minimal and necessary personal data is collected or stored during such monitoring?",
+                            "subCategoryNumber": "C7.7",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Monitoring is not part of a device centric specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C7.6, do you make it clear to customers what monitoring information is collected and why it is needed?",
+                            "subCategoryNumber": "C7.8",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Monitoring is not part of a device centric specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your device / service validate the data it receives and highlight to the user any data which is invalid? How is this achieved?",
+                            "subCategoryNumber": "C7.9",
+                            "ocfMatchSpecification": "OCF Core Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Core_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "4.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "All data inputs are validated against JSON schemas"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your device / service still provide basic functions in a network outage or communication failure?",
+                            "subCategoryNumber": "C7.10",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clause 5.1: Shows the layers of connectivity and access control all remain proximally functional by default."
+                                },
+                                {
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Clause 14.2.2.2:  SVRs (Secure Virtual Resource) are stored in non-volatile storage"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your device return to a normal, usable state when network access or power is restored is restored?",
+                            "subCategoryNumber": "C7.11",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "5.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Shows the layers of connectivity and access control all remain proximally functional by default"
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "Usage of data",
+                    "categoryNumber": "C8",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Does your device, your service or any suppliers you have engaged store or process any personal data?",
+                            "subCategoryNumber": "C8.1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": " OCF this data data is not stored on the device."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C8.1, do you provide customers with clear and transparent information about how their data is being used, by whom, where it is stored and for which purposes?",
+                            "subCategoryNumber": "C8.2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C8.1, do you provide customers with clear and transparent information about capabilities of the product, such as cameras and microphones, that could collect personal data?",
+                            "subCategoryNumber": "C8.3",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C8.1, how do you obtain consent for using personal data?",
+                            "subCategoryNumber": "C8.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C8.1, how can a customer withdraw their consent for the use of personal data?",
+                            "subCategoryNumber": "C8.5",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If yes to C8.1, is it simple for customers to permanently delete any personal data from the device, service and any suppliers who have access to the data?",
+                            "subCategoryNumber": "C8.6",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device Onboarding-Reset State Definition The Platform manufacturer should provide a physical mechanism (e.g. button) that forces Platform reset. All Devices hosted on the same Platform transition their Device states to RESET when the Platform reset is asserted."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C8.1, do you provide clear instructions on how to delete personal data?",
+                            "subCategoryNumber": "C8.7",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Functinoality is present but is UI  and manufacturer dependant "
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If Yes to C8.1, do you provide clear confirmation that personal data has been deleted?",
+                            "subCategoryNumber": "C8.8",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Device Onboarding-Reset State Definition The Platform manufacturer should provide a physical mechanism (e.g. button) that forces Platform reset. All Devices hosted on the same Platform transition their Device states to RESET when the Platform reset is asserted."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Where is the data used by the service and your suppliers stored?",
+                            "subCategoryNumber": "C8.9",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "If data is stored outside the EEA, describe which measures have been put in place to comply with the requirements of the EU GDPR if applicable to your organisation.",
+                            "subCategoryNumber": "C8.10",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification"
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you ensure that all personal data (including sensitive personal data) is encrypted using a suitable industry-standard method when it is sent between your device and any associated services? How do you achieve this?",
+                            "subCategoryNumber": "C8.11",
+                            "ocfMatchSpecification": "OCF Cloud Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Cloud_Security_Specification_v2.2.2.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes how messages between the cloud service and device use TLS for establishing secure sessions."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "In the last 12 months, have you undertaken a risk assessment to understand the potential risks to data subjects of the data used by your organisation, your device, its services and any suppliers?",
+                            "subCategoryNumber": "C8.12",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF does not store data on device users."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Do you have a record of: - The personal data you hold; - Where the data is held (including any suppliers); - The lawful purposes for processing; - Who the data is shared with; - The period of time the data will be held?",
+                            "subCategoryNumber": "C8.13",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF does not store data on device users."
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Does your organisation maintain a data retention policy?",
+                            "subCategoryNumber": "C8.14",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "OCF does not store data on device users."
+                                }
+                            ]
+			}
+		    ]
+		}
+            ]
 	}
     ]
 }

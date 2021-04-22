@@ -76,7 +76,8 @@ Security Baseline Requirement Matches per Baseline.
 //make sure we can depend on setting stuff from ajax calls
 $(function () {
     var ctx = document.getElementById("myChart").getContext("2d");
-    var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json";
+    //var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json";
+    var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/iasme/baseline-data.json";
     // draw empty chart
     var myChart = new Chart(ctx, {
         type: 'bar',
