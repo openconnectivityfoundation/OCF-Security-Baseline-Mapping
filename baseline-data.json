@@ -3764,20 +3764,140 @@
             "baselineCategories":
 	    [
                 {
-                    "categoryName": "About The Device",
-                    "categoryNumber": "C2",
+                    "categoryName": "",
+                    "categoryNumber": "1",
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "Clear instructions to customers make it more likely that your device will be setup correctly which can improve its security. ",
-                            "subCategoryNumber": "C2.4",
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
                             "ocfMatchSpecification": "OCF Security Specification",
-                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "None",
-                                    "ocfMatchFlag":"Not Applicable",
-                                    "ocfMatchNotes": "Out of Scope for device centric specification"
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "2",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "3",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "4",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "5",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "6",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			}
+		    ]
+		},
+                {
+                    "categoryName": "",
+                    "categoryNumber": "7",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "",
+                            "subCategoryNumber": "",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
                                 }
                             ]
 			}
