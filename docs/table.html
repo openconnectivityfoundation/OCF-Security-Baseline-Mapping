@@ -259,7 +259,8 @@ Unmatched Requirements:
                 if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber != "undefined") {
                   my_subcategoryNumber = json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber
                   my_subcategoryName = my_subcategoryNumber + ". " + my_subcategoryName;
-			my_subcategoryName = my_subcategoryName.split(/•|—/).join("<br>•");
+			my_subcategoryName = my_subcategoryName.split(/•/).join("<br>•");
+			my_subcategoryName = my_subcategoryName.split(/—/).join("<br>—");
                 }
                 if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification != "undefined") {
                   my_specName = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification

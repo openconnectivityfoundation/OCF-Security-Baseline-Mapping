@@ -3867,7 +3867,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Device Configuration Control: • Configuration settings for use with the Device Configuration capability including: — Ability to configure any remote update mechanisms to be either automatically or manually initiated for update downloads and installations — Ability to enable or disable notification when an update is available and specify who or what is to be notified",
+                            "subCategoryDescription": "Device Configuration Control: • Configuration settings for use with the Device Configuration capability including: — Ability to configure any remote update mechanisms to be either automatically or manually initiated for update downloads and installations",
                             "subCategoryNumber": "2c2",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
