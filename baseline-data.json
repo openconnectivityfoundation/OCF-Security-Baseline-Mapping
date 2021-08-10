@@ -3756,6 +3756,34 @@
 		    ]
 		}
             ]
+	},
+        {
+            "baselineOrg": "IASME",
+            "baselineName": "IASME",
+	    "baselineURL":"IASME",
+            "baselineCategories":
+	    [
+                {
+                    "categoryName": "About The Device",
+                    "categoryNumber": "C2",
+                    "subCategories":
+		    [
+                        {
+                            "subCategoryDescription": "Clear instructions to customers make it more likely that your device will be setup correctly which can improve its security. ",
+                            "subCategoryNumber": "C2.4",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://standards.iso.org/ittf/PubliclyAvailableStandards/c074239_ISO_IEC_30118-2_2018.zip",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope for device centric specification"
+                                }
+                            ]
+			}
+		    ]
+		}
+	    ]
 	}
     ]
 }
