@@ -3756,6 +3756,46 @@
 		    ]
 		}
             ]
+	},
+        {
+            "baselineOrg": "NIST-8259D",
+            "baselineName": "8529D",
+	    "baselineURL":"https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8259.pdf",
+            "baselineCategories": [
+                {
+                    "categoryName": "Device Identification",
+                    "categoryNumber": "1",
+                    "subCategories": [
+                        {
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "7.1.1",
+                                    "ocfMatchNotes": "Device IDs shall be unique within the scope of operation of the corresponding OCF Security Domain, and should be universally unique.",
+                                    "ocfMatchFlag":"Yes"
+                                }
+                            ],
+                            "subCategoryDescription": "A unique logical identifier",
+                            "subCategoryName": "1",
+                            "subCategoryNumber": "1"
+                        },
+                        {
+                            "subCategoryDescription": "A unique physical identifier at an external or internal location on the device authorized entities can access",
+                            "subCategoryName": "2",
+                            "subCategoryNumber": "2",
+                            "ocfMatchSpecification": "",
+                            "ocfMatchSpecificationURL": "",
+                            "ocfMatches": [
+				    {
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchNotes": "Physical Identifiers are out of scope of the OCF specification.",
+                                    "ocfMatchFlag":"Not Applicable"
+				    }
+			    ]
+                        }
+                    ]
+                }
 	}
     ]
 }
