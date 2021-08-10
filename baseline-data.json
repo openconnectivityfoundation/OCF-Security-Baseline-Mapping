@@ -4061,6 +4061,71 @@
                                     "ocfMatchNotes": ""
                                 }
                             ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication configuration: • Ability to set the time period for how long the device will remain locked after an established configurable limit of unsuccessful login attempts has been met",
+                            "subCategoryNumber": "2a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication configuration: • Ability to disable or lock access to the device after an established number of unsuccessful login attempts",
+                            "subCategoryNumber": "2b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication configuration: • Ability to display and/or report the previous date and time of the last successful login following successful login authentication",
+                            "subCategoryNumber": "2c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication configuration: • Ability to automatically disable accounts for the IoT device after an established period of inactivity.—Ability to support automatic logout of inactive accounts after a configurable established time period.",
+                            "subCategoryNumber": "2d1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication configuration: •Ability to automatically disable accounts for the IoT device after an established period of inactivity. —Ability to support automatic removal of temporary, emergency and other special use accounts after an established time period",
+                            "subCategoryNumber": "2d2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
 			}
 		    ]
 		},
