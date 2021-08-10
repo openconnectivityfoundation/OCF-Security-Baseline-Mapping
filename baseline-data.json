@@ -3841,7 +3841,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Device Configuration Control: \\n Ability for authorized entities to restore the device to a secure configuration defined by an authorized entity",
+                            "subCategoryDescription": "Device Configuration Control: \\\n Ability for authorized entities to restore the device to a secure configuration defined by an authorized entity",
                             "subCategoryNumber": "2b",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
