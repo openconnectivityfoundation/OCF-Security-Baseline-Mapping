@@ -3764,7 +3764,7 @@
             "baselineCategories":
 	    [
                 {
-                    "categoryName": "",
+                    "categoryName": "Device Identity",
                     "categoryNumber": "1",
                     "subCategories":
 		    [
@@ -3784,7 +3784,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Device Configuration",
                     "categoryNumber": "2",
                     "subCategories":
 		    [
@@ -3804,7 +3804,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Data Protection",
                     "categoryNumber": "3",
                     "subCategories":
 		    [
@@ -3824,7 +3824,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Logical Access to Interfaces",
                     "categoryNumber": "4",
                     "subCategories":
 		    [
@@ -3844,7 +3844,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Software Update",
                     "categoryNumber": "5",
                     "subCategories":
 		    [
@@ -3864,7 +3864,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Cybersecurity State Awareness",
                     "categoryNumber": "6",
                     "subCategories":
 		    [
@@ -3884,7 +3884,7 @@
 		    ]
 		},
                 {
-                    "categoryName": "",
+                    "categoryName": "Device Security",
                     "categoryNumber": "7",
                     "subCategories":
 		    [
