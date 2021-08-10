@@ -3913,8 +3913,47 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "",
+                            "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to execute cryptographic mechanisms of appropriate strength and performance",
+                            "subCategoryNumber": "2a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to verify digital signatures",
+                            "subCategoryNumber": "2b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to run hashing algorithms",
+                            "subCategoryNumber": "2c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to compute and compare hashes",
+                            "subCategoryNumber": "2d",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
