@@ -3914,7 +3914,7 @@
 		    [
                         {
                             "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to execute cryptographic mechanisms of appropriate strength and performance",
-                            "subCategoryNumber": "2a",
+                            "subCategoryNumber": "1a",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -3927,7 +3927,7 @@
 			},
                         {
                             "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to verify digital signatures",
-                            "subCategoryNumber": "2b",
+                            "subCategoryNumber": "1b",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -3940,7 +3940,7 @@
 			},
                         {
                             "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to run hashing algorithms",
-                            "subCategoryNumber": "2c",
+                            "subCategoryNumber": "1c",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -3953,7 +3953,59 @@
 			},
                         {
                             "subCategoryDescription": "Cryptographic Capabilities & Support: • Ability to compute and compare hashes",
-                            "subCategoryNumber": "2d",
+                            "subCategoryNumber": "1d",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic Key Management: • Ability to change keys securely",
+                            "subCategoryNumber": "2a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic Key Management: • Ability to generate key pairs",
+                            "subCategoryNumber": "2b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Cryptographic Key Management: • Ability to store encryption keys securely",
+                            "subCategoryNumber": "2c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Storage: • Ability to “sanitize” or “purge” specific or all data in the device",
+                            "subCategoryNumber": "3",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
