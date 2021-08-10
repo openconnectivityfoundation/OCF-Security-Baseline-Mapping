@@ -3815,8 +3815,34 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "",
+                            "subCategoryDescription": "Display Configuration",
+                            "subCategoryNumber": "1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Device Configuration Control: • Ability to change the device’s software configuration settings",
+                            "subCategoryNumber": "2a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Device Configuration Control: • Ability for authorized entities to restore the device to a secure configuration defined by an authorized entity",
+                            "subCategoryNumber": "2b",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
