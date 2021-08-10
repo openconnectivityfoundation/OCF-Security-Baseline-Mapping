@@ -3769,7 +3769,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "Identifier Management Support",
+                            "subCategoryDescription": "Identifier Management Support: • Ability for the device to support a unique device ID (e.g., to allow it to be linked to the person or process assigned to use the IoT device) ",
                             "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
@@ -3782,8 +3782,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Actions Based on Device Identity",
-                            "subCategoryNumber": "2",
+                            "subCategoryDescription": "Actions Based on Device Identity: • Ability to monitor specific actions based on the IoT device identity",
+                            "subCategoryNumber": "2a",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -3795,7 +3795,20 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Physical Identifiers",
+                            "subCategoryDescription": "Actions Based on Device Identity: • Ability to identify software loaded on the IoT device based on IoT device identity",
+                            "subCategoryNumber": "2b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Physical Identifiers: • Ability to add a unique physical identifier at an external or internal location on the device authorized entities can access",
                             "subCategoryNumber": "3",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
