@@ -3854,8 +3854,34 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Device Configuration Control: • Configuration settings for use with the Device Configuration capability including, but not limited to: — Ability for authorized entities to configure the cryptography use itself, such as choosing a key length — Ability to configure any remote update mechanisms to be either automatically or manually initiated for update downloads and installations — Ability to enable or disable notification when an update is available and specify who or what is to be notified",
-                            "subCategoryNumber": "2c",
+                            "subCategoryDescription": "Device Configuration Control: • Configuration settings for use with the Device Configuration capability including, but not limited to: — Ability for authorized entities to configure the cryptography use itself, such as choosing a key length",
+                            "subCategoryNumber": "2c1",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Device Configuration Control: • Configuration settings for use with the Device Configuration capability including, but not limited to: — Ability to configure any remote update mechanisms to be either automatically or manually initiated for update downloads and installations — Ability to enable or disable notification when an update is available and specify who or what is to be notified",
+                            "subCategoryNumber": "2c2",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Device Configuration Control: • Configuration settings for use with the Device Configuration capability including, but not limited to: — Ability to enable or disable notification when an update is available and specify who or what is to be notified",
+                            "subCategoryNumber": "2c3",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
