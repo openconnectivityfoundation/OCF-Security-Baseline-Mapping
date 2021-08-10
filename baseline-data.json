@@ -4024,8 +4024,34 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "",
+                            "subCategoryDescription": "Authentication Support: • Ability for the IoT device to require authentication prior to connecting to the device ",
+                            "subCategoryNumber": "1a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication Support: • Ability for the IoT device to support a second, or more, authentication method(s) through an out-ofband path such as: Temporary passwords or other one-use credentials; Third-party credential checks; Biometrics; Text messages; Hard Tokens; etc. ",
+                            "subCategoryNumber": "1b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Authentication Support: • Ability for the IoT device to hide or mask authentication information during the authentication process. ",
+                            "subCategoryNumber": "1c",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
