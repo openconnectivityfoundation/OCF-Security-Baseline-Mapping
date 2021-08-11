@@ -4300,9 +4300,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.8",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Definition of pstat state resource.  Pstat resource is an SVR and has protected access. "
                                 }
                             ]
 			},
@@ -4313,9 +4313,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.8",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Definition of pstat state resource.  Pstat resource is an SVR and has protected access. "
                                 }
                             ]
 			},
@@ -4326,9 +4326,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "ACL Resources. Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity"
                                 }
                             ]
 			},
@@ -4339,9 +4339,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "ACL Resources. Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity. Local access is OS dependent on if OS supports local access. "
                                 }
                             ]
 			},
@@ -4352,9 +4352,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": " Device and vendor dependent.  Underlying layers are not specified in application layer focused specification"
                                 }
                             ]
 			}
