@@ -3919,9 +3919,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Cipher Suites: All heavily reviewed and IETF approved or greater."
                                 }
                             ]
 			},
@@ -3932,9 +3932,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "9.4.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "OCF certificates require that the device support ECDSA algorithm for certificate signatures."
                                 }
                             ]
 			},
@@ -3945,9 +3945,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "9.4.2.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "OCF certificates require that the device support SHA256 hashing algorithms "
                                 }
                             ]
 			},
@@ -3958,9 +3958,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "9.4.2.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Devices must implement extensions that include SHA256. "
                                 }
                             ]
 			},
@@ -3971,9 +3971,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "This describes the process where credentials both symmetric and asymmetric can be provisioned by the Onboarding Tool and the Device Ownership Transfer Service."
                                 }
                             ]
 			},
@@ -3984,9 +3984,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.9",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Certificate Signing Request Resource The Device chooses which public key to use, and may optionally generate a new key pair for this purpose. "
                                 }
                             ]
 			},
@@ -3997,22 +3997,22 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Hardware Secure storage is recommended for symmetric and asymmetric keys, access credentials and personal private data. "
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Secure Storage: • Ability to “sanitize” or “purge” specific or all data in the device",
-                            "subCategoryNumber": "3",
+                            "subCategoryNumber": "2d",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The Platform manufacturer should provide a physical mechanism (e.g. button) that forces Platform reset. All Devices hosted on the same Platform transition their Device states to RESET when the Platform reset is asserted."
                                 }
                             ]
 			}
