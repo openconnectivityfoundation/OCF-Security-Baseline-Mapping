@@ -3828,7 +3828,7 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "Display Configuration",
+                            "subCategoryDescription": "Display Configuration  • Ability to configure content to be displayed on a device",
                             "subCategoryNumber": "1",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
