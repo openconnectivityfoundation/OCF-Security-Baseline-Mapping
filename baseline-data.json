@@ -3860,9 +3860,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Describes the Resources and properties that are restored to manufacturer settings"
                                 }
                             ]
 			},
@@ -3873,9 +3873,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Authorized entities can configure types of credentials used. Credentials can be pairwise symmetric keys, certificates, or raw asymmetric keys.   Generally key length is not configurable."
                                 }
                             ]
 			},
@@ -3886,9 +3886,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process.  "
                                 }
                             ]
 			},
@@ -3899,9 +3899,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Indicates a request to initiate the process to check if new software is available.  Note: Security of channel is out of scope, vendor responsibility."
                                 }
                             ]
 			}
