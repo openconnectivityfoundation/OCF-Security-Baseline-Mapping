@@ -4649,8 +4649,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Logging Capture & Trigger Support: • ",
-                            "subCategoryNumber": "4",
+                            "subCategoryDescription": "Logging Capture & Trigger Support: • Ability to identify and capture organizationallydefined events using a persistent method ",
+                            "subCategoryNumber": "4a",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4662,8 +4662,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Support of Required Data Logging: • ",
-                            "subCategoryNumber": "5",
+                            "subCategoryDescription": "Logging Capture & Trigger Support: • Ability to capture information from organizationally-defined cybersecurity events (e.g., cybersecurity state, time) through organizationally-defined means (e.g., logs) ",
+                            "subCategoryNumber": "4b",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4675,8 +4675,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Audit Log Storage & Retention: • ",
-                            "subCategoryNumber": "6",
+                            "subCategoryDescription": "Logging Capture & Trigger Support: • Ability to create audit logs within the device for organizationally-defined and auditable events (e.g.  account creation, modification, enabling, disabling, removal actions and notifications) ",
+                            "subCategoryNumber": "4c",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4688,8 +4688,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Support for Reliable Time: • ",
-                            "subCategoryNumber": "7",
+                            "subCategoryDescription": "Support of Required Data Logging: • Ability to track users interacting with the device, the time they interacted with the device, the time the user logged out of the device, and to list this information in an audit log ",
+                            "subCategoryNumber": "5a",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4701,8 +4701,8 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Audit Support & Protection: • ",
-                            "subCategoryNumber": "8",
+                            "subCategoryDescription": "Support of Required Data Logging: •  Ability to log information pertaining to: —  The type of event that occurred —  The time that the event occurred —  Where the event occurred —  The source of the event —  The outcome of the event —  Identity of users/processes associated with the event",
+                            "subCategoryNumber": "5b",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4714,7 +4714,176 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "State Awareness Support: • ",
+                            "subCategoryDescription": "Support of Required Data Logging: • Ability to provide information as to why the device captured a particular event or set of events ",
+                            "subCategoryNumber": "5c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Support of Required Data Logging: • Ability to capture organizationally-defined information to support examination of security incidents ",
+                            "subCategoryNumber": "5d",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Support of Required Data Logging: •  Ability to record stored data access and usage ",
+                            "subCategoryNumber": "5e",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Log Storage & Retention: • Ability to comply with organizational policy for storing persistent audit logs up to a predefined size ",
+                            "subCategoryNumber": "6a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Log Storage & Retention: • Ability to comply with organizational policy for audit log retention period",
+                            "subCategoryNumber": "6b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Log Storage & Retention: • Ability to delete audit logs in accordance with organizational policy",
+                            "subCategoryNumber": "6c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Support for Reliable Time: • Ability to use synchronization with a verified time source to determine the validity of a timestamp ",
+                            "subCategoryNumber": "7a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Support for Reliable Time: • Ability to record timestamps convertible to UTC or GMT to support a standardized representation of timing",
+                            "subCategoryNumber": "7b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Support for Reliable Time: • Ability to log timing measurements outside a threshold value (e.g., enabling alerts if device’s system time is not reliable) ",
+                            "subCategoryNumber": "7c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Support & Protection: • Ability to report on its cybersecurity state ",
+                            "subCategoryNumber": "8a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Support & Protection: • Ability to support a self-audit generation process ",
+                            "subCategoryNumber": "8b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Support & Protection: • Ability to send requested audit logs to an external audit process or information system (e.g., where audit information can be checked to allow for review, analysis, and reporting.) ",
+                            "subCategoryNumber": "8c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Audit Support & Protection: • Ability to protect the audit information through the use of: —  Encryption —  Digitally signing audit files —  Securely sending audit files to another device —  Other protections created by the device manufacturer ",
+                            "subCategoryNumber": "8d",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "State Awareness Support: • Ability to differentiate between when a device will likely operate as expected from when it may be in a degraded cybersecurity state",
                             "subCategoryNumber": "9",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
@@ -4734,8 +4903,138 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "",
-                            "subCategoryNumber": "",
+                            "subCategoryDescription": "Secure Execution: • Ability to execute code in confined virtual environments ",
+                            "subCategoryNumber": "1a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Execution: • Ability to separate IoT device processes into separate execution domains ",
+                            "subCategoryNumber": "1b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Communication: • Ability to enforce traffic flow policies ",
+                            "subCategoryNumber": "2a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Communication: • Ability to interface with DNS/DNSSEC ",
+                            "subCategoryNumber": "2b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Resource Usage: • Ability to manage memory address space assigned to processes ",
+                            "subCategoryNumber": "3a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Resource Usage: • Ability to enforce access to memory space through the kernel ",
+                            "subCategoryNumber": "3b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Resource Usage: • Ability to prevent a process from accessing memory space of another process ",
+                            "subCategoryNumber": "3c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Resource Usage: • Ability to enforce configured disk quotas ",
+                            "subCategoryNumber": "3d",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Resource Usage: • Ability to utilize file compression technologies (e.g., to provide denial of service protection) ",
+                            "subCategoryNumber": "3e",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Device Operation: • Ability to define various operational states ",
+                            "subCategoryNumber": "4a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Secure Device Operation: • Ability to restrict components/features of the IoT device (e.g., ports, functions, protocols, services) in accordance with organizationally-defined policies ",
+                            "subCategoryNumber": "4b",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
