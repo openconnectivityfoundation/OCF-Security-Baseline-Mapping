@@ -4402,8 +4402,8 @@
                     "subCategories":
 		    [
                         {
-                            "subCategoryDescription": "Access to Event Information: • ",
-                            "subCategoryNumber": "1",
+                            "subCategoryDescription": "Access to Event Information: • Ability to access information about the IoT device’s cybersecurity state and other necessary data ",
+                            "subCategoryNumber": "1a",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4415,8 +4415,125 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": "Event Identification & Monitoring: • ",
-                            "subCategoryNumber": "2",
+                            "subCategoryDescription": "Access to Event Information: • Ability to preserve system state information ",
+                            "subCategoryNumber": "1b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to identify organizationally-defined cybersecurity events (e.g., expected state change) that may occur on or involving the IoT device ",
+                            "subCategoryNumber": "2a",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to monitor for organizationally-defined cybersecurity events (e.g., expected state change) that may occur on or involving the IoT device ",
+                            "subCategoryNumber": "2b",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to support a list of events that are necessary for auditing purposes (to support organization’s audit policy) ",
+                            "subCategoryNumber": "2c",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to identify unique users interacting with the device (to allow for user session monitoring) ",
+                            "subCategoryNumber": "2d",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to monitor communications traffic ",
+                            "subCategoryNumber": "2e",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to detect remote activation attempts ",
+                            "subCategoryNumber": "2f",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to detect remote activation of a collaborative computing device/component (e.g., microphone, camera) ",
+                            "subCategoryNumber": "2g",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to define characteristics of unapproved content ",
+                            "subCategoryNumber": "2h",
+                            "ocfMatchSpecification": "OCF Security Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatches": [
+                                {
+                                    "ocfMatchClause": "",
+                                    "ocfMatchFlag":"",
+                                    "ocfMatchNotes": ""
+                                }
+                            ]
+			},
+                        {
+                            "subCategoryDescription": "Event Identification & Monitoring: • Ability to scan files for unapproved content",
+                            "subCategoryNumber": "2i",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
@@ -4441,7 +4558,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": ":Logging Capture & Trigger Support • ",
+                            "subCategoryDescription": "Logging Capture & Trigger Support: • ",
                             "subCategoryNumber": "4",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
@@ -4454,7 +4571,7 @@
                             ]
 			},
                         {
-                            "subCategoryDescription": ":. Support of Required Data Logging • ",
+                            "subCategoryDescription": "Support of Required Data Logging: • ",
                             "subCategoryNumber": "5",
                             "ocfMatchSpecification": "OCF Security Specification",
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
