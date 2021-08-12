@@ -4348,13 +4348,13 @@
                         {
                             "subCategoryDescription": "Interface Control: • Ability to establish and configure IoT device settings for wireless technologies including wireless authentication protocols (e.g., EAP/TLS, PEAP) ",
                             "subCategoryNumber": "7i",
-                            "ocfMatchSpecification": "OCF Security Specification",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatchSpecification": "OCF Easy Setup Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Easy_Setup_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "None",
-                                    "ocfMatchFlag":"Not Applicable",
-                                    "ocfMatchNotes": " Device and vendor dependent.  Underlying layers are not specified in application layer focused specification"
+                                    "ocfMatchClause": "6.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Wifi Configuration Resource Type Device and vendor dependent.  Underlying layers are not specified in application layer focused specification"
                                 }
                             ]
 			}
@@ -4372,9 +4372,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Indicates a request to initiate the process to check if new software is available.  "
                                 }
                             ]
 			},
@@ -4385,9 +4385,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.2.2.4-2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "It is recommended that to use Secure Download and Secure Boot methods and that  authentication of a binary’s source as well as verification of its contents be used."
                                 }
                             ]
 			},
@@ -4398,9 +4398,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "14.5.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "A client with the correct authorization can initiate a software update process by setting a software update bit to true or false.  This software update bit enables or disables the update process.  Dedicated resource for updates."
                                 }
                             ]
 			}
@@ -4418,9 +4418,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be used for log analysis or for real-time understanding of a system condition. "
                                 }
                             ]
 			},
@@ -4431,9 +4431,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.11.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Auditable Event Resources shall be stored in non-volatile memory"
+                                },
+                                {
+                                    "ocfMatchClause": "13.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "ACL Resources. Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity.  Components are models as resources in OCF and all resources can be protected by authorized and authenticated access"
                                 }
                             ]
 			},
@@ -4444,9 +4449,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4457,9 +4467,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition. Logs are SVRs and can be deleted by entity with rights to delete this resource."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4470,9 +4485,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4483,9 +4503,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.4.4",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Roles can identify specific authorized entities.  Role authorization can be recorded as an auditable event as per clause 5.7"
+                                },
+                                {
+                                    "ocfMatchClause": "5.3.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Prior to operational state, device must be onboarded and configured with either symmetric or asymmetric credentials based on certificates or shared keys  Once operational devices implement role-based and/or subject based access control for each resource they present to the network. "
                                 }
                             ]
 			},
@@ -4496,9 +4521,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for device specification."
                                 }
                             ]
 			},
@@ -4509,9 +4534,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "11.3.2",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Observe/Notification. Activation attempts changes in resource states.   These changes can be detected using a RETREIVE on the resource."
                                 }
                             ]
 			},
@@ -4522,9 +4547,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Implementation specific.  Devices may not have microphones or cameras."
                                 }
                             ]
 			},
@@ -4535,9 +4560,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": " Out of  Scope for a device specification."
                                 }
                             ]
 			},
@@ -4548,9 +4573,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": " Out of  Scope for a device specification."
                                 }
                             ]
 			},
