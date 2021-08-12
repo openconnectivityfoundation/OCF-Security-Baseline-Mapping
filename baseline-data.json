@@ -4821,7 +4821,6 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                {
                                     "ocfMatchClause": "5.7",
                                     "ocfMatchFlag":"Yes",
                                     "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
