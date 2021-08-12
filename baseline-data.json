@@ -4586,22 +4586,22 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can be used for log analysis or for real-time understanding of a system condition."
                                 }
                             ]
 			},
                         {
                             "subCategoryDescription": "Event Response: • Ability to respond to alerts with predefined responses ",
                             "subCategoryNumber": "3b",
-                            "ocfMatchSpecification": "OCF Security Specification",
-                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
+                            "ocfMatchSpecification": "OCF Core Specification",
+                            "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Core_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The NOTIFY operation is used to request asynchronous notification of state changes. Complete description of the NOTIFY operation is provided in 0. The NOTIFY operation uses the NOTIFICATION response message which is defined here. "
                                 }
                             ]
 			},
@@ -4612,9 +4612,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can be used for log analysis or for real-time understanding of a system condition."
+                                },
+                                {
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The NOTIFY operation is used to request asynchronous notification of state changes. Complete description of the NOTIFY operation is provided in 0. The NOTIFY operation uses the NOTIFICATION response message which is defined here. "
                                 }
                             ]
 			},
@@ -4625,9 +4630,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.6",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "The NOTIFY operation is used to request asynchronous notification of state changes. Complete description of the NOTIFY operation is provided in 0. The NOTIFY operation uses the NOTIFICATION response message which is defined here. "
                                 }
                             ]
 			},
@@ -4638,9 +4643,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope.  Implementation Specific, devices may not be collaboration devices."
                                 }
                             ]
 			},
@@ -4651,9 +4656,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4664,9 +4674,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for a device specification."
                                 }
                             ]
 			},
@@ -4677,9 +4687,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope for a device specification."
                                 }
                             ]
 			},
@@ -4690,9 +4700,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.11.1",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "Auditable Event Resources shall be stored in non-volatile memory."
                                 }
                             ]
 			},
@@ -4703,9 +4713,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4716,9 +4731,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4729,9 +4749,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4742,9 +4767,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4755,9 +4785,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4768,9 +4803,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4781,9 +4821,15 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                {
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4794,9 +4840,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4807,9 +4858,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
@@ -4820,9 +4876,14 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "5.7",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "An OCF Platform can generate various kinds of Auditable Events. These Auditable Events can be set by the administrator and can  be used for log analysis or for real-time understanding of a system condition.  Any client with correct access permission cna retrieve logs of failure."
+                                },
+                                {
+                                    "ocfMatchClause": "Table 51",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " Properties of the '/oic/sec/ael'  Auditable Events List Resource "
                                 }
                             ]
 			},
