@@ -172,9 +172,6 @@ input:checked + .slider:before {
     <li class="nav-item">
       <a class="nav-link" href="index.html">Baseline Overview</a>  
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="summary.html">Baseline Summary Graph</a>
-    </li>
         <li class="nav-item">
       <a class="nav-link active" href="table.html">Baseline Table</a>
     </li>
@@ -184,6 +181,7 @@ input:checked + .slider:before {
 	<select class='custom-select' name="baselines" id="baselines" onChange="filter_table()" style="width:200px">
 	  <option value="">---</option>
 	  <option value="NIST">NIST 8259A</option>
+	  <option value="8259D">NIST 8259D</option>
 	  <option value="CTAC2">CTAC2</option>
 	  <option value="ENISA">ENISA</option>
 	  <option value="ETSI">ETSI</option>
@@ -218,7 +216,7 @@ Unmatched Requirements:
     table = $('#example').DataTable({
       "ajax": {
         //"url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json",
-        "url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/iasme/baseline-data.json",
+        "url": "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/nist8259d/baseline-data.json",
         "dataSrc": function (json) {
           var return_data = new Array();
           var return_data = new Array();
@@ -258,6 +256,8 @@ Unmatched Requirements:
                 if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber != "undefined") {
                   my_subcategoryNumber = json.baseLines[i].baselineCategories[j].subCategories[k].subCategoryNumber
                   my_subcategoryName = my_subcategoryNumber + ". " + my_subcategoryName;
+			my_subcategoryName = my_subcategoryName.split(/•/).join("<br>•");
+			my_subcategoryName = my_subcategoryName.split(/—/).join("<br>—");
                 }
                 if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification != "undefined") {
                   my_specName = json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatchSpecification
@@ -323,11 +323,11 @@ Unmatched Requirements:
 	 my_filter = x.value
 	 var um = document.getElementById('unmatched').checked
 	 if (um){
-		 table.columns(0).search(my_filter).draw();
+		 table.columns(1).search(my_filter).draw();
 		 table.columns(5).search('None').draw();
 	 }
 	 else{
-		 table.columns(0).search(my_filter).draw();
+		 table.columns(1).search(my_filter).draw();
 		 table.columns(5).search('').draw();
 	 }
      }
