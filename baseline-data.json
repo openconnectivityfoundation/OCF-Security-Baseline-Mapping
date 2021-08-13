@@ -5029,9 +5029,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific.  Virtual environements may not be feasible on contrained devices."
                                 }
                             ]
 			},
@@ -5042,9 +5042,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific.  Exceution domains may not be feasible on contrained devices."
                                 }
                             ]
 			},
@@ -5055,9 +5055,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Met",
+                                    "ocfMatchNotes": "Secure DNS is currently not in the specification"
                                 }
                             ]
 			},
@@ -5068,9 +5068,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific.  Virtual environements may not be feasible on contrained devices."
                                 }
                             ]
 			},
@@ -5081,9 +5081,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific."
                                 }
                             ]
 			},
@@ -5094,9 +5094,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific."
                                 }
                             ]
 			},
@@ -5107,9 +5107,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific."
                                 }
                             ]
 			},
@@ -5120,9 +5120,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific."
                                 }
                             ]
 			},
@@ -5133,9 +5133,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "None",
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific."
                                 }
                             ]
 			},
@@ -5146,9 +5146,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "8.1 - Figure 22",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": "This shows the device state model"
                                 }
                             ]
 			},
@@ -5159,9 +5159,9 @@
                             "ocfMatchSpecificationURL": "https://openconnectivity.org/specs/OCF_Security_Specification.pdf",
                             "ocfMatches": [
                                 {
-                                    "ocfMatchClause": "",
-                                    "ocfMatchFlag":"",
-                                    "ocfMatchNotes": ""
+                                    "ocfMatchClause": "13.5.3",
+                                    "ocfMatchFlag":"Yes",
+                                    "ocfMatchNotes": " ACL Resources. Security Virtual Resources (SVRs) and Access Policy, All SVRs can be accessed by the authorized entity"
                                 }
                             ]
 			}
