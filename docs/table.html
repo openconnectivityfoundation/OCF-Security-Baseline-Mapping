@@ -323,11 +323,11 @@ Unmatched Requirements:
 	 my_filter = x.value
 	 var um = document.getElementById('unmatched').checked
 	 if (um){
-		 table.columns(0).search(my_filter).draw();
+		 table.columns(1).search(my_filter).draw();
 		 table.columns(5).search('None').draw();
 	 }
 	 else{
-		 table.columns(0).search(my_filter).draw();
+		 table.columns(1).search(my_filter).draw();
 		 table.columns(5).search('').draw();
 	 }
      }

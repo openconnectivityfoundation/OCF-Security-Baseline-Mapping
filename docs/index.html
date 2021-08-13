@@ -21,7 +21,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
     crossorigin="anonymous"></script>
 
 
-  <title>OCF Security Baseline overview</title>
+  <title>OCF Security Baseline mapping summary</title>
   <a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64"
       align="right"></a>
 
@@ -37,49 +37,32 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 
 
 <div class=page>
-  <h1>OCF Security Baseline overview </h1>
+  <h1>OCF Security Baseline Summary Graph </h1>
 
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active " href="index.html">Baseline Overview</a>
+      <a class="nav-link " href="index.html">Baseline Overview</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link " href="summary.html">Baseline Summary Graph</a>
-    </li>
-    <li class="nav-item">
+        <li class="nav-item">
       <a class="nav-link " href="table.html">Baseline Table</a>
     </li>
   </ul>
 <div>
 
 <div>
-<p>The OCF specification's security-first approach brings it into close alignment with several of the security guidelines from government and industry, including:
-</p>
+<p>
+Security Baseline Requirement Matches per Baseline.
 
+<p style="font-weight:bold">Baseline Match Definitions:</p>
 <ul>
-	<li>National Institute for Standards and Technology (NIST) NISTIR 8259 draft of recommendations IoT device manufacturers.</li>
-	<li>The Consumer Technology Association (CTA) C2 Consensus on IoT Device Security Baseline Capabilities.</li>
-	<li>UK's Code of Practice for Consumer IoT Security.</li>
-	<li>European Union Agency for CyberSecurity (ENISA) Baseline Security Recommendations for IoT.</li>
-	<li>European Telecommunications Standards Institute (ETSI) Baseline Security Requirements for IoT.</li>
+	<li>Met:  The OCF Specification meets the clause or sub-clause of the baseline requirement with one or more  OCF specification clauses</li>
+	<li>Not Implemented: The baseline requirement is applicable to the specification, but is not currently met within the OCF specification</li>
+	<li>Not Appicable: The baseline requirement is not applicable to the specification.  Some examples of this are where the security baseline is  out of scope for OCF, which is a device specification, or when the baseline requirement is implementation or user interface specific. <i>Note: Requirements that were deemed not applicable are not counted in the total percentages.</i></li>
 
-</ul>
-
-
-The graph below indicates how many security requirements per baseline are defined.
-<div>
-<canvas id="myChart2" width="400" height="100"></canvas>
 </div>
 
-The Tab <em>Baseline Summary Graph</em> shows graphically the percentages met of security requirements per baseline.
-<p>
-The Tab <em>Baseline table</em> shows all requirement and how they are met. This is a searchable table.
-Usefull search criteria:
-<ul>
-<li>Search <em>None</em> will show all requirements that are not met, being not implemented or not applicable.</li>
-<li>Search <em>Not Applicable;</em> will show the requirements that are not met and are not applicable.</li>
-<li>Search <em>Not Implemented;</em> will show the requirements that are not met but are applicable.</li>
-</ul>
+<div >
+  <canvas id="myChart" width="400" height="150"></canvas>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
@@ -89,32 +72,56 @@ Usefull search criteria:
 <script>
 //make sure we can depend on setting stuff from ajax calls
 $(function () {
-    
-    var ctx2 = document.getElementById("myChart2").getContext("2d");
+    var ctx = document.getElementById("myChart").getContext("2d");
     //var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/master/baseline-data.json";
-    var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/iasme/baseline-data.json";
-        
-       var myChart2 = new Chart(ctx2, {
-        type: 'pie',
+    //var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/iasme/baseline-data.json";
+    var json_url = "https://raw.githubusercontent.com/openconnectivityfoundation/OCF-Security-Baseline-Mapping/nist8259d/baseline-data.json";
+    // draw empty chart
+    var myChart = new Chart(ctx, {
+        type: 'bar',
         data: {
             labels: [],
             datasets: [
                 {
-                    label: "Total Specification Matches on the Requirements",
+                    label: "Total Matches Fulfilled",
                     fill: false,
                     lineTension: 0.1,
-                    //backgroundColor: "rgba(175,192,192,0.4)",
-                    //borderColor: "rgba(175,192,192,1)",
+                    backgroundColor: "rgba(75,192,75,0.4)",
+                    borderColor: "rgba(75,192,75,1)",
+		    borderWidth:1,
                     borderCapStyle: 'butt',
                     borderDash: [],
                     borderDashOffset: 0.0,
                     borderJoinStyle: 'miter',
-                    //pointBorderColor: "rgba(175,192,192,1)",
-                    //pointBackgroundColor: "#fff",
+                    pointBorderColor: "rgba(75,192,75,1)",
+                    pointBackgroundColor: "#fff",
                     pointBorderWidth: 1,
                     pointHoverRadius: 5,
-                    //pointHoverBackgroundColor: "rgba(175,192,192,1)",
-                    //pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBackgroundColor: "rgba(75,192,75,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [],
+                    spanGaps: false,
+                },
+                {
+                    label: "Requirement Not Met",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(275,192,192,0.4)",
+		    borderWidth:1,
+                    borderColor: "rgba(275,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(175,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(275,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointHoverBorderWidth: 2,
                     pointRadius: 1,
                     pointHitRadius: 10,
@@ -128,39 +135,57 @@ $(function () {
                 mode: 'index',
                 intersect: false
             },
+	    layout:{
+		    padding:{
+			    top: 10
+		    }
+	    },
+            scales: {
+                yAxes: [{
+		    gridLines: {display:false,drawBorder:false},
+                    ticks: {
+			    callback: function(value, index, values) {
+				return '';
+			    },
+                        beginAtZero:true
+                    },
+		stacked:true
+                }],
+		xAxes:[{
+		stacked:true
+		}]
+
+            },
             title: {
                  display: true,
-                 text: 'Number of Security requirements per Baseline'
+                 text: 'Security Requirements Overview Per Baseline',
+		 padding:60
             },
-            //scales: {
-            //    yAxes: [{
-            //        ticks: {
-            //            beginAtZero:true
-            //        }
-            //    }]
-            //},
-            plugins: {
-                colorschemes: {
-                  scheme: 'brewer.Paired12'
-                },
+	    legend:{
+		display:true,
+		position:'bottom'
+	    },
+	    plugins:{
 		    labels:{
-			    render:'value',
-			    fontStyle:'bold'
+			    //render:'percentage'
+			    render: function(args){
+				    if (args.dataset.label == 'Total Matches Fulfilled'){
+					    return "Total Requirements Met: "+ args.percentage+"%\n\n"
+				    }
+			    },
+			    fontSize:14,
 		    }
-            }
+	    }
         }
     });
+    
+    ajax_chart(myChart, json_url);
 
-
-    ajax_chart2(myChart2, json_url);
-
-
-    // function to update the pie chart
-    function ajax_chart2(chart, url, data) {
+    // function to update the bar chart
+    function ajax_chart(chart, url, data) {
         var data = data || {};
         $.getJSON(url, data).done(function(json) {
           var labels = new Array();
-          var datasets = new Array();
         
           var my_baselineName = " ";
           var my_baselineOrg = " ";
@@ -204,10 +229,7 @@ $(function () {
             
             my_baselineName = json.baseLines[i].baselineName
             my_baselineOrg = json.baseLines[i].baselineOrg
-            //if (typeof json.baseLines[i].baselineURL != "undefined") {
-            //  my_baselineURL = json.baseLines[i].baselineURL;
-            //  my_baselineName = "<a href='" + my_baselineURL + "'>" + my_baselineName + "</a>"
-            //}
+
             my_label = my_baselineOrg  + " " + my_baselineName
             if (my_label.length > 20)
             {
@@ -243,8 +265,14 @@ $(function () {
                 my_tot_nr_clauses ++;
                 my_nr_clauses ++;
 	        my_nr_sub_items++;
-
+	        my_tot_nr_sub_items++;
+	
+                
                 var compliant = false;
+		  var my_tot_nr_sub_items_compliant = 0;
+		  var my_tot_nr_sub_items_not_compliant = 0;
+		  var my_tot_nr_sub_items_not_applicable = 0
+		  var my_tot_nr_sub_items_not_met = 0
                 for (var l = 0; l < json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches.length; l++) {
                   // assign vars in this loop and create the table entry 
                   if (typeof json.baseLines[i].baselineCategories[j].subCategories[k].ocfMatches[l].ocfMatchClause != "undefined") {
@@ -257,12 +285,13 @@ $(function () {
                       my_tot_nr_sub_items_compliant++;
                       my_nr_sub_items_compliant++;
                       compliant = true;
+		      break;
                     }
                     else
                     {
                         if (my_ocfMatchFlag.includes("Not Applicable")) {
-                          my_nr_sub_items_not_applicable++;
-                          my_tot_nr_sub_items_not_applicable++;
+                          //my_nr_sub_items_not_applicable++;
+                          //my_tot_nr_sub_items_not_applicable++;
                         }
                         else {
                           my_nr_sub_items_not_met++;
@@ -270,26 +299,26 @@ $(function () {
                         }
                         my_tot_nr_sub_items_not_compliant++;
                         my_nr_sub_items_not_compliant++;
+		        break;
                     }
-                    my_tot_nr_sub_items++;
                   }
                 }
               }
             }
-            //datasets[i].data = my_nr_sub_items;
             nr_sub.push(my_nr_sub_items);
             nr_clauses.push(my_nr_clauses);
             nr_sub_comp.push(my_nr_sub_items_compliant);
-            nr_sub_not_app.push(my_nr_sub_items_not_applicable);
+            //nr_sub_not_app.push(my_nr_sub_items_not_applicable);
             nr_sub_not_met.push(my_nr_sub_items_not_met);
           }
         
           chart.data.labels = labels;
-          chart.data.datasets[0].data = nr_sub; // or you can iterate for multiple datasets
+          chart.data.datasets[0].data = nr_sub_comp; // or you can iterate for multiple datasets
+          //chart.data.datasets[1].data = nr_sub_not_app; // or you can iterate for multiple datasets
+          chart.data.datasets[1].data = nr_sub_not_met; // or you can iterate for multiple datasets
           chart.update(); // finally update our chart
         });
     }
-
 });
 </script>
 
