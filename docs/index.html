@@ -132,8 +132,9 @@ $(function () {
         },
         options: {
             tooltips: {
-                mode: 'index',
-                intersect: false
+		enabled:false,
+                //mode: 'index',
+                //intersect: false
             },
 	    layout:{
 		    padding:{
@@ -170,7 +171,7 @@ $(function () {
 			    //render:'percentage'
 			    render: function(args){
 				    if (args.dataset.label == 'Total Matches Fulfilled'){
-					    return "Total Requirements Met: "+ args.percentage+"%\n\n"
+					    return "Applicable Requirements Met: "+ args.percentage+"%\n\n"
 				    }
 			    },
 			    fontSize:14,
