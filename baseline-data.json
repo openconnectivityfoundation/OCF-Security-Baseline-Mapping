@@ -4,6 +4,7 @@
             "baselineOrg": "NIST",
             "baselineName": "8529A",
 	    "baselineURL":"https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8259.pdf",
+	    "baselineGraph":"False",
             "baselineCategories": [
                 {
                     "categoryName": "Device Identification",
@@ -373,6 +374,7 @@
             "baselineOrg": "CTAC2",
             "baselineName": "Conveners",
 	    "baselineURL":"https://securingdigitaleconomy.org/wp-content/uploads/2019/09/CSDE_IoT-C2-Consensus-Report_FINAL.pdf",
+	    "baselineGraph":"True",
             "baselineCategories": [
                 {
                     "categoryName": "Device Identifiers",
@@ -607,6 +609,7 @@
             "baselineOrg": "ENISA",
             "baselineName": "IOTSec",
 	    "baselineURL":"https://www.enisa.europa.eu/publications/baseline-security-recommendations-for-iot/at_download/fullReport",
+	    "baselineGraph":"False",
             "baselineCategories": [
                 {
                     "categoryName": "Hardware security",
@@ -1521,6 +1524,7 @@
             "baselineOrg": "UK",
             "baselineName": "UK: Iot Requirements",
 	    "baselineURL":"https://www.gov.uk/government/publications/code-of-practice-for-consumer-iot-security/code-of-practice-for-consumer-iot-security",
+	    "baselineGraph":"True",
             "baselineCategories":
 	    [
                 {
@@ -1819,6 +1823,7 @@
             "baselineOrg": "European Telecommunications Standards Institute (ETSI)",
             "baselineName": "ETSI:  Iot Baseline Requirements",
 	    "baselineURL":"https://www.etsi.org/deliver/etsi_en/303600_303699/303645/02.01.01_60/en_303645v020101p.pdf",
+	    "baselineGraph":"True",
             "baselineCategories":
 	    [
                 {
@@ -2826,6 +2831,7 @@
             "baselineOrg": "IASME",
             "baselineName": "IASME",
 	    "baselineURL":"IASME",
+	    "baselineGraph":"True",
             "baselineCategories":
 	    [
                 {
@@ -3761,6 +3767,7 @@
             "baselineOrg": "NIST",
             "baselineName": "8259D",
 	    "baselineURL":"8259D",
+	    "baselineGraph":"True",
             "baselineCategories":
 	    [
                 {
