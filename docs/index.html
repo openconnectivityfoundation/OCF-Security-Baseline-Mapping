@@ -229,6 +229,11 @@ $(function () {
             
             my_baselineName = json.baseLines[i].baselineName
             my_baselineOrg = json.baseLines[i].baselineOrg
+            my_graph = json.baseLines[i].baselineGraph
+
+	    if (my_graph == "False"){
+		    continue;
+	    }
 
             my_label = my_baselineOrg  + " " + my_baselineName
             if (my_label.length > 20)
@@ -307,12 +312,15 @@ $(function () {
             }
             nr_sub.push(my_nr_sub_items);
             nr_clauses.push(my_nr_clauses);
-            nr_sub_comp.push(my_nr_sub_items_compliant);
+            nr_sub_comp.push(my_nr_sub_items_compliant/(my_nr_sub_items_compliant+my_nr_sub_items_not_met));
             //nr_sub_not_app.push(my_nr_sub_items_not_applicable);
-            nr_sub_not_met.push(my_nr_sub_items_not_met);
+            nr_sub_not_met.push(my_nr_sub_items_not_met/(my_nr_sub_items_compliant+my_nr_sub_items_not_met));
           }
         
           chart.data.labels = labels;
+	  console.log("Met: "+nr_sub_comp);
+	  console.log("Not Met: "+nr_sub_comp);
+	  console.log("Total: "+nr_sub);
           chart.data.datasets[0].data = nr_sub_comp; // or you can iterate for multiple datasets
           //chart.data.datasets[1].data = nr_sub_not_app; // or you can iterate for multiple datasets
           chart.data.datasets[1].data = nr_sub_not_met; // or you can iterate for multiple datasets

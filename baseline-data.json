@@ -607,7 +607,7 @@
         },
         {
             "baselineOrg": "ENISA",
-            "baselineName": "IOTSec",
+            "baselineName": "IoT",
 	    "baselineURL":"https://www.enisa.europa.eu/publications/baseline-security-recommendations-for-iot/at_download/fullReport",
 	    "baselineGraph":"False",
             "baselineCategories": [
