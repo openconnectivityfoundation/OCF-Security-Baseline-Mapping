@@ -5063,8 +5063,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchFlag":"Not Met",
-                                    "ocfMatchNotes": "Secure DNS is currently not in the specification"
+                                    "ocfMatchFlag":"Not Applicable",
+                                    "ocfMatchNotes": "Out of scope.  Traffic flow policies are generally external to device."
                                 }
                             ]
 			},
@@ -5076,8 +5076,8 @@
                             "ocfMatches": [
                                 {
                                     "ocfMatchClause": "None",
-                                    "ocfMatchFlag":"Not Applicable",
-                                    "ocfMatchNotes": "Out of Scope:  This is implementation specific.  Virtual environements may not be feasible on contrained devices."
+                                    "ocfMatchFlag":"Not Met",
+                                    "ocfMatchNotes": "Secure DNS is currently not in the specification"
                                 }
                             ]
 			},
